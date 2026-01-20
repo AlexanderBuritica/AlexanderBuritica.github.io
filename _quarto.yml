@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 # Meta
-description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-author-meta: "Dr. Gang He"
+description-meta: "Academic website of Alexander Buriticá Casanova"
+author-meta: "Alexander Buriticá Casanova"
 
 website:
-  title: "Quarto Academic"
+  title: "Alexander Buritica"
   image: "https://quarto.org/quarto.png"
-  description: "Quarto Academic Website Template adapted by Dr. Gang He"
+  description: "Agricultural and environmental economist. Impact evaluation, sustainable agriculture, and policy-relevant research."
  
   navbar:
     background: light  # You can change the background color here
