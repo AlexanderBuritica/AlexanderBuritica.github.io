@@ -1,0 +1,10 @@
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      image: "/files/profiles/profile3.JPG"
+      title: "Student B"
+      lastname: "B"
+#      author: 
+      subtitle: "Masters Student"
+#      date: "2024-03-12"
+      categories: [Masters Student] 
+      started: "2024"
+      ended: "2025"

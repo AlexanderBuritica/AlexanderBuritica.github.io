@@ -1,0 +1,10 @@
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      image: "/files/profiles/profile6.JPG"
+      title: "Alumni C"
+      lastname: "C"
+#      author: 
+      subtitle: "Undergraduate Alumni"
+#      date: "2024-03-12"
+      categories: [Undergraduate Student] 
+      started: "2024"
+      ended: "2025"

@@ -1,0 +1,50 @@
+---
+title: "Advancing sustainable silvopastoral practices for achieving zero deforestation in the Colombian Amazon"
+description: "Evidence on sustainable silvopastoral practices and zero-deforestation pathways in the Colombian Amazon."
+subtitle: "*Agricultural Systems*"
+author:
+  - name: Alexander Buritica
+  - name: Mary Ngaiwi
+  - name: Manuel Moreno
+  - name: Carolina Gonzalez
+  - name: Augusto Castro-Nunez
+date: "2026-01-01"
+categories: [paper]
+image: "featured.jpg"
+
+citation:
+  type: article-journal
+  container-title: "Agricultural Systems"
+  doi: "10.1016/j.agsy.2025.104525"
+  url: "https://doi.org/10.1016/j.agsy.2025.104525"
+  volume: 231
+  page: "104525"
+  issued: "2026-01-01"
+
+google-scholar: true
+---
+
+<!--Include academic icons or buttons-->
+{{< include /files/includes/_academic.qmd >}}
+
+## Abstract
+
+Deforestation and unsustainable agricultural practices, particularly extensive cattle ranching, have significantly contributed to carbon emissions and biodiversity loss globally. The Colombian Amazon, specifically the Caquetá region, faces high deforestation pressure due to pasture expansion for cattle. Silvopastoral Systems (SPS) integrate livestock, trees, and grasses, offering a sustainable alternative to traditional ranching practices. However, adoption rates of SPS remain low due to financial and technical barriers. This study aims to evaluate the impact of SPS adoption on livestock productivity and environmental outcomes in Caquetá, Colombia. Specifically, it investigates the effects of SPS on herd size, weight gain, deforestation rates, and income generation. The study uses robust econometric approaches to provide empirical evidence of the potential of SPS to enhance sustainability in agricultural systems. The research employs a difference-in-differences (DiD) methodology to analyze longitudinal data from 149 farms surveyed in 2016 (baseline) and 2019 (endline) under the Sustainable Amazonian Landscape (SAL) and Sustainable Land Use Systems (SLUS) projects. The analysis includes farm-level productivity metrics and rural property-level deforestation data. Propensity score matching (PSM) was used to address selection bias, and satellite imagery provided deforestation trends. SPS adoption resulted in a 21 percentage-point reduction in deforestation and modest but significant increases in income from livestock sales and animal welfare indicators, including an average weight gain of 169 kg for young heifers. While SPS interventions improved paddock management and rotational grazing, the overall adoption rate remained low. The findings underscore the dual benefits of SPS in enhancing agricultural productivity and mitigating environmental degradation. This study highlights the critical role of SPS as a climate-smart agricultural practice that aligns productivity with environmental sustainability. Policymakers must address adoption barriers through financial incentives, capacity-building, and technical support to scale SPS implementation. The results contribute to global efforts to balance livestock production with ecological conservation, particularly in high-deforestation regions like the Colombian Amazon.
+
+## Links
+
+- [ScienceDirect page](https://www.sciencedirect.com/science/article/abs/pii/S0308521X25002653?via%3Dihub)
+- [DOI](https://doi.org/10.1016/j.agsy.2025.104525)
+
+```{=html}
+<!-- Altmetric -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1016/j.agsy.2025.104525"></div>
+
+<!-- Dimensions -->
+<span class="__dimensions_badge_embed__"
+      data-doi="10.1016/j.agsy.2025.104525"
+      data-hide-zero-citations="true"
+      data-style="small_circle"></span>
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+```

@@ -1,0 +1,9 @@
+
+    - path: https://drganghe.github.io/quarto-academic-site-examples.html
+      image: "/files/images/avatarX2.png"
+      title: "Quarto Academic Website Examples and Tips"
+      author: "Dr. Gang He"
+      description: "Examples and tips for Quarto Academic Website"
+      date: "2024-10-15"
+      categories: [news] 
+

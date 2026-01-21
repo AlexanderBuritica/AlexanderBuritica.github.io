@@ -1,0 +1,376 @@
+---
+title: "Publications"
+description-meta: "Information, pdfs, and social metrics of papers"
+#page-layout: full
+#back-to-top-navigation: true
+title-block-banner: false
+css: custom.css
+nocite: '@*'
+---
+
+<!--Include academic icons or buttons-->
+
+{{< include /files/includes/_academic.qmd >}}
+
+## All publications
+
+::: {#refs}
+:::
+
+```{=html}
+<div>...</div>
+```
+```{=html}
+<script>
+/* ---- Publications Enhancer (group by year, bold your name + journal, add badges) ---- */
+(function () {
+  function normalize(s){ return (s||"").toLowerCase(); }
+
+  // 1) Detect YOUR NAME (full name preferred)
+  const YOUR_FULL = [
+    "alexander buritica",
+    "alexander buriticá",
+    "buritica, alexander",
+    "buriticá, alexander",
+    "buritica casanova, alexander",
+    "buritica-casanova, alexander"
+  ];
+
+  // Keep last name as fallback too
+  const YOUR_LAST = ["buritica", "buriticá", "buritica-casanova", "buritica casanova"];
+
+  // 2) Journal badge labels
+  const journalMap = [
+    { key: "Agricultural Systems", badge: "Agricultural Systems" },
+    { key: "Scientific Reports", badge: "Scientific Reports" },
+    { key: "Food Policy", badge: "Food Policy" },
+    { key: "Applied Geography", badge: "Applied Geography" },
+    { key: "Environmental and Resource Economics", badge: "Env & Resource Econ" },
+    { key: "Conservation Science and Practice", badge: "Conservation Sci & Practice" },
+    { key: "Ambiente y Sostenibilidad", badge: "Ambiente y Sostenibilidad" }
+  ];
+
+  const refs = document.querySelector("#refs");
+  if (!refs) return;
+
+  const entries = Array.from(refs.querySelectorAll(".csl-entry"));
+  if (!entries.length) return;
+
+  // Helper: extract year (first 19xx/20xx)
+  function getYear(el){
+    const t = el.textContent || "";
+    const m = t.match(/\b(19|20)\d{2}\b/);
+    return m ? m[0] : "Other";
+  }
+
+  // Helper: find journal element (usually <em> or <i> in CSL)
+  function getJournalEl(el){
+    return el.querySelector("i, em");
+  }
+
+  // Helper: find DOI link
+  function getDoiUrl(el){
+    const links = Array.from(el.querySelectorAll("a"));
+    const doi = links.find(a => /doi\.org\//i.test(a.href));
+    return doi ? doi.href : null;
+  }
+
+  // Build grouped container
+  const container = document.createElement("div");
+  container.className = "pubs-container";
+
+  // Group by year
+  const groups = {};
+  entries.forEach(e => {
+    const y = getYear(e);
+    (groups[y] ||= []).push(e);
+  });
+
+  const years = Object.keys(groups)
+    .filter(y => y !== "Other")
+    .sort((a,b) => parseInt(b)-parseInt(a));
+  if (groups["Other"]) years.push("Other");
+
+  years.forEach(y => {
+    const sec = document.createElement("section");
+    sec.className = "pub-year-section";
+
+    const h = document.createElement("h3");
+    h.className = "pub-year";
+    h.textContent = y === "Other" ? "Other" : y;
+    sec.appendChild(h);
+
+    const list = document.createElement("div");
+    list.className = "pub-list";
+
+    groups[y].forEach(e => {
+      // Wrap each entry in a card
+      const card = document.createElement("div");
+      card.className = "pub-card";
+
+      // Badges row
+      const badges = document.createElement("div");
+      badges.className = "pub-badges";
+
+      // Year badge
+      const yearBadge = document.createElement("span");
+      yearBadge.className = "pub-badge pub-badge-year";
+      yearBadge.textContent = y;
+      badges.appendChild(yearBadge);
+
+      // Journal badge (from journal element)
+      const jEl = getJournalEl(e);
+      const jText = (jEl && jEl.textContent) ? jEl.textContent.trim() : "";
+      if (jText) {
+        const jm = journalMap.find(x => normalize(jText).includes(normalize(x.key)));
+        const jBadge = document.createElement("span");
+        jBadge.className = "pub-badge pub-badge-journal";
+        jBadge.textContent = jm ? jm.badge : jText;
+        badges.appendChild(jBadge);
+
+        // ALSO bold the journal name in the citation text
+        jEl.innerHTML = "<strong>" + jEl.textContent + "</strong>";
+      }
+
+      // DOI badge
+      const doiUrl = getDoiUrl(e);
+      if (doiUrl) {
+        const doiBadge = document.createElement("a");
+        doiBadge.className = "pub-badge pub-badge-doi";
+        doiBadge.href = doiUrl;
+        doiBadge.target = "_blank";
+        doiBadge.rel = "noopener";
+        doiBadge.textContent = "DOI";
+        badges.appendChild(doiBadge);
+      }
+
+      // Bold YOUR FULL NAME first (best-effort)
+      let html = e.innerHTML;
+
+      // bold full name patterns
+      YOUR_FULL.forEach(k => {
+        const re = new RegExp(`\\b(${k})\\b`, "gi");
+        html = html.replace(re, "<strong>$1</strong>");
+      });
+
+      // fallback: bold last name occurrences
+      YOUR_LAST.forEach(k => {
+        const re = new RegExp(`\\b(${k})\\b`, "gi");
+        html = html.replace(re, "<strong>$1</strong>");
+      });
+
+      e.innerHTML = html;
+
+      // Move into card
+      card.appendChild(badges);
+      card.appendChild(e);
+      list.appendChild(card);
+    });
+
+    sec.appendChild(list);
+    container.appendChild(sec);
+  });
+
+  // Replace refs content
+  refs.innerHTML = "";
+  refs.appendChild(container);
+})();
+</script>
+```
+## Working Papers
+
+<ul id="working-papers" class="wp-list">
+
+</ul>
+
+```{=html}
+<script>
+/* ---- Working Papers Renderer (bullets; title first; title is the link) ---- */
+(function () {
+  function esc(s){
+    return (s||"")
+      .replace(/&/g,"&amp;")
+      .replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;");
+  }
+
+  // ✅ Your working papers (edit URLs if needed)
+  const WORKING_PAPERS = [
+    {
+      title: "Silvopastoral Systems in Practice: Evidence from a Dairy Value Chain Intervention in Caquetá, Colombia",
+      authors: ["Alexander Buritica"],
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:RGFaLdJalmkC",
+      pdf: "",
+      slides: "",
+      figure: ""
+    },
+    {
+      title: "Impacts of Community Seed Banks on Seed Security and Food Access Outcomes in Ethiopia: A Multinomial Logit Analysis",
+      authors: [
+        "Mary Eyeniyeh Ngaiwi",
+        "Alexander Buritica",
+        "Carolina Gonzalez",
+        "Dejene Kassahun Mengistu",
+        "Eric Junior Bomdzele",
+        "Elisabetta Gotor",
+        "Augusto Carlos Castro-Nunez"
+      ],
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:BqipwSGYUEgC",
+      pdf: "",
+      slides: "",
+      figure: ""
+    },
+    {
+      title: "Gendered dynamics in Colombian public policy: Assessing impact and investment towards equitable development",
+      authors: [
+        "Alexander Buritica",
+        "Diana Carolina Lopera",
+        "Maria Blanco",
+        "Jorge Rueda",
+        "Fanny Howland"
+      ],
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:hC7cP41nSMkC",
+      pdf: "",
+      slides: "",
+      figure: ""
+    },
+    {
+      title: "A case study of the FARC peace agreement impact on land markets in Caquetá, Colombia",
+      authors: [
+        "Manuel Moreno",
+        "Alexander Buritica",
+        "Carolina Gonzalez",
+        "Augusto Castro"
+      ],
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:hFOr9nPyWt4C",
+      pdf: "",
+      slides: "",
+      figure: ""
+    },
+    {
+      title: "Food security and forest access in the Colombian and Peruvian Amazon: How do forest quality and belonging to an ethnic group play a role?",
+      authors: [
+        "Alexander Buritica",
+        "Martha Vanegas",
+        "Deborah Pierce",
+        "Marcela Quintero"
+      ],
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:dhFuZR0502QC",
+      pdf: "",
+      slides: "",
+      figure: ""
+    }
+  ];
+
+  const ul = document.querySelector("#working-papers");
+  if (!ul) return;
+
+  // Bold your full name in authors
+  function boldMyName(name){
+    const safe = esc(name);
+    if (/^alexander\s+buritic[aá]\b/i.test(name)) return `<strong>${safe}</strong>`;
+    return safe;
+  }
+
+  function makeBadge(label, url){
+    if (!url) return "";
+    return `<a class="wp-badge" href="${url}" target="_blank" rel="noopener">${label}</a>`;
+  }
+
+  WORKING_PAPERS.forEach(p => {
+    const li = document.createElement("li");
+    li.className = "wp-item";
+
+    const title = esc(p.title || "Untitled working paper");
+    const titleHtml = p.link
+      ? `<a class="wp-title" href="${p.link}" target="_blank" rel="noopener">${title}</a>`
+      : `<span class="wp-title">${title}</span>`;
+
+    const authors = (p.authors || []).map(boldMyName).join(", ");
+
+    const badges =
+      makeBadge("Link", p.link) +
+      makeBadge("PDF", p.pdf) +
+      makeBadge("Slides", p.slides) +
+      makeBadge("Figure", p.figure);
+
+    li.innerHTML = `
+      <div class="wp-row">
+        <div class="wp-main">
+          ${titleHtml}
+          <div class="wp-authors">${authors}</div>
+        </div>
+        <div class="wp-actions">${badges}</div>
+      </div>
+    `;
+
+    ul.appendChild(li);
+  });
+})();
+</script>
+```
+```{=html}
+<style>
+/* ---- Working papers styling (self-contained) ---- */
+.wp-list{
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin-top: 0.75rem;
+}
+
+.wp-item{
+  margin: 0.9rem 0;
+}
+
+.wp-row{
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wp-main{
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.wp-title{
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.wp-title:hover{
+  text-decoration: underline;
+}
+
+.wp-authors{
+  margin-top: 0.25rem;
+  font-size: 0.95em;
+  opacity: 0.9;
+  line-height: 1.35;
+}
+
+.wp-actions{
+  flex: 0 0 auto;
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 0.1rem;
+}
+
+.wp-badge{
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 999px;
+  font-size: 0.8em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.wp-badge:hover{
+  border-color: rgba(0,0,0,0.35);
+}
+</style>
+```

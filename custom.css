@@ -1,0 +1,104 @@
+/*Inline block for altmetric badges, will keep the badges in the same line*/
+span.__dimensions_badge_embed__, div.altmetric-embed {
+  display: inline-block;
+}
+
+/* Journal in bold should still look like journal */
+.csl-entry em strong, .csl-entry i strong {
+  font-style: italic;
+  font-weight: 800;
+}
+
+/* Hide the badges line that appears under each year */
+.pub-badges {
+  display: none !important;
+}
+
+.contact-card{
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.contact-card h3{
+  margin-bottom: 0.25rem;
+}
+
+.contact-card a{
+  text-decoration: none;
+}
+
+.contact-card a:hover{
+  text-decoration: underline;
+}
+
+.news-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.news-card img {
+  margin-top: 0.75rem;
+}
+
+.news-card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.news-card img {
+  margin-top: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.news-card ul {
+  margin-top: 0.75rem;
+}
+
+.news-card li {
+  margin-bottom: 1rem;
+}
+
+
+
+.fieldwork-grid, .fieldwork-gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.fieldwork-grid img, .fieldwork-gallery img{
+  width: 300%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+
+
+
+
+
+
+

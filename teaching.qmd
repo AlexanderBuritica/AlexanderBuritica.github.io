@@ -1,0 +1,23 @@
+---
+title: "Teaching"
+subtitle: ""
+title-block-banner: false
+---
+
+## Universidad Icesi, Colombia
+
+::: grid
+::: {.g-col-12 .g-col-md-2}
+![](images/curso1.png)
+:::
+
+::: {.g-col-12 .g-col-md-10}
+2026-1
+
+-   Inference
+:::
+:::
+
+## 
+
+## 

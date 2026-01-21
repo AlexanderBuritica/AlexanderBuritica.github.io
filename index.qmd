@@ -1,0 +1,75 @@
+---
+title: "Alexander Buritica Casanova"
+description-meta: ""
+image: "files/images/Alex_Buritaca.JPG"
+page-navigation: false
+toc: false
+#sidebar: false
+page-layout: full
+
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 70%
+  links:
+    - icon: sun
+      text: Lab
+      href: https://github.com/AlexanderBuritica
+      target: _blank
+    - icon: envelope
+      text: E-mail
+      href: mailto:a.buritica@cgiar.org    
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/alexander-buritica-casanova-738827155/
+      target: _blank
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ&view_op=list_works&sortby=pubdate
+      target: _blank
+#    - text: "{{< ai researchgate >}} Research Gate"
+#      href: https://www.researchgate.net
+#      target: _blank
+
+listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
+  - id: recent-posts
+    contents: 
+      - posts
+    exclude:
+      title: ""
+    type: grid
+    max-items: 3
+#    image-height: 150px
+    page-size: 3 #set same as max-times to remove the page number setting
+    fields: [image, date, title, subtitle]
+    max-description-length: 75
+    sort: 
+      - "date desc"
+      - "title asc"
+---
+
+::: {#hero-heading}
+# **About me**
+
+I am a **PhD economist ,** with expertise in impact evaluation and applied development economics. My research agenda focuses on agriculture, sustainability, and rural development, with particular attention to the impacts of policies, technologies, and market interventions on productivity, livelihoods, and environmental outcomes.
+
+I am currently a **postdoctoral researcher at the** [Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/), where I combine causal inference methods with field data to generate policy-relevant evidence for agri-food systems in developing countries.
+
+## Education
+
+-   **PhD in Economics (2023)**\
+    Universidad de los Andes, Colombia
+-   **MSc in Economics (2023)**\
+    Universidad de los Andes, Colombia
+-   **BSc in Economics (2013)**\
+    Universidad del Valle, Colombia
+:::
+
+## Recent Posts
+
+Check out the latest  [Papers](publications.qmd) ,  [News](news2.qmd) 
+
+<p align="right">
+
+[All Posts »](/news2.qmd)
+
+</p>
