@@ -13,6 +13,8 @@
 <url>https://drganghe.github.io/quarto-academic-website-template/files/images/icon.png</url>
 <title>Alexander Buritica</title>
 <link>https://drganghe.github.io/quarto-academic-website-template/posts.html</link>
+<height>90</height>
+<width>144</width>
 </image>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Thu, 01 Jan 2026 05:00:00 GMT</lastBuildDate>
@@ -95,7 +97,7 @@ Amazon.”</span> <em>Agricultural Systems</em> 231 (January): 104525. <a href="
   <category>news</category>
   <guid>https://drganghe.github.io/quarto-academic-website-template/</guid>
   <pubDate>Tue, 15 Oct 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/files/images/avatarX2.png" medium="image" type="image/png" height="90" width="144"/>
+  <media:content url="https://drganghe.github.io/quarto-academic-website-template/files/images/avatarX2.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>News &amp; Academic Highlights</title>
@@ -163,7 +165,7 @@ Amazon.”</span> <em>Agricultural Systems</em> 231 (January): 104525. <a href="
 
  ]]></description>
   <guid>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/</guid>
-  <pubDate>Thu, 22 Jan 2026 16:03:38 GMT</pubDate>
+  <pubDate>Thu, 22 Jan 2026 16:17:41 GMT</pubDate>
 </item>
 </channel>
 </rss>

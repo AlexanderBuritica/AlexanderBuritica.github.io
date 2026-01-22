@@ -92,31 +92,74 @@ Se realizarán al menos cuatro quices cortos para evaluar la comprensión concep
   \item \textbf{Examen final acumulativo (20\%):} Evalúa la totalidad de los contenidos.
 \end{itemize}
 
-\section*{6. Cronograma tentativo}
 
-\begin{center}
-\begin{tabular}{c l}
-\hline
-\textbf{Semana} & \textbf{Tema} \\
-\hline
-1 & Introducción, datos y toma de decisiones \\
-2 & Estadística descriptiva y visualización \\
-3 & Probabilidad e incertidumbre \\
-4 & Variables aleatorias y distribuciones \\
-5 & Inferencia estadística e hipótesis (Entrega 1) \\
-6 & Intervalos de confianza \\
-7 & Pruebas de hipótesis \\
-8 & Examen parcial \\
-9 & Comparación de medias y ANOVA \\
-10 & A/B testing y experimentos (Entrega 2) \\
-11 & Regresión lineal simple \\
-12 & Regresión múltiple e interpretación \\
-13 & Modelos de riesgo y predicción \\
-14 & Integración de métodos \\
-15 & Presentaciones proyecto final (Entrega 3) \\
-\hline
-\end{tabular}
-\end{center}
+
+
+\section*{6. Cronograma tentativo por semanas}
+
+El curso se organiza en cuatro bloques temáticos progresivos, que integran fundamentos conceptuales, estimación, pruebas de hipótesis y aplicaciones prácticas orientadas a la toma de decisiones empresariales. Los contenidos se desarrollan de manera articulada con talleres prácticos en \texttt{R} y evaluaciones parciales.
+
+\subsection*{Bloque I – Fundamentos (Semanas 1–4)}
+
+\begin{itemize}
+  \item \textbf{Semana 1:} Introducción al curso, estadística descriptiva y conceptos básicos de muestreo.
+  \item \textbf{Semana 2:} Muestreo probabilístico y no probabilístico.
+  \item \textbf{Semana 3:} Distribuciones muestrales.
+  \item \textbf{Semana 4:} Teorema del Límite Central.
+\end{itemize}
+
+\textit{Base conceptual:} \texttt{Inferencia.pdf} (muestreo y Teorema del Límite Central).
+
+\subsection*{Bloque II – Estimación (Semanas 5–7)}
+
+\begin{itemize}
+  \item \textbf{Semana 5:} Estimación puntual.
+  \item \textbf{Semana 6:} Intervalos de confianza para la media.
+  \item \textbf{Semana 7:} Intervalos de confianza para proporciones y varianzas.
+\end{itemize}
+
+\textit{Base conceptual:} \texttt{Inferencia.pdf} (estimación e intervalos de confianza).
+
+\textbf{Parcial 1:} Evaluación escrita al final de la Semana 7.
+
+\subsection*{Bloque III – Pruebas de hipótesis (Semanas 8–11)}
+
+\begin{itemize}
+  \item \textbf{Semana 8:} Formulación de hipótesis nula y alternativa, nivel de significancia.
+  \item \textbf{Semana 9:} Pruebas de hipótesis para una media (estadísticos z y t).
+  \item \textbf{Semana 10:} Pruebas de hipótesis para proporciones.
+  \item \textbf{Semana 11:} Pruebas para varianzas y comparación de medias.
+\end{itemize}
+
+\textit{Base conceptual:} \texttt{PARCIAL 1 Y 2 INFERENCIA.pdf}.
+
+\textbf{Parcial 2:} Evaluación escrita al final de la Semana 11.
+
+\subsection*{Bloque IV – Aplicaciones (Semanas 12–14)}
+
+\begin{itemize}
+  \item \textbf{Semana 12:} Análisis de varianza (ANOVA).
+  \item \textbf{Semana 13:} Regresión lineal simple.
+  \item \textbf{Semana 14:} Regresión lineal e interpretación de resultados para la toma de decisiones.
+\end{itemize}
+
+\textit{Material práctico:}
+\begin{itemize}
+  \item Taller ANOVA.
+  \item Taller REGRESIÓN.
+  \item Scripts en \texttt{R}: \texttt{R regresion.R}, \texttt{R sem 13.R}.
+\end{itemize}
+
+\subsection*{Semana 15 – Cierre del curso}
+
+\begin{itemize}
+  \item Presentación y sustentación del proyecto final.
+  \item Integración de métodos y discusión de resultados.
+\end{itemize}
+
+
+
+
 
 \section*{7. Fechas académicas relevantes}
 
