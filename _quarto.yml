@@ -8,9 +8,9 @@ author-meta: "Alexander Buriticá Casanova"
 
 website:
   title: "Alexander Buritica"
-  description: "Development and Agricultural Economist"
-  favicon: "files/images/avatarX.png"
-  image: "files/images/avatarX2.PNG"
+  image: "files/images/avatarX2.png"
+  favicon: "files/images/avatarX2.png"
+  description: "Agricultural and environmental economist. Impact evaluation, sustainable agriculture, and policy-relevant research."
  
   navbar:
     background: light  # You can change the background color here

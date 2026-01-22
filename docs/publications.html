@@ -52,6 +52,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./files/images/avatarX2.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -125,10 +126,10 @@ https://badge.dimensions.ai/
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="Publications – Alexander Buritica">
-<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/files/images/avatarX2.PNG">
+<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/images/wp1-01.JPG">
 <meta property="og:site_name" content="Alexander Buritica">
 <meta name="twitter:title" content="Publications – Alexander Buritica">
-<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/files/images/avatarX2.PNG">
+<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/images/wp1-01.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -443,195 +444,50 @@ Vellema, Wytse, Alexander Buritica Casanova, Carolina Gonzalez, and Marijke D’
 </section>
 <section id="working-papers" class="level2">
 <h2 class="anchored" data-anchor-id="working-papers">Working Papers</h2>
-<ul id="working-papers" class="wp-list">
+<div class="wp-list">
+<ul>
+<li><p><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:RGFaLdJalmkC"><strong>Silvopastoral Systems in Practice: Evidence from a Dairy Value Chain Intervention in Caquetá, Colombia</strong></a></p>
+<p><img src="images/wp1-01.JPG" class="wp-figure img-fluid"></p>
+<p><span class="wp-authors"><strong>Alexander Buritica</strong></span></p>
+<p><span class="wp-links"></span></p></li>
 </ul>
-<script>
-/* ---- Working Papers Renderer (bullets; title first; title is the link) ---- */
-(function () {
-  function esc(s){
-    return (s||"")
-      .replace(/&/g,"&amp;")
-      .replace(/</g,"&lt;")
-      .replace(/>/g,"&gt;");
-  }
-
-  // ✅ Your working papers (edit URLs if needed)
-  const WORKING_PAPERS = [
-    {
-      title: "Silvopastoral Systems in Practice: Evidence from a Dairy Value Chain Intervention in Caquetá, Colombia",
-      authors: ["Alexander Buritica"],
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:RGFaLdJalmkC",
-      pdf: "",
-      slides: "",
-      figure: ""
-    },
-    {
-      title: "Impacts of Community Seed Banks on Seed Security and Food Access Outcomes in Ethiopia: A Multinomial Logit Analysis",
-      authors: [
-        "Mary Eyeniyeh Ngaiwi",
-        "Alexander Buritica",
-        "Carolina Gonzalez",
-        "Dejene Kassahun Mengistu",
-        "Eric Junior Bomdzele",
-        "Elisabetta Gotor",
-        "Augusto Carlos Castro-Nunez"
-      ],
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:BqipwSGYUEgC",
-      pdf: "",
-      slides: "",
-      figure: ""
-    },
-    {
-      title: "Gendered dynamics in Colombian public policy: Assessing impact and investment towards equitable development",
-      authors: [
-        "Alexander Buritica",
-        "Diana Carolina Lopera",
-        "Maria Blanco",
-        "Jorge Rueda",
-        "Fanny Howland"
-      ],
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:hC7cP41nSMkC",
-      pdf: "",
-      slides: "",
-      figure: ""
-    },
-    {
-      title: "A case study of the FARC peace agreement impact on land markets in Caquetá, Colombia",
-      authors: [
-        "Manuel Moreno",
-        "Alexander Buritica",
-        "Carolina Gonzalez",
-        "Augusto Castro"
-      ],
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:hFOr9nPyWt4C",
-      pdf: "",
-      slides: "",
-      figure: ""
-    },
-    {
-      title: "Food security and forest access in the Colombian and Peruvian Amazon: How do forest quality and belonging to an ethnic group play a role?",
-      authors: [
-        "Alexander Buritica",
-        "Martha Vanegas",
-        "Deborah Pierce",
-        "Marcela Quintero"
-      ],
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:dhFuZR0502QC",
-      pdf: "",
-      slides: "",
-      figure: ""
-    }
-  ];
-
-  const ul = document.querySelector("#working-papers");
-  if (!ul) return;
-
-  // Bold your full name in authors
-  function boldMyName(name){
-    const safe = esc(name);
-    if (/^alexander\s+buritic[aá]\b/i.test(name)) return `<strong>${safe}</strong>`;
-    return safe;
-  }
-
-  function makeBadge(label, url){
-    if (!url) return "";
-    return `<a class="wp-badge" href="${url}" target="_blank" rel="noopener">${label}</a>`;
-  }
-
-  WORKING_PAPERS.forEach(p => {
-    const li = document.createElement("li");
-    li.className = "wp-item";
-
-    const title = esc(p.title || "Untitled working paper");
-    const titleHtml = p.link
-      ? `<a class="wp-title" href="${p.link}" target="_blank" rel="noopener">${title}</a>`
-      : `<span class="wp-title">${title}</span>`;
-
-    const authors = (p.authors || []).map(boldMyName).join(", ");
-
-    const badges =
-      makeBadge("Link", p.link) +
-      makeBadge("PDF", p.pdf) +
-      makeBadge("Slides", p.slides) +
-      makeBadge("Figure", p.figure);
-
-    li.innerHTML = `
-      <div class="wp-row">
-        <div class="wp-main">
-          ${titleHtml}
-          <div class="wp-authors">${authors}</div>
-        </div>
-        <div class="wp-actions">${badges}</div>
-      </div>
-    `;
-
-    ul.appendChild(li);
-  });
-})();
-</script>
-<style>
-/* ---- Working papers styling (self-contained) ---- */
-.wp-list{
-  list-style: disc;
-  padding-left: 1.2rem;
-  margin-top: 0.75rem;
-}
-
-.wp-item{
-  margin: 0.9rem 0;
-}
-
-.wp-row{
-  display: flex;
-  gap: 0.85rem;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.wp-main{
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-.wp-title{
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.wp-title:hover{
-  text-decoration: underline;
-}
-
-.wp-authors{
-  margin-top: 0.25rem;
-  font-size: 0.95em;
-  opacity: 0.9;
-  line-height: 1.35;
-}
-
-.wp-actions{
-  flex: 0 0 auto;
-  display: flex;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-top: 0.1rem;
-}
-
-.wp-badge{
-  display: inline-block;
-  padding: 0.15rem 0.5rem;
-  border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 999px;
-  font-size: 0.8em;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.wp-badge:hover{
-  border-color: rgba(0,0,0,0.35);
-}
-</style>
+<hr>
+<ul>
+<li><p><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:BqipwSGYUEgC"><strong>Impacts of Community Seed Banks on Seed Security and Food Access Outcomes in Ethiopia: A Multinomial Logit Analysis</strong></a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wp2-01.jpg" class="wp-figure img-fluid figure-img" width="914"></p>
+<figcaption>Source: Management team of the Kabudi-Agoro community seed bank, Kenya. Credit: Alliance of Bioversity International &amp; CIAT/R. Vernooy.</figcaption>
+</figure>
+</div>
+<p><span class="wp-authors">Mary Eyeniyeh Ngaiwi; <strong>Alexander Buritica</strong>; Carolina Gonzalez;<br>
+Dejene Kassahun Mengistu; Eric Junior Bomdzele; Elisabetta Gotor;<br>
+Augusto Carlos Castro-Nunez</span></p></li>
+</ul>
+<hr>
+<ul>
+<li><p><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:hC7cP41nSMkC"><strong>Gendered dynamics in Colombian public policy: Assessing impact and investment towards equitable development</strong></a></p>
+<p><img src=".\images/wp3.png" class="wp-figure img-fluid"></p>
+<p><span class="wp-authors"><strong>Alexander Buritica</strong>; Diana Carolina Lopera; Maria Blanco;<br>
+Jorge Rueda; Fanny Howland</span></p></li>
+</ul>
+<hr>
+<ul>
+<li><p><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:hFOr9nPyWt4C"><strong>A case study of the FARC peace agreement impact on land markets in Caquetá, Colombia</strong></a></p>
+<p><img src="images/wp5-01.png" class="img-fluid" width="898"></p>
+<p><span class="wp-authors">Manuel Moreno; <strong>Alexander Buritica</strong>;<br>
+Carolina Gonzalez; Augusto Castro</span></p>
+<p><span class="wp-links"><a href="https://cgspace.cgiar.org/items/e6e0703a-886b-4108-80c0-a9cc8f770a57" class="wp-btn">Slides</a></span></p></li>
+</ul>
+<hr>
+<ul>
+<li><p><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:dhFuZR0502QC"><strong>Food security and forest access in the Colombian and Peruvian Amazon: How do forest quality and belonging to an ethnic group play a role?</strong></a></p>
+<p><img src="images/wp4-01.png" class="wp-figure img-fluid"></p>
+<p><span class="wp-authors"><strong>Alexander Buritica</strong>; Martha Vanegas; Deborah Pierce;<br>
+Marcela Quintero</span></p>
+<p><span class="wp-links"><a href="https://cgspace.cgiar.org/items/acb864d8-0b9f-42fb-b84f-79450ef573b2" class="wp-btn">Slides</a></span><span class="wp-authors"></span></p></li>
+</ul>
+</div>
 
 
 </section>

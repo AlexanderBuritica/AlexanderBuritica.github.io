@@ -10,9 +10,11 @@
 <atom:link href="https://drganghe.github.io/quarto-academic-website-template/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Agricultural and environmental economist. Impact evaluation, sustainable agriculture, and policy-relevant research.</description>
 <image>
-<url>https://drganghe.github.io/quarto-academic-website-template/files/images/avatarX2.PNG</url>
+<url>https://drganghe.github.io/quarto-academic-website-template/files/images/avatarX2.png</url>
 <title>Alexander Buritica</title>
 <link>https://drganghe.github.io/quarto-academic-website-template/posts.html</link>
+<height>90</height>
+<width>144</width>
 </image>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Thu, 01 Jan 2026 05:00:00 GMT</lastBuildDate>
@@ -163,7 +165,7 @@ Amazon.”</span> <em>Agricultural Systems</em> 231 (January): 104525. <a href="
 
  ]]></description>
   <guid>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/</guid>
-  <pubDate>Wed, 21 Jan 2026 20:36:45 GMT</pubDate>
+  <pubDate>Thu, 22 Jan 2026 13:46:22 GMT</pubDate>
 </item>
 </channel>
 </rss>

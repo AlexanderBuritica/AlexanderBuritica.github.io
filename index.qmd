@@ -10,7 +10,7 @@ page-layout: full
 about:
   id: hero-heading
   template: trestles
-  image-width: 70%
+  image-width: 90%
   links:
     - icon: sun
       text: Lab
@@ -45,7 +45,6 @@ listing:   # Comment the listing section and delete corresponding lines in the i
     sort: 
       - "date desc"
       - "title asc"
----t
 ---
 
 ::: {#hero-heading}
