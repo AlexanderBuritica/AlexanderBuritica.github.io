@@ -91,11 +91,11 @@
     "text": "📚 Training & Certificates (Coursera)\n\n\n\nSelected Coursera Certificates\n\nHaz clic en cada certificado para verlo en tamaño completo.\n\nLos Objetivos de Desarrollo Sostenible para las empresas\n\n\nCombining and Analyzing Complex Data\n\nReproducible Templates for Analysis and Dissemination\n\nIntroduction to Big Data\n\n\n:::"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "cursos/ED/Syllabus.html",
+    "href": "cursos/ED/Syllabus.html",
+    "title": "Estadística para la Toma de Decisiones",
     "section": "",
-    "text": "Alexander Buritica\nForesight and Applied Economics for Impact\nAlliance of Bioversity International & CIAT (CGIAR)\n\n📍 Office address\nKm 17 Recta Cali–Palmira\nPalmira, Valle del Cauca, Colombia\n📧 Email\na.buritica at cgiar dot org\n📞 Phone / WhatsApp\n+57 314 841 7188\n\n\n\nWhat you can contact me about\n\nResearch collaboration (impact evaluation, agriculture, environment)\nPolicy analysis and advisory work\nGuest lectures, seminars, and workshops\n\nEmail is the fastest way to reach me."
+    "text": "Este curso introduce herramientas fundamentales de estadística inferencial aplicadas a la toma de decisiones empresariales. El énfasis está en el uso de datos reales para formular preguntas relevantes de negocio, analizar información, interpretar resultados y sustentar decisiones bajo incertidumbre.\nEl curso combina fundamentos conceptuales con un fuerte componente práctico en , permitiendo a los estudiantes desarrollar habilidades analíticas transferibles a contextos profesionales en marketing, finanzas, economía aplicada y analítica de negocios.\nAl finalizar el curso, el estudiante será capaz de:\nEl curso combina clases magistrales breves orientadas a la intuición y comprensión conceptual con espacios prácticos de aplicación. Cada sesión se estructura en tres momentos:\nAdicionalmente, el curso incluye quices periódicos y un proyecto aplicado progresivo que simula un análisis profesional para la toma de decisiones empresariales.\nLos talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada. Bajo la guía del profesor, los estudiantes limpian datos, construyen variables, aplican pruebas estadísticas e interpretan resultados para la toma de decisiones.\nCada taller incluye una evaluación corta asociada al contenido trabajado en clase.\nEl proyecto final simula un análisis profesional orientado a la toma de decisiones empresariales. Cada grupo debe formular una pregunta de negocio y responderla utilizando las herramientas estadísticas del curso.\n\nLa sustentación oral es obligatoria y los grupos y expositores serán seleccionados aleatoriamente.\nSe realizarán al menos cuatro quices cortos para evaluar la comprensión conceptual y fomentar el estudio continuo. Podrán ser anunciados o sorpresa."
   },
   {
     "objectID": "about.html",
@@ -105,11 +105,18 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Alexander Buritica\nForesight and Applied Economics for Impact\nAlliance of Bioversity International & CIAT (CGIAR)\n\n📍 Office address\nKm 17 Recta Cali–Palmira\nPalmira, Valle del Cauca, Colombia\n📧 Email\na.buritica at cgiar dot org\n📞 Phone / WhatsApp\n+57 314 841 7188\n\n\n\nWhat you can contact me about\n\nResearch collaboration (impact evaluation, agriculture, environment)\nPolicy analysis and advisory work\nGuest lectures, seminars, and workshops\n\nEmail is the fastest way to reach me."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Alexander Buritica Casanova",
     "section": "",
-    "text": "Lab\n  \n  \n    \n     E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      Google Scholar\n  \n\n  \n  \n\n\nI am a PhD economist , with expertise in impact evaluation and applied development economics. My research agenda focuses on agriculture, sustainability, and rural development, with particular attention to the impacts of policies, technologies, and market interventions on productivity, livelihoods, and environmental outcomes.\nI am currently a postdoctoral researcher at the Alliance of Bioversity International and CIAT, where I combine causal inference methods with field data to generate policy-relevant evidence for agri-food systems in developing countries.\n\n\n\nPhD in Economics (2023)\nUniversidad de los Andes, Colombia\nMSc in Economics (2023)\nUniversidad de los Andes, Colombia\nBSc in Economics (2013)\nUniversidad del Valle, Colombia"
+    "text": "E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      Google Scholar\n  \n\n  \n  \n\n\nI am a PhD economist , with expertise in impact evaluation and applied development economics. My research agenda focuses on agriculture, sustainability, and rural development, with particular attention to the impacts of policies, technologies, and market interventions on productivity, livelihoods, and environmental outcomes.\nI am currently a postdoctoral researcher at the Alliance of Bioversity International and CIAT, where I combine causal inference methods with field data to generate policy-relevant evidence for agri-food systems in developing countries.\n\n\n\nPhD in Economics (2023)\nUniversidad de los Andes, Colombia\nMSc in Economics (2023)\nUniversidad de los Andes, Colombia\nBSc in Economics (2013)\nUniversidad del Valle, Colombia"
   },
   {
     "objectID": "index.html#education",

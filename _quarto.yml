@@ -9,6 +9,7 @@ author-meta: "Alexander Buriticá Casanova"
 website:
   title: "Alexander Buritica"
   favicon: "files/images/icon.png"
+  image: "files/images/icon.png"
   description: "Agricultural and environmental economist. Impact evaluation, sustainable agriculture, and policy-relevant research."
  
   navbar:

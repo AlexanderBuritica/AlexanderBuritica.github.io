@@ -12,10 +12,6 @@ about:
   template: trestles
   image-width: 90%
   links:
-    - icon: sun
-      text: Lab
-      href: https://github.com/AlexanderBuritica
-      target: _blank
     - icon: envelope
       text: E-mail
       href: mailto:a.buritica@cgiar.org    
