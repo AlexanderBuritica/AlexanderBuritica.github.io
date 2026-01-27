@@ -4,14 +4,14 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "2026-1\n\nInference"
+    "text": "2026-1\n\nSyllabus\nSlides"
   },
   {
-    "objectID": "teaching.html#universidad-icesi-colombia",
-    "href": "teaching.html#universidad-icesi-colombia",
+    "objectID": "teaching.html#estadística-para-la-toma-de-decisiones",
+    "href": "teaching.html#estadística-para-la-toma-de-decisiones",
     "title": "Teaching",
     "section": "",
-    "text": "2026-1\n\nInference"
+    "text": "2026-1\n\nSyllabus\nSlides"
   },
   {
     "objectID": "publications.html#all-publications",
@@ -95,7 +95,35 @@
     "href": "cursos/ED/Syllabus.html",
     "title": "Estadística para la Toma de Decisiones",
     "section": "",
-    "text": "Este curso introduce herramientas fundamentales de estadística inferencial aplicadas a la toma de decisiones empresariales. El énfasis está en el uso de datos reales para formular preguntas relevantes de negocio, analizar información, interpretar resultados y sustentar decisiones bajo incertidumbre.\nEl curso combina fundamentos conceptuales con un fuerte componente práctico en , permitiendo a los estudiantes desarrollar habilidades analíticas transferibles a contextos profesionales en marketing, finanzas, economía aplicada y analítica de negocios.\nAl finalizar el curso, el estudiante será capaz de:\nEl curso combina clases magistrales breves orientadas a la intuición y comprensión conceptual con espacios prácticos de aplicación. Cada sesión se estructura en tres momentos:\nAdicionalmente, el curso incluye quices periódicos y un proyecto aplicado progresivo que simula un análisis profesional para la toma de decisiones empresariales.\nLos talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada. Bajo la guía del profesor, los estudiantes limpian datos, construyen variables, aplican pruebas estadísticas e interpretan resultados para la toma de decisiones.\nCada taller incluye una evaluación corta asociada al contenido trabajado en clase.\nEl proyecto final simula un análisis profesional orientado a la toma de decisiones empresariales. Cada grupo debe formular una pregunta de negocio y responderla utilizando las herramientas estadísticas del curso.\n\nLa sustentación oral es obligatoria y los grupos y expositores serán seleccionados aleatoriamente.\nSe realizarán al menos cuatro quices cortos para evaluar la comprensión conceptual y fomentar el estudio continuo. Podrán ser anunciados o sorpresa.\nEl curso se organiza en cuatro bloques temáticos progresivos, que integran fundamentos conceptuales, estimación, pruebas de hipótesis y aplicaciones prácticas orientadas a la toma de decisiones empresariales. Los contenidos se desarrollan de manera articulada con talleres prácticos en y evaluaciones parciales.\n (muestreo y Teorema del Límite Central).\n (estimación e intervalos de confianza).\n Evaluación escrita al final de la Semana 7.\n .\n Evaluación escrita al final de la Semana 11."
+    "text": "Este curso introduce herramientas fundamentales de estadística inferencial aplicadas a la toma de decisiones empresariales. El énfasis está en el uso de datos reales para formular preguntas relevantes de negocio, analizar información, interpretar resultados y sustentar decisiones bajo incertidumbre.\nEl curso combina fundamentos conceptuales con un componente práctico en R, permitiendo a los estudiantes desarrollar habilidades analíticas transferibles a contextos profesionales en marketing, finanzas, economía aplicada y analítica de negocios."
+  },
+  {
+    "objectID": "cursos/ED/Syllabus.html#talleres-prácticos-en-clase-20",
+    "href": "cursos/ED/Syllabus.html#talleres-prácticos-en-clase-20",
+    "title": "Estadística para la Toma de Decisiones",
+    "section": "Talleres prácticos en clase (20%)",
+    "text": "Talleres prácticos en clase (20%)\nLos talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada, aplicando las herramientas estadísticas vistas en clase mediante el uso de R.\nBajo la guía del profesor, los estudiantes limpian datos, construyen variables, ejecutan análisis inferenciales e interpretan resultados para respaldar decisiones empresariales. Cada taller incluye una actividad corta de evaluación asociada al contenido trabajado en la sesión."
+  },
+  {
+    "objectID": "cursos/ED/Syllabus.html#proyecto-final-25",
+    "href": "cursos/ED/Syllabus.html#proyecto-final-25",
+    "title": "Estadística para la Toma de Decisiones",
+    "section": "Proyecto final (25%)",
+    "text": "Proyecto final (25%)\nEl proyecto final es el eje integrador del curso y simula el desarrollo de un análisis profesional orientado a la toma de decisiones empresariales. Cada grupo debe formular una pregunta de negocio concreta y responderla utilizando datos reales y las herramientas estadísticas del curso.\nEjemplos de preguntas de proyecto:\n\n¿Una nueva campaña aumenta significativamente la tasa de conversión?\n¿Reducir el precio incrementa las ventas netas de manera estadísticamente significativa?\n¿Existen diferencias significativas en el comportamiento entre segmentos de clientes?\n¿Qué factores explican el nivel de ventas o el riesgo de incumplimiento?\n\n\nEntregas del proyecto\n\nEntrega 1 (Semana 5 – 5%): Contexto del problema, formulación de la pregunta de negocio, preguntas estadísticas, variables relevantes e hipótesis preliminares.\nEntrega 2 (Semana 10 – 5%): Base de datos depurada y análisis descriptivo (tablas y gráficos).\nEntrega 3 (01 de junio de 2026 – 15%): Análisis final, interpretación de resultados, recomendaciones y sustentación oral.\n\nLa sustentación oral es obligatoria. Por limitaciones de tiempo, el grupo que presenta y la persona expositora podrán definirse de manera aleatoria."
+  },
+  {
+    "objectID": "cursos/ED/Syllabus.html#quices-20",
+    "href": "cursos/ED/Syllabus.html#quices-20",
+    "title": "Estadística para la Toma de Decisiones",
+    "section": "Quices (20%)",
+    "text": "Quices (20%)\nSe realizarán al menos cuatro quices cortos a lo largo del semestre, orientados a evaluar la comprensión conceptual y fomentar el estudio continuo. Los quices podrán ser anunciados o aplicados de manera sorpresa, y se realizarán en modalidad presencial o virtual según la dinámica del curso."
+  },
+  {
+    "objectID": "cursos/ED/Syllabus.html#exámenes-35",
+    "href": "cursos/ED/Syllabus.html#exámenes-35",
+    "title": "Estadística para la Toma de Decisiones",
+    "section": "Exámenes (35%)",
+    "text": "Exámenes (35%)\n\nParcial 1 (15%): Evaluación integradora de los contenidos de fundamentos y estimación.\nExamen final acumulativo (20%): Evaluación de la totalidad de los contenidos del curso, con énfasis en interpretación, análisis y aplicación."
   },
   {
     "objectID": "about.html",
@@ -109,7 +137,7 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Alexander Buritica\nForesight and Applied Economics for Impact\nAlliance of Bioversity International & CIAT (CGIAR)\n\n📍 Office address\nKm 17 Recta Cali–Palmira\nPalmira, Valle del Cauca, Colombia\n📧 Email\na.buritica at cgiar dot org\n📞 Phone / WhatsApp\n+57 314 841 7188\n\n\n\nWhat you can contact me about\n\nResearch collaboration (impact evaluation, agriculture, environment)\nPolicy analysis and advisory work\nGuest lectures, seminars, and workshops\n\nEmail is the fastest way to reach me."
+    "text": "Alexander Buritica\nForesight and Applied Economics for Impact\nAlliance of Bioversity International & CIAT (CGIAR)\n\n📍 Office address\nKm 17 Recta Cali–Palmira\nPalmira, Valle del Cauca, Colombia\n📧 Email\na.buritica at cgiar dot org\n\n\n\nWhat you can contact me about\n\nResearch collaboration (impact evaluation, agriculture, environment)\nPolicy analysis and advisory work\nGuest lectures, seminars, and workshops\n\nEmail is the fastest way to reach me."
   },
   {
     "objectID": "index.html",

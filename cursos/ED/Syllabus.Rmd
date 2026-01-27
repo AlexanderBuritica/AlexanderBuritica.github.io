@@ -1,172 +1,120 @@
 ---
 title: "Estadística para la Toma de Decisiones"
 subtitle: "Programa del curso – Pregrado"
-author: "Alexander Buriticá Casanova, PhD"
+author: "Alexander Buriticá Casanova"
 date: "Periodo académico 2026-1"
 output:
-  pdf_document:
-    latex_engine: xelatex
-geometry: margin=1in
+  word_document:
+    toc: false
+    number_sections: true
 fontsize: 11pt
 lang: es
 ---
 
-\section*{1. Descripción del curso}
+# Descripción del curso
 
 Este curso introduce herramientas fundamentales de estadística inferencial aplicadas a la toma de decisiones empresariales. El énfasis está en el uso de datos reales para formular preguntas relevantes de negocio, analizar información, interpretar resultados y sustentar decisiones bajo incertidumbre.
 
-El curso combina fundamentos conceptuales con un fuerte componente práctico en \texttt{R}, permitiendo a los estudiantes desarrollar habilidades analíticas transferibles a contextos profesionales en marketing, finanzas, economía aplicada y analítica de negocios.
+El curso combina fundamentos conceptuales con un componente práctico en **R**, permitiendo a los estudiantes desarrollar habilidades analíticas transferibles a contextos profesionales en marketing, finanzas, economía aplicada y analítica de negocios.
 
-\section*{2. Objetivos de aprendizaje}
+# Resultados de aprendizaje
 
 Al finalizar el curso, el estudiante será capaz de:
 
-\begin{itemize}
-  \item Formular preguntas de negocio y traducirlas en preguntas estadísticas.
-  \item Aplicar herramientas de estadística descriptiva e inferencial usando datos reales.
-  \item Interpretar resultados estadísticos para apoyar decisiones empresariales.
-  \item Utilizar \texttt{R} para análisis de datos, visualización e inferencia.
-  \item Comunicar hallazgos de manera clara y basada en evidencia.
-\end{itemize}
+-   Formular preguntas de negocio y traducirlas en preguntas estadísticas.
+-   Describir y explorar datos para identificar patrones relevantes.
+-   Estimar parámetros e interpretar intervalos de confianza.
+-   Diseñar y ejecutar pruebas de hipótesis para apoyar decisiones empresariales.
+-   Aplicar ANOVA y regresión lineal simple para responder preguntas aplicadas.
+-   Utilizar **R** para análisis de datos, visualización e inferencia estadística.
+-   Comunicar hallazgos de manera clara, indicando supuestos, limitaciones e implicaciones para la toma de decisiones.
 
-\section*{3. Metodología}
+# Metodología
 
-El curso combina clases magistrales breves orientadas a la intuición y comprensión conceptual con espacios prácticos de aplicación. Cada sesión se estructura en tres momentos:
+El curso combina clases magistrales breves orientadas a la comprensión conceptual con espacios prácticos de aplicación. Cada sesión se estructura, en general, en tres momentos:
 
-\begin{enumerate}
-  \item Exposición conceptual de los fundamentos estadísticos, supuestos e interpretación.
-  \item Taller práctico en clase usando \texttt{R} y bases de datos reales.
-  \item Actividad corta de verificación (quiz o ejercicio aplicado).
-\end{enumerate}
+1.  **Exposición conceptual**: presentación de los fundamentos estadísticos, su intuición, supuestos y correcta interpretación.
+2.  **Taller práctico en clase**: análisis de datos reales utilizando **R**, con énfasis en limpieza de datos, construcción de variables e interpretación de resultados.
+3.  **Actividad corta de verificación**: ejercicio aplicado o quiz breve para consolidar los conceptos trabajados.
 
-Adicionalmente, el curso incluye quices periódicos y un proyecto aplicado progresivo que simula un análisis profesional para la toma de decisiones empresariales.
+Adicionalmente, el curso incluye quices periódicos y un proyecto aplicado progresivo que simula un análisis profesional orientado a la toma de decisiones empresariales.
 
-\section*{4. Evaluación}
+# Evaluación
 
-\begin{center}
-\begin{tabular}{l c}
-\hline
-\textbf{Componente} & \textbf{Porcentaje} \\
-\hline
-Talleres prácticos en clase & 20\% \\
-Proyecto final (3 entregas) & 25\% \\
-Quices (mínimo 4) & 20\% \\
-Examen parcial & 15\% \\
-Examen final acumulativo & 20\% \\
-\hline
-\textbf{Total} & 100\% \\
-\hline
-\end{tabular}
-\end{center}
+| Componente                  | Porcentaje |
+|-----------------------------|:----------:|
+| Talleres prácticos en clase |    20%     |
+| Proyecto final (3 entregas) |    25%     |
+| Quices (mínimo 4)           |    20%     |
+| Examen parcial (Parcial 1)  |    15%     |
+| Examen final acumulativo    |    20%     |
+| **Total**                   |  **100%**  |
 
-\section*{5. Componentes de evaluación}
+# Descripción de los componentes de evaluación
 
-\subsection*{5.1 Talleres prácticos en clase (20\%)}
+## Talleres prácticos en clase (20%)
 
-Los talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada. Bajo la guía del profesor, los estudiantes limpian datos, construyen variables, aplican pruebas estadísticas e interpretan resultados para la toma de decisiones.
+Los talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada, aplicando las herramientas estadísticas vistas en clase mediante el uso de **R**.
 
-Cada taller incluye una evaluación corta asociada al contenido trabajado en clase.
+Bajo la guía del profesor, los estudiantes limpian datos, construyen variables, ejecutan análisis inferenciales e interpretan resultados para respaldar decisiones empresariales. Cada taller incluye una actividad corta de evaluación asociada al contenido trabajado en la sesión.
 
-\subsection*{5.2 Proyecto final (25\%)}
+## Proyecto final (25%)
 
-El proyecto final simula un análisis profesional orientado a la toma de decisiones empresariales. Cada grupo debe formular una pregunta de negocio y responderla utilizando las herramientas estadísticas del curso.
+El proyecto final es el eje integrador del curso y simula el desarrollo de un análisis profesional orientado a la toma de decisiones empresariales. Cada grupo debe formular una pregunta de negocio concreta y responderla utilizando datos reales y las herramientas estadísticas del curso.
 
-\textbf{Entregas:}
+**Ejemplos de preguntas de proyecto:**
 
-\begin{itemize}
-  \item \textbf{Entrega 1 (Semana 5 – 5\%):} Formulación del problema, contexto, variables e hipótesis.
-  \item \textbf{Entrega 2 (Semana 10 – 5\%):} Base de datos depurada y análisis descriptivo.
-  \item \textbf{Entrega 3 (Semana 15 – 15\%):} Análisis inferencial, conclusiones y sustentación oral.
-\end{itemize}
+-   ¿Una nueva campaña aumenta significativamente la tasa de conversión?
+-   ¿Reducir el precio incrementa las ventas netas de manera estadísticamente significativa?
+-   ¿Existen diferencias significativas en el comportamiento entre segmentos de clientes?
+-   ¿Qué factores explican el nivel de ventas o el riesgo de incumplimiento?
 
-La sustentación oral es obligatoria y los grupos y expositores serán seleccionados aleatoriamente.
+### Entregas del proyecto
 
-\subsection*{5.3 Quices (20\%)}
+-   **Entrega 1 (Semana 5 -- 5%)**: Contexto del problema, formulación de la pregunta de negocio, preguntas estadísticas, variables relevantes e hipótesis preliminares.
+-   **Entrega 2 (Semana 10 -- 5%)**: Base de datos depurada y análisis descriptivo (tablas y gráficos).
+-   **Entrega 3 (01 de junio de 2026 -- 15%)**: Análisis final, interpretación de resultados, recomendaciones y sustentación oral.
 
-Se realizarán al menos cuatro quices cortos para evaluar la comprensión conceptual y fomentar el estudio continuo. Podrán ser anunciados o sorpresa.
+La sustentación oral es obligatoria. Por limitaciones de tiempo, el grupo que presenta y la persona expositora podrán definirse de manera aleatoria.
 
-\subsection*{5.4 Exámenes (35\%)}
+## Quices (20%)
 
-\begin{itemize}
-  \item \textbf{Examen parcial (15\%):} Evaluación integradora de la primera mitad del curso.
-  \item \textbf{Examen final acumulativo (20\%):} Evalúa la totalidad de los contenidos.
-\end{itemize}
+Se realizarán al menos cuatro quices cortos a lo largo del semestre, orientados a evaluar la comprensión conceptual y fomentar el estudio continuo. Los quices podrán ser anunciados o aplicados de manera sorpresa, y se realizarán en modalidad presencial o virtual según la dinámica del curso.
 
+## Exámenes (35%)
 
+-   **Parcial 1 (15%)**: Evaluación integradora de los contenidos de fundamentos y estimación.
+-   **Examen final acumulativo (20%)**: Evaluación de la totalidad de los contenidos del curso, con énfasis en interpretación, análisis y aplicación.
 
+# Cronograma del curso
 
-\section*{6. Cronograma tentativo por semanas}
+Las sesiones del curso se dictan únicamente los **lunes**. El cronograma se ajusta a las fechas académicas del periodo 2026-1 y excluye dos lunes festivos: **23 de marzo** y **18 de mayo**.
 
-El curso se organiza en cuatro bloques temáticos progresivos, que integran fundamentos conceptuales, estimación, pruebas de hipótesis y aplicaciones prácticas orientadas a la toma de decisiones empresariales. Los contenidos se desarrollan de manera articulada con talleres prácticos en \texttt{R} y evaluaciones parciales.
+| Sesión | Fecha (lunes) | Tema                                                           |
+|:------------------|------------------------------------|------------------|
+| 1      | 02-feb-2026   | Introducción al curso; estadística descriptiva; muestreo       |
+| 2      | 09-feb-2026   | Muestreo probabilístico y no probabilístico; sesgos y validez  |
+| 3      | 16-feb-2026   | Distribuciones muestrales; error estándar                      |
+| 4      | 23-feb-2026   | Teorema del Límite Central; simulaciones y práctica en R       |
+| 5      | 02-mar-2026   | Estimación puntual; incertidumbre y comunicación de resultados |
+| 6      | 09-mar-2026   | Intervalos de confianza para la media                          |
+| 7      | 16-mar-2026   | Intervalos para proporciones; repaso Bloques I--II             |
+| ---    | 23-mar-2026   | **Festivo (no hay clase)**                                     |
+| 8      | 30-mar-2026   | **Parcial 1**                                                  |
+| 9      | 06-abr-2026   | Pruebas de hipótesis; p-value; errores tipo I y II             |
+| 10     | 13-abr-2026   | Pruebas para una media y una proporción                        |
+| 11     | 20-abr-2026   | Comparación de medias y varianzas                              |
+| 12     | 27-abr-2026   | **Parcial 2**                                                  |
+| 13     | 04-may-2026   | ANOVA; supuestos e interpretación                              |
+| 14     | 11-may-2026   | Regresión lineal simple                                        |
+| ---    | 18-may-2026   | **Festivo (no hay clase)**                                     |
+| 15     | 25-may-2026   | Regresión: interpretación aplicada y taller en R               |
+| 16     | 01-jun-2026   | Integración final; **Entrega 3 y sustentación del proyecto**   |
 
-\subsection*{Bloque I – Fundamentos (Semanas 1–4)}
+# Reglas básicas del curso
 
-\begin{itemize}
-  \item \textbf{Semana 1:} Introducción al curso, estadística descriptiva y conceptos básicos de muestreo.
-  \item \textbf{Semana 2:} Muestreo probabilístico y no probabilístico.
-  \item \textbf{Semana 3:} Distribuciones muestrales.
-  \item \textbf{Semana 4:} Teorema del Límite Central.
-\end{itemize}
-
-\textit{Base conceptual:} \texttt{Inferencia.pdf} (muestreo y Teorema del Límite Central).
-
-\subsection*{Bloque II – Estimación (Semanas 5–7)}
-
-\begin{itemize}
-  \item \textbf{Semana 5:} Estimación puntual.
-  \item \textbf{Semana 6:} Intervalos de confianza para la media.
-  \item \textbf{Semana 7:} Intervalos de confianza para proporciones y varianzas.
-\end{itemize}
-
-\textit{Base conceptual:} \texttt{Inferencia.pdf} (estimación e intervalos de confianza).
-
-\textbf{Parcial 1:} Evaluación escrita al final de la Semana 7.
-
-\subsection*{Bloque III – Pruebas de hipótesis (Semanas 8–11)}
-
-\begin{itemize}
-  \item \textbf{Semana 8:} Formulación de hipótesis nula y alternativa, nivel de significancia.
-  \item \textbf{Semana 9:} Pruebas de hipótesis para una media (estadísticos z y t).
-  \item \textbf{Semana 10:} Pruebas de hipótesis para proporciones.
-  \item \textbf{Semana 11:} Pruebas para varianzas y comparación de medias.
-\end{itemize}
-
-\textit{Base conceptual:} \texttt{PARCIAL 1 Y 2 INFERENCIA.pdf}.
-
-\textbf{Parcial 2:} Evaluación escrita al final de la Semana 11.
-
-\subsection*{Bloque IV – Aplicaciones (Semanas 12–14)}
-
-\begin{itemize}
-  \item \textbf{Semana 12:} Análisis de varianza (ANOVA).
-  \item \textbf{Semana 13:} Regresión lineal simple.
-  \item \textbf{Semana 14:} Regresión lineal e interpretación de resultados para la toma de decisiones.
-\end{itemize}
-
-\textit{Material práctico:}
-\begin{itemize}
-  \item Taller ANOVA.
-  \item Taller REGRESIÓN.
-  \item Scripts en \texttt{R}: \texttt{R regresion.R}, \texttt{R sem 13.R}.
-\end{itemize}
-
-\subsection*{Semana 15 – Cierre del curso}
-
-\begin{itemize}
-  \item Presentación y sustentación del proyecto final.
-  \item Integración de métodos y discusión de resultados.
-\end{itemize}
-
-
-
-
-
-\section*{7. Fechas académicas relevantes}
-
-\begin{itemize}
-  \item Inicio de clases: 2 de febrero de 2026
-  \item Cancelaciones extemporáneas: 24 de abril de 2026
-  \item Finalización de clases: 1 de junio de 2026
-  \item Exámenes finales: 2 al 13 de junio de 2026
-  \item Último día para ingreso de notas: 17 de junio de 2026
-\end{itemize}
+-   Se espera asistencia y participación activa en los talleres prácticos.
+-   El trabajo en **R** hace parte central del proceso de aprendizaje y será evaluado.
+-   Las entregas deben presentarse en las fechas establecidas.
+-   Las políticas de retraso y las rúbricas de evaluación se comunicarán oportunamente.
+-   La honestidad académica aplica a todas las actividades del curso.

@@ -28,8 +28,8 @@ website:
         menu:
           - text: List of Publications
             href: publications.qmd
-      - text: Teaching # Comment the Teaching part out to remove the Teaching page
-        href: teaching.qmd
+#      - text: Teaching # Comment the Teaching part out to remove the Teaching page
+#        href: teaching.qmd
       - text: Field Work   # Comment the Group part out to remove the Group page
         href: speakers.qmd
 
