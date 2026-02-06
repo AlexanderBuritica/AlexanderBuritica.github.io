@@ -1,15 +1,31 @@
 ---
-title: "Estadística para la Toma de Decisiones"
-subtitle: "Programa del curso – Pregrado"
-author: "Alexander Buriticá Casanova"
-date: "Periodo académico 2026-1"
+title: "BA2 – Estadística para la Toma de Decisiones"
+subtitle: "Programa del curso – 2026-1"
+author: ""
+date: ""
+lang: es
+fontsize: 11pt
 output:
   word_document:
     toc: false
-    number_sections: true
-fontsize: 11pt
-lang: es
+    number_sections: false
+    reference_doc: word_styles_reference.docx
 ---
+
+# Información general del curso
+
+| Campo                 | Detalle                                                   |
+|-----------------------|-----------------------------------------------------------|
+| **Curso**             | BA2 -- Estadística para la Toma de Decisiones             |
+| **Código**            | ECO-06326                                                 |
+| **Programa**          | Business Analytics                                        |
+| **Periodo académico** | 2026-1                                                    |
+| **Créditos**          | 3                                                         |
+| **Profesor**          | Alexander Buriticá Casanova (a.buritica\@uniandes.edu.co) |
+| **Monitora**          | María Camila García (maria.garcia34\@u.icesi.edu.co)      |
+| **Día y horario**     | Lunes, 14:00--16:59                                       |
+| **Modalidad**         | Presencial                                                |
+| **Lugar**             | Salón 303, Edificio C                                     |
 
 # Descripción del curso
 
@@ -26,95 +42,129 @@ Al finalizar el curso, el estudiante será capaz de:
 -   Estimar parámetros e interpretar intervalos de confianza.
 -   Diseñar y ejecutar pruebas de hipótesis para apoyar decisiones empresariales.
 -   Aplicar ANOVA y regresión lineal simple para responder preguntas aplicadas.
--   Utilizar **R** para análisis de datos, visualización e inferencia estadística.
+-   Utilizar R para análisis de datos, visualización e inferencia estadística.
 -   Comunicar hallazgos de manera clara, indicando supuestos, limitaciones e implicaciones para la toma de decisiones.
 
 # Metodología
 
 El curso combina clases magistrales breves orientadas a la comprensión conceptual con espacios prácticos de aplicación. Cada sesión se estructura, en general, en tres momentos:
 
-1.  **Exposición conceptual**: presentación de los fundamentos estadísticos, su intuición, supuestos y correcta interpretación.
-2.  **Taller práctico en clase**: análisis de datos reales utilizando **R**, con énfasis en limpieza de datos, construcción de variables e interpretación de resultados.
-3.  **Actividad corta de verificación**: ejercicio aplicado o quiz breve para consolidar los conceptos trabajados.
+1.  **Exposición conceptual:** presentación de los fundamentos estadísticos, su intuición, supuestos y correcta interpretación.\
+2.  **Taller práctico en clase:** análisis de datos reales utilizando R, con énfasis en limpieza de datos, construcción de variables e interpretación de resultados.\
+3.  **Actividad corta de verificación:** ejercicio aplicado o quiz breve para consolidar los conceptos trabajados.
 
 Adicionalmente, el curso incluye quices periódicos y un proyecto aplicado progresivo que simula un análisis profesional orientado a la toma de decisiones empresariales.
 
 # Evaluación
 
 | Componente                  | Porcentaje |
-|-----------------------------|:----------:|
-| Talleres prácticos en clase |    20%     |
-| Proyecto final (3 entregas) |    25%     |
-| Quices (mínimo 4)           |    20%     |
-| Examen parcial (Parcial 1)  |    15%     |
-| Examen final acumulativo    |    20%     |
-| **Total**                   |  **100%**  |
+|-----------------------------|-----------:|
+| Talleres prácticos en clase |        20% |
+| Proyecto final (3 entregas) |        25% |
+| Quices (mínimo 4)           |        20% |
+| Examen Parcial 1            |        15% |
+| Examen Parcial 2            |        20% |
+| **Total**                   |   **100%** |
 
-# Descripción de los componentes de evaluación
+## Descripción de los componentes de evaluación
 
-## Talleres prácticos en clase (20%)
+### Talleres prácticos en clase (20%)
 
-Los talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada, aplicando las herramientas estadísticas vistas en clase mediante el uso de **R**.
+Los talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada, aplicando las herramientas estadísticas vistas en clase mediante el uso de R.
 
 Bajo la guía del profesor, los estudiantes limpian datos, construyen variables, ejecutan análisis inferenciales e interpretan resultados para respaldar decisiones empresariales. Cada taller incluye una actividad corta de evaluación asociada al contenido trabajado en la sesión.
 
-## Proyecto final (25%)
+### Proyecto final (25%)
 
-El proyecto final es el eje integrador del curso y simula el desarrollo de un análisis profesional orientado a la toma de decisiones empresariales. Cada grupo debe formular una pregunta de negocio concreta y responderla utilizando datos reales y las herramientas estadísticas del curso.
+El proyecto final constituye el eje integrador del curso y simula el desarrollo de un análisis profesional orientado a la toma de decisiones empresariales. En este proyecto, los estudiantes deberán formular una pregunta de negocio/investigación concreta y responderla utilizando datos reales y las herramientas estadísticas abordadas a lo largo del curso, con énfasis en la interpretación de resultados y la comunicación de hallazgos.
+
+El proyecto busca que los estudiantes integren la formulación del problema, el análisis de datos, la inferencia estadística y la traducción de resultados en recomendaciones claras para la toma de decisiones.
 
 **Ejemplos de preguntas de proyecto:**
 
--   ¿Una nueva campaña aumenta significativamente la tasa de conversión?
--   ¿Reducir el precio incrementa las ventas netas de manera estadísticamente significativa?
--   ¿Existen diferencias significativas en el comportamiento entre segmentos de clientes?
--   ¿Qué factores explican el nivel de ventas o el riesgo de incumplimiento?
+-   ¿La implementación de una **nueva campaña publicitaria digital** aumenta significativamente la **probabilidad de que un cliente potencial realice una compra** (tasa de conversión de visitas a compras), en comparación con el periodo previo a la campaña?
 
-### Entregas del proyecto
+-   ¿Una **reducción en el precio de un producto** genera un aumento estadísticamente significativo en el **volumen de ventas** o en los **ingresos totales**, en comparación con el precio anterior?
 
--   **Entrega 1 (Semana 5 -- 5%)**: Contexto del problema, formulación de la pregunta de negocio, preguntas estadísticas, variables relevantes e hipótesis preliminares.
--   **Entrega 2 (Semana 10 -- 5%)**: Base de datos depurada y análisis descriptivo (tablas y gráficos).
--   **Entrega 3 (01 de junio de 2026 -- 15%)**: Análisis final, interpretación de resultados, recomendaciones y sustentación oral.
+-   ¿Existen **diferencias estadísticamente significativas** en el **nivel de gasto promedio** o en la **frecuencia de compra** entre distintos **segmentos de clientes** (por ejemplo, nuevos vs. recurrentes, o por grupo etario)?
 
-La sustentación oral es obligatoria. Por limitaciones de tiempo, el grupo que presenta y la persona expositora podrán definirse de manera aleatoria.
+-   ¿Qué variables observables (por ejemplo, precio, características del cliente o historial de compras) están asociadas de manera estadísticamente significativa con el **nivel de ventas** o con la **probabilidad de incumplimiento de pago**?
 
-## Quices (20%)
+**Entregas del proyecto:**
+
+El proyecto se desarrolla de manera progresiva a través de **tres entregas**, que permiten acompañar el proceso analítico y retroalimentar a los estudiantes:
+
+\-**Entrega 1 (Semana 5 -- 5%)**: Contexto del problema, formulación de la pregunta de negocio, traducción a preguntas estadísticas, identificación de variables relevantes y planteamiento inicial de hipótesis o supuestos a evaluar.
+
+\- **Entrega 2 (Semana 10 -- 5%)**: Base de datos depurada y análisis descriptivo (tablas y gráficos), junto con una interpretación preliminar de los patrones observados.
+
+\- **Entrega 3 (Semana 16 y 17-- 15%)**: Análisis final, interpretación de resultados, recomendaciones y sustentación oral. La sustentación oral es obligatoria. Por limitaciones de tiempo, el grupo que presenta y la persona expositora podrán definirse de manera aleatoria.
+
+### Quices (20%)
 
 Se realizarán al menos cuatro quices cortos a lo largo del semestre, orientados a evaluar la comprensión conceptual y fomentar el estudio continuo. Los quices podrán ser anunciados o aplicados de manera sorpresa, y se realizarán en modalidad presencial o virtual según la dinámica del curso.
 
-## Exámenes (35%)
+### Exámenes (35%)
 
--   **Parcial 1 (15%)**: Evaluación integradora de los contenidos de fundamentos y estimación.
--   **Examen final acumulativo (20%)**: Evaluación de la totalidad de los contenidos del curso, con énfasis en interpretación, análisis y aplicación.
+-   **Parcial 1 (15%)**: Evaluación integradora de los contenidos del Bloque I, que incluye fundamentos de estadística inferencial, muestreo, distribuciones muestrales, Teorema del Límite Central, estimación puntual e intervalos de confianza. El énfasis estará en la correcta interpretación de resultados, el reconocimiento de supuestos y su uso para la toma de decisiones.
+-   **Parcial 2 (20%)**: Evaluación de los contenidos de **inferencia estadística**, que incluye pruebas de hipótesis para medias y proporciones, comparación de dos medias y análisis de varianza (ANOVA) a nivel conceptual. El examen tendrá un fuerte énfasis en interpretación, análisis aplicado y comunicación de resultados, más que en el cálculo manual.
 
 # Cronograma del curso
 
-Las sesiones del curso se dictan únicamente los **lunes**. El cronograma se ajusta a las fechas académicas del periodo 2026-1 y excluye dos lunes festivos: **23 de marzo** y **18 de mayo**.
+Las sesiones del curso se dictan únicamente los lunes. El cronograma se ajusta a las fechas académicas del periodo 2026-1 y excluye dos lunes festivos: **23 de marzo** y **18 de mayo**.
 
-| Sesión | Fecha (lunes) | Tema                                                           |
-|:------------------|------------------------------------|------------------|
-| 1      | 02-feb-2026   | Introducción al curso; estadística descriptiva; muestreo       |
-| 2      | 09-feb-2026   | Muestreo probabilístico y no probabilístico; sesgos y validez  |
-| 3      | 16-feb-2026   | Distribuciones muestrales; error estándar                      |
-| 4      | 23-feb-2026   | Teorema del Límite Central; simulaciones y práctica en R       |
-| 5      | 02-mar-2026   | Estimación puntual; incertidumbre y comunicación de resultados |
-| 6      | 09-mar-2026   | Intervalos de confianza para la media                          |
-| 7      | 16-mar-2026   | Intervalos para proporciones; repaso Bloques I--II             |
-| ---    | 23-mar-2026   | **Festivo (no hay clase)**                                     |
-| 8      | 30-mar-2026   | **Parcial 1**                                                  |
-| 9      | 06-abr-2026   | Pruebas de hipótesis; p-value; errores tipo I y II             |
-| 10     | 13-abr-2026   | Pruebas para una media y una proporción                        |
-| 11     | 20-abr-2026   | Comparación de medias y varianzas                              |
-| 12     | 27-abr-2026   | **Parcial 2**                                                  |
-| 13     | 04-may-2026   | ANOVA; supuestos e interpretación                              |
-| 14     | 11-may-2026   | Regresión lineal simple                                        |
-| ---    | 18-may-2026   | **Festivo (no hay clase)**                                     |
-| 15     | 25-may-2026   | Regresión: interpretación aplicada y taller en R               |
-| 16     | 01-jun-2026   | Integración final; **Entrega 3 y sustentación del proyecto**   |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| Sesión                                                                   | Fecha (lunes) | Tema                                                                                          |
++==========================================================================+===============+===============================================================================================+
+| 1                                                                        | 02-feb-2026   | -   Introducción al curso. Estadística descriptiva. Repaso básico de R para análisis de datos |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 2                                                                        | 09-feb-2026   | -   Muestreo probabilístico y no probabilístico. Sesgos y validez                             |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 3                                                                        | 16-feb-2026   | -   Distribuciones muestrales. Variabilidad y error estándar                                  |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 4                                                                        | 23-feb-2026   | -   Teorema del Límite Central. Simulaciones y práctica aplicada en R                         |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 5                                                                        | 02-mar-2026   | -   Estimación puntual. Incertidumbre y comunicación de resultados.                           |
+|                                                                          |               |                                                                                               |
+|                                                                          |               | -   Trabajo Final (Entrega 1).                                                                |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 6                                                                        | 09-mar-2026   | -   Intervalos de confianza para la media                                                     |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 7                                                                        | 16-mar-2026   | -   **Parcial 1**                                                                             |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| ------------------------------------------------------------------------ | 23-mar-2026   | **Festivo (no hay clase)**                                                                    |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 8                                                                        | 30-mar-2026   | -   Intervalos de confianza para proporciones. Repaso Bloque I                                |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 9                                                                        | 06-abr-2026   | -   Pruebas de hipótesis. p-value. Errores tipo I y II                                        |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 10                                                                       | 13-abr-2026   | -   Pruebas de hipótesis para una media y una proporción.                                     |
+|                                                                          |               |                                                                                               |
+|                                                                          |               | -   Trabajo Final (Entrega 2).                                                                |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 11                                                                       | 20-abr-2026   | -   Comparación de dos medias                                                                 |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 12                                                                       | 27-abr-2026   | -   Análisis de varianza (ANOVA): intuición y supuestos                                       |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 13                                                                       | 04-may-2026   | -   **Parcial 2**                                                                             |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 14                                                                       | 11-may-2026   | -   Análisis de varianza (ANOVA) aplicado en R e interpretación                               |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| ------------------------------------------------------------------------ | 18-may-2026   | **Festivo (no hay clase)**                                                                    |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 15                                                                       | 25-may-2026   | -   Regresión lineal simple. Interpretación aplicada                                          |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 16                                                                       | 01-jun-2026   | -   Regresión lineal: aplicación en R y taller integrador.                                    |
+|                                                                          |               |                                                                                               |
+|                                                                          |               | -   Trabajo Final (Entrega 3).                                                                |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
+| 17                                                                       | 08-jun-2026   | -   Sustentación del proyecto Final                                                           |
++--------------------------------------------------------------------------+---------------+-----------------------------------------------------------------------------------------------+
 
 # Reglas básicas del curso
 
 -   Se espera asistencia y participación activa en los talleres prácticos.
--   El trabajo en **R** hace parte central del proceso de aprendizaje y será evaluado.
+-   El trabajo en R hace parte central del proceso de aprendizaje y será evaluado.
 -   Las entregas deben presentarse en las fechas establecidas.
 -   Las políticas de retraso y las rúbricas de evaluación se comunicarán oportunamente.
 -   La honestidad académica aplica a todas las actividades del curso.

@@ -1,0 +1,15 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2026.1.30)  30 JAN 2026 21:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./clase1.tex
+(clase1.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+
+
+! Sorry, but C:\Users\ABURIT~1\AppData\Local\Programs\MiKTeX\miktex\bin\x64\pdflatex.exe did not succeed.
+
+! The log file hopefully contains the information to get MiKTeX going again:
+
+!   C:\Users\aburitica\AppData\Local\MiKTeX\miktex\log\pdflatex.log

@@ -1,0 +1,250 @@
+---
+title: "BA2 – Estadística descriptiva + muestreo y sesgo"
+author: "Alexander Buritica"
+date: "2026-02-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE
+)
+set.seed(123)  # reproducibilidad
+```
+
+## Objetivo de la hora
+
+En esta práctica guiada vamos a conectar la teoría con R:
+
+1.  Estadística descriptiva (media, mediana, moda, varianza, desviación estándar, CV, percentiles).
+
+2.  Población vs. muestra (simulación).
+
+3.  Muestreo probabilístico vs. no probabilístico (sesgo).
+
+4.  "Muestras distintas → estadísticos distintos" (variabilidad muestral).
+
+# Parte A --- Descriptiva con un dataset pequeño (15--20 min)
+
+## 1) Un dataset simple (horas de deporte/semana)
+
+Usaremos un conjunto pequeño para poder calcular e interpretar fácilmente.
+
+```{r r1}
+x <- c(2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 10, 12)
+x
+length(x)
+
+```
+
+## 2) Media y mediana
+
+```{r r2}
+mean(x)
+median(x)
+
+```
+
+## 3) Moda (función casera)
+
+R no trae una función "moda" por defecto; la construimos:
+
+```{r r3}
+
+mode_stat <- function(v) {
+  tab <- table(v)
+  maxf <- max(tab)
+  modes <- as.numeric(names(tab)[tab == maxf])
+  if (maxf == 1) return(NA_real_)  # no hay moda única
+  modes
+}
+
+mode_stat(x)
+table(x)
+
+
+```
+
+## **Interpretación guiada:**
+
+-   La moda es el valor más frecuente.
+
+-   Puede no existir o pueden existir varias
+
+## 4) Visualización rápida
+
+```{r r4}
+
+hist(x, breaks = seq(0, 13, by = 1), main = "Horas de deporte (muestra)", xlab = "Horas", ylab = "Frecuencia")
+
+```
+
+## 5) Outliers: por qué media y mediana cuentan historias distintas
+
+Cambiamos el último valor (12) por un extremo (30).
+
+```{r r5}
+
+x_out <- c(2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 10, 30)
+
+c(
+  mean_original = mean(x),
+  median_original = median(x),
+  mean_outlier = mean(x_out),
+  median_outlier = median(x_out)
+)
+```
+
+# Parte B --- Variabilidad: varianza, desviación estándar y CV (15 min)
+
+## 6) Varianza y desviación estándar
+
+```{r r6}
+
+var(x)   # varianza muestral (divide por n-1)
+sd(x)    # desviación estándar (raíz de la varianza)
+
+
+
+```
+
+**Interpretación :**
+
+-   La **varianza** es una medida de dispersión pero queda en unidades al cuadrado (horas²).
+
+-   La **desviación estándar** vuelve a "horas", así que se interpreta mejor:\
+    "típicamente los datos se alejan unas \~sd horas del promedio".
+
+**7) Coeficiente de variación (CV)**
+
+```{r r7}
+cv <- sd(x) / mean(x)
+cv
+```
+
+**8) Ejemplo BA: comparar variabilidad relativa (Fútbol vs Yoga)**
+
+```{r r8}
+futbol <- c(5, 6, 7, 7, 8, 9)
+yoga   <- c(1, 2, 2, 4, 6, 6)
+
+data.frame(
+  grupo = c("Fútbol", "Yoga"),
+  media = c(mean(futbol), mean(yoga)),
+  sd    = c(sd(futbol), sd(yoga)),
+  cv    = c(sd(futbol)/mean(futbol), sd(yoga)/mean(yoga))
+)
+
+
+
+```
+
+**Lectura:**
+
+-   Aunque las desviaciones sean parecidas, el grupo con media pequeña suele tener CV más alto.
+
+# Parte C --- Percentiles
+
+## 9) Percentiles con `quantile()`
+
+```{r r9}
+
+quantile(x, probs = c(.25, .5, .75, .9))
+
+
+```
+
+**Interpretación guiada:**
+
+-   P50 = mediana.
+
+-   P90: "el 90% de los estudiantes dedica hasta (ese valor) horas o menos".
+
+    # Parte D --- Población vs muestra (simulación)
+
+    En la vida real, la población completa suele ser inobservable. Aquí la simulamos para "ver" lo que normalmente no vemos.
+
+    ## 10) Crear una "población" (ingreso mensual) sesgada a la derecha
+
+```{r r10}
+
+N <- 100000
+poblacion <- data.frame(
+  id = 1:N,
+  ingreso = rlnorm(N, meanlog = 8.5, sdlog = 0.5)
+)
+
+# Parámetros poblacionales (en la vida real: desconocidos)
+mu_pop  <- mean(poblacion$ingreso)
+sd_pop  <- sd(poblacion$ingreso)
+p90_pop <- quantile(poblacion$ingreso, .9)
+
+c(mu_pop = mu_pop, sd_pop = sd_pop, p90_pop = p90_pop)
+
+
+```
+
+## 11) Tomar una muestra aleatoria simple (muestreo probabilístico)
+
+```{r r11}
+n <- 400
+muestra_srs <- poblacion[sample(1:N, n), ]
+
+c(
+  mean_srs = mean(muestra_srs$ingreso),
+  sd_srs   = sd(muestra_srs$ingreso),
+  p90_srs  = quantile(muestra_srs$ingreso, .9)
+)
+
+
+
+```
+
+**Mensaje clave:**
+
+-   Usamos estadísticas muestrales para aproximar parámetros poblacionales.
+
+    # Parte E --- Sesgo: muestreo no probabilístico
+
+    ## 12) Muestra sesgada: "solo responde el top 30%" (sesgo de selección)
+
+    Simulamos una encuesta donde solo aparecen personas con ingresos altos (por ejemplo, "usuarios premium" o "clientes activos").
+
+```{r r12}
+
+umbral <- quantile(poblacion$ingreso, 0.70)
+umbral
+poblacion_alta <- subset(poblacion, ingreso >= umbral)
+
+muestra_sesgada <- poblacion_alta[sample(1:nrow(poblacion_alta), n), ]
+
+c(
+  mean_pop     = mu_pop,
+  mean_srs     = mean(muestra_srs$ingreso),
+  mean_sesgada = mean(muestra_sesgada$ingreso)
+)
+
+
+```
+
+**Mensaje clave (BA):**
+
+-   Una muestra sesgada puede generar conclusiones "precisas" pero equivocadas.
+
+-   Aumentar n no corrige el sesgo si el mecanismo de selección está mal.
+
+13) Visual rápido (comparación)
+
+```{r r13}
+par(mfrow = c(1, 2))
+hist(muestra_srs$ingreso, breaks = 30, main = "Muestra aleatoria (SRS)", xlab = "Ingreso")
+hist(muestra_sesgada$ingreso, breaks = 30, main = "Muestra sesgada (altos ingresos)", xlab = "Ingreso")
+par(mfrow = c(1, 1))
+
+
+
+```
+
+# 

@@ -18,14 +18,14 @@
     "href": "publications.html#all-publications",
     "title": "Publications",
     "section": "All publications",
-    "text": "All publications\n\n\nBuritica, Alexander, Mary Ngaiwi, Manuel Moreno, Carolina Gonzalez, and Augusto Castro-Nunez. 2026. “Advancing Sustainable Silvopastoral Practices for Achieving Zero Deforestation in the Colombian Amazon.” Agricultural Systems 231: 104525. https://doi.org/10.1016/j.agsy.2025.104525.\n\n\nBuritica-Casanova, Alexander, and Fabio Arias-Arbelaez. 2016. “Gestión Ambiental y Gobernanza En Los Municipios Del Valle Del Cauca.” Ambiente y Sostenibilidad 5: 78–96. https://revistaambiente.univalle.edu.co/index.php/ays/article/view/4304/6524.\n\n\nCastro-Nunez, Augusto, Alexander Buritica, Carolina Gonzalez, Eliza Villarino, Federico Holmann, Lisset Perez, Martha Del Rio, et al. 2021. “The Risk of Unintended Deforestation from Scaling Sustainable Livestock Production Systems.” Conservation Science and Practice 3 (9): e495. https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/csp2.495.\n\n\nCastro-Nunez, Augusto, Alexander Buritica, Federico Holmann, Mary Ngaiwi, Marcela Quintero, Antonio Solarte, and Carolina Gonzalez. 2024. “Unlocking Sustainable Livestock Production Potential in the Colombian Amazon Through Paddock Division and Gender Inclusivity.” Scientific Reports 14 (1): 13644. https://doi.org/10.1038/s41598-024-63697-2.\n\n\nCastro-Nunez, Augusto, Ole Mertz, Alexander Buritica, Chrystian C. Sosa, and Stephanie T. Lee. 2017. “Land-Related Grievances Shape Tropical Forest Cover in Areas Affected by Armed Conflict.” Applied Geography 85: 39–50.\n\n\nMartinez, Jose Maria, Victor Zuluaga, and Alexander Buritica. 2025. “Sweating Bullets: Heat, High-Stakes Evaluations, and the Role of Incentives.” Environmental and Resource Economics 88 (9): 2429–67. https://doi.org/10.1007/s10640-025-01011-y.\n\n\nPérez, Salomón, Alexander Buritica, Adewale Oparinde, Ekin Birol, Carolina Gonzalez, and Manfred Zeller. 2017. “Identifying Socioeconomic Characteristics Defining Consumers’ Acceptance for Main Organoleptic Attributes of an Iron-Biofortified Bean Variety in Guatemala.” International Journal on Food System Dynamics 8 (3): 222–35. https://brill.com/view/journals/fsd/8/3/article-p222_4.xml.\n\n\nVellema, Wytse, Alexander Buritica Casanova, Carolina Gonzalez, and Marijke D’Haese. 2015. “The Effect of Specialty Coffee Certification on Household Livelihood Strategies and Specialisation.” Food Policy 57: 13–25.\n\n\n..."
+    "text": "All publications"
   },
   {
     "objectID": "publications.html#working-papers",
     "href": "publications.html#working-papers",
     "title": "Publications",
     "section": "Working Papers",
-    "text": "Working Papers\n\n\nSilvopastoral Systems in Practice: Evidence from a Dairy Value Chain Intervention in Caquetá, Colombia\n\nAlexander Buritica\n\n\n\n\nImpacts of Community Seed Banks on Seed Security and Food Access Outcomes in Ethiopia: A Multinomial Logit Analysis\n\n\n\nSource: Management team of the Kabudi-Agoro community seed bank, Kenya. Credit: Alliance of Bioversity International & CIAT/R. Vernooy.\n\n\nMary Eyeniyeh Ngaiwi; Alexander Buritica; Carolina Gonzalez;\nDejene Kassahun Mengistu; Eric Junior Bomdzele; Elisabetta Gotor;\nAugusto Carlos Castro-Nunez\n\n\n\nGendered dynamics in Colombian public policy: Assessing impact and investment towards equitable development\n\nAlexander Buritica; Diana Carolina Lopera; Maria Blanco;\nJorge Rueda; Fanny Howland\n\n\n\nA case study of the FARC peace agreement impact on land markets in Caquetá, Colombia\n\nManuel Moreno; Alexander Buritica;\nCarolina Gonzalez; Augusto Castro\nSlides\n\n\n\nFood security and forest access in the Colombian and Peruvian Amazon: How do forest quality and belonging to an ethnic group play a role?\n\nAlexander Buritica; Martha Vanegas; Deborah Pierce;\nMarcela Quintero\nSlides"
+    "text": "Working Papers\n\n\nSilvopastoral Systems in Practice: Evidence from a Dairy Value Chain Intervention in Caquetá, Colombia\n\nAlexander Buritica\n\n\n\nImpacts of Community Seed Banks on Seed Security and Food Access Outcomes in Ethiopia: A Multinomial Logit Analysis\n\n\n\nSource: Management team of the Kabudi-Agoro community seed bank, Kenya. Credit: Alliance of Bioversity International & CIAT/R. Vernooy.\n\n\nMary Eyeniyeh Ngaiwi; Alexander Buritica; Carolina Gonzalez;\nDejene Kassahun Mengistu; Eric Junior Bomdzele; Elisabetta Gotor;\nAugusto Carlos Castro-Nunez\n\n\n\nGendered dynamics in Colombian public policy: Assessing impact and investment towards equitable development\n\nAlexander Buritica; Diana Carolina Lopera; Maria Blanco;\nJorge Rueda; Fanny Howland\n\n\n\nA case study of the FARC peace agreement impact on land markets in Caquetá, Colombia\n\nManuel Moreno; Alexander Buritica;\nCarolina Gonzalez; Augusto Castro\nSlides\n\n\n\nFood security and forest access in the Colombian and Peruvian Amazon: How do forest quality and belonging to an ethnic group play a role?\n\nAlexander Buritica; Martha Vanegas; Deborah Pierce;\nMarcela Quintero\nSlides"
   },
   {
     "objectID": "posts.html",
@@ -93,37 +93,51 @@
   {
     "objectID": "cursos/ED/Syllabus.html",
     "href": "cursos/ED/Syllabus.html",
-    "title": "Estadística para la Toma de Decisiones",
+    "title": "BA2 – Estadística para la Toma de Decisiones",
     "section": "",
-    "text": "Este curso introduce herramientas fundamentales de estadística inferencial aplicadas a la toma de decisiones empresariales. El énfasis está en el uso de datos reales para formular preguntas relevantes de negocio, analizar información, interpretar resultados y sustentar decisiones bajo incertidumbre.\nEl curso combina fundamentos conceptuales con un componente práctico en R, permitiendo a los estudiantes desarrollar habilidades analíticas transferibles a contextos profesionales en marketing, finanzas, economía aplicada y analítica de negocios."
+    "text": "Campo\nDetalle\n\n\n\n\nCurso\nBA2 – Estadística para la Toma de Decisiones\n\n\nCódigo\nECO-06326\n\n\nPrograma\nBusiness Analytics\n\n\nPeriodo académico\n2026-1\n\n\nCréditos\n3\n\n\nProfesor\nAlexander Buriticá Casanova (a.buritica@uniandes.edu.co)\n\n\nMonitora\nMaría Camila García (maria.garcia34@u.icesi.edu.co)\n\n\nDía y horario\nLunes, 14:00–16:59\n\n\nModalidad\nPresencial\n\n\nLugar\nSalón 303, Edificio C"
   },
   {
-    "objectID": "cursos/ED/Syllabus.html#talleres-prácticos-en-clase-20",
-    "href": "cursos/ED/Syllabus.html#talleres-prácticos-en-clase-20",
-    "title": "Estadística para la Toma de Decisiones",
-    "section": "Talleres prácticos en clase (20%)",
-    "text": "Talleres prácticos en clase (20%)\nLos talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada, aplicando las herramientas estadísticas vistas en clase mediante el uso de R.\nBajo la guía del profesor, los estudiantes limpian datos, construyen variables, ejecutan análisis inferenciales e interpretan resultados para respaldar decisiones empresariales. Cada taller incluye una actividad corta de evaluación asociada al contenido trabajado en la sesión."
+    "objectID": "cursos/ED/Syllabus.html#descripción-de-los-componentes-de-evaluación",
+    "href": "cursos/ED/Syllabus.html#descripción-de-los-componentes-de-evaluación",
+    "title": "BA2 – Estadística para la Toma de Decisiones",
+    "section": "Descripción de los componentes de evaluación",
+    "text": "Descripción de los componentes de evaluación\n\nTalleres prácticos en clase (20%)\nLos talleres constituyen el núcleo aplicado del curso. En ellos, los estudiantes trabajan con bases de datos reales de marketing, finanzas y economía aplicada, aplicando las herramientas estadísticas vistas en clase mediante el uso de R.\nBajo la guía del profesor, los estudiantes limpian datos, construyen variables, ejecutan análisis inferenciales e interpretan resultados para respaldar decisiones empresariales. Cada taller incluye una actividad corta de evaluación asociada al contenido trabajado en la sesión.\n\n\nProyecto final (25%)\nEl proyecto final constituye el eje integrador del curso y simula el desarrollo de un análisis profesional orientado a la toma de decisiones empresariales. En este proyecto, los estudiantes deberán formular una pregunta de negocio/investigación concreta y responderla utilizando datos reales y las herramientas estadísticas abordadas a lo largo del curso, con énfasis en la interpretación de resultados y la comunicación de hallazgos.\nEl proyecto busca que los estudiantes integren la formulación del problema, el análisis de datos, la inferencia estadística y la traducción de resultados en recomendaciones claras para la toma de decisiones.\nEjemplos de preguntas de proyecto:\n\n¿La implementación de una nueva campaña publicitaria digital aumenta significativamente la probabilidad de que un cliente potencial realice una compra (tasa de conversión de visitas a compras), en comparación con el periodo previo a la campaña?\n¿Una reducción en el precio de un producto genera un aumento estadísticamente significativo en el volumen de ventas o en los ingresos totales, en comparación con el precio anterior?\n¿Existen diferencias estadísticamente significativas en el nivel de gasto promedio o en la frecuencia de compra entre distintos segmentos de clientes (por ejemplo, nuevos vs. recurrentes, o por grupo etario)?\n¿Qué variables observables (por ejemplo, precio, características del cliente o historial de compras) están asociadas de manera estadísticamente significativa con el nivel de ventas o con la probabilidad de incumplimiento de pago?\n\nEntregas del proyecto:\nEl proyecto se desarrolla de manera progresiva a través de tres entregas, que permiten acompañar el proceso analítico y retroalimentar a los estudiantes:\n-Entrega 1 (Semana 5 – 5%): Contexto del problema, formulación de la pregunta de negocio, traducción a preguntas estadísticas, identificación de variables relevantes y planteamiento inicial de hipótesis o supuestos a evaluar.\n- Entrega 2 (Semana 10 – 5%): Base de datos depurada y análisis descriptivo (tablas y gráficos), junto con una interpretación preliminar de los patrones observados.\n- Entrega 3 (Semana 16 y 17– 15%): Análisis final, interpretación de resultados, recomendaciones y sustentación oral. La sustentación oral es obligatoria. Por limitaciones de tiempo, el grupo que presenta y la persona expositora podrán definirse de manera aleatoria.\n\n\nQuices (20%)\nSe realizarán al menos cuatro quices cortos a lo largo del semestre, orientados a evaluar la comprensión conceptual y fomentar el estudio continuo. Los quices podrán ser anunciados o aplicados de manera sorpresa, y se realizarán en modalidad presencial o virtual según la dinámica del curso.\n\n\nExámenes (35%)\n\nParcial 1 (15%): Evaluación integradora de los contenidos del Bloque I, que incluye fundamentos de estadística inferencial, muestreo, distribuciones muestrales, Teorema del Límite Central, estimación puntual e intervalos de confianza. El énfasis estará en la correcta interpretación de resultados, el reconocimiento de supuestos y su uso para la toma de decisiones.\nParcial 2 (20%): Evaluación de los contenidos de inferencia estadística, que incluye pruebas de hipótesis para medias y proporciones, comparación de dos medias y análisis de varianza (ANOVA) a nivel conceptual. El examen tendrá un fuerte énfasis en interpretación, análisis aplicado y comunicación de resultados, más que en el cálculo manual."
   },
   {
-    "objectID": "cursos/ED/Syllabus.html#proyecto-final-25",
-    "href": "cursos/ED/Syllabus.html#proyecto-final-25",
-    "title": "Estadística para la Toma de Decisiones",
-    "section": "Proyecto final (25%)",
-    "text": "Proyecto final (25%)\nEl proyecto final es el eje integrador del curso y simula el desarrollo de un análisis profesional orientado a la toma de decisiones empresariales. Cada grupo debe formular una pregunta de negocio concreta y responderla utilizando datos reales y las herramientas estadísticas del curso.\nEjemplos de preguntas de proyecto:\n\n¿Una nueva campaña aumenta significativamente la tasa de conversión?\n¿Reducir el precio incrementa las ventas netas de manera estadísticamente significativa?\n¿Existen diferencias significativas en el comportamiento entre segmentos de clientes?\n¿Qué factores explican el nivel de ventas o el riesgo de incumplimiento?\n\n\nEntregas del proyecto\n\nEntrega 1 (Semana 5 – 5%): Contexto del problema, formulación de la pregunta de negocio, preguntas estadísticas, variables relevantes e hipótesis preliminares.\nEntrega 2 (Semana 10 – 5%): Base de datos depurada y análisis descriptivo (tablas y gráficos).\nEntrega 3 (01 de junio de 2026 – 15%): Análisis final, interpretación de resultados, recomendaciones y sustentación oral.\n\nLa sustentación oral es obligatoria. Por limitaciones de tiempo, el grupo que presenta y la persona expositora podrán definirse de manera aleatoria."
+    "objectID": "cursos/ED/clase1/clase1.html",
+    "href": "cursos/ED/clase1/clase1.html",
+    "title": "BA2 – Estadística para la Toma de Decisiones",
+    "section": "",
+    "text": "class: center, middle"
   },
   {
-    "objectID": "cursos/ED/Syllabus.html#quices-20",
-    "href": "cursos/ED/Syllabus.html#quices-20",
-    "title": "Estadística para la Toma de Decisiones",
-    "section": "Quices (20%)",
-    "text": "Quices (20%)\nSe realizarán al menos cuatro quices cortos a lo largo del semestre, orientados a evaluar la comprensión conceptual y fomentar el estudio continuo. Los quices podrán ser anunciados o aplicados de manera sorpresa, y se realizarán en modalidad presencial o virtual según la dinámica del curso."
+    "objectID": "cursos/ED/clase1/clase1.html#decidir-con-datos-descriptiva-r",
+    "href": "cursos/ED/clase1/clase1.html#decidir-con-datos-descriptiva-r",
+    "title": "BA2 – Estadística para la Toma de Decisiones",
+    "section": "Decidir con datos + Descriptiva + R",
+    "text": "Decidir con datos + Descriptiva + R\nAlexander Buriticá Casanova, PhD\nUniversidad Icesi — Business Analytics\n02-feb-2026"
   },
   {
-    "objectID": "cursos/ED/Syllabus.html#exámenes-35",
-    "href": "cursos/ED/Syllabus.html#exámenes-35",
-    "title": "Estadística para la Toma de Decisiones",
-    "section": "Exámenes (35%)",
-    "text": "Exámenes (35%)\n\nParcial 1 (15%): Evaluación integradora de los contenidos de fundamentos y estimación.\nExamen final acumulativo (20%): Evaluación de la totalidad de los contenidos del curso, con énfasis en interpretación, análisis y aplicación."
+    "objectID": "cursos/ED/clase1/clase1.html#por-qué-esto-importa",
+    "href": "cursos/ED/clase1/clase1.html#por-qué-esto-importa",
+    "title": "BA2 – Estadística para la Toma de Decisiones",
+    "section": "¿Por qué esto importa?",
+    "text": "¿Por qué esto importa?\nDecisiones reales en empresas:\n\n¿Subimos o bajamos precios?\n¿Qué campaña funcionó mejor?\n¿Qué segmento es más rentable?\n¿Qué clientes son más riesgosos?\n\nIdea central: la estadística no reemplaza decisiones… las hace mejores."
+  },
+  {
+    "objectID": "cursos/ED/clase1/clase1.html#objetivos-de-hoy",
+    "href": "cursos/ED/clase1/clase1.html#objetivos-de-hoy",
+    "title": "BA2 – Estadística para la Toma de Decisiones",
+    "section": "Objetivos de hoy",
+    "text": "Objetivos de hoy\n\nEntender “decidir con datos”\nMedidas descriptivas: nivel + dispersión\nGráficos que sí sirven: histograma, boxplot, scatter\nVer cómo R permite análisis rápidos y reproducibles"
+  },
+  {
+    "objectID": "cursos/ED/clase1/clase1.html#ejemplo-real-1-datos-incluidos-en-r-autos",
+    "href": "cursos/ED/clase1/clase1.html#ejemplo-real-1-datos-incluidos-en-r-autos",
+    "title": "BA2 – Estadística para la Toma de Decisiones",
+    "section": "Ejemplo real 1 (datos incluidos en R): autos",
+    "text": "Ejemplo real 1 (datos incluidos en R): autos\nPregunta de negocio:\n¿Autos más potentes consumen más gasolina?\nVamos a usar mtcars (viene en R).\n\n\n                   mpg  hp    wt\nMazda RX4         21.0 110 2.620\nMazda RX4 Wag     21.0 110 2.875\nDatsun 710        22.8  93 2.320\nHornet 4 Drive    21.4 110 3.215\nHornet Sportabout 18.7 175 3.440\nValiant           18.1 105 3.460\n\n\n`geom_smooth()` using formula = 'y ~ x'"
   },
   {
     "objectID": "about.html",
@@ -138,6 +152,83 @@
     "title": "Contact",
     "section": "",
     "text": "Alexander Buritica\nForesight and Applied Economics for Impact\nAlliance of Bioversity International & CIAT (CGIAR)\n\n📍 Office address\nKm 17 Recta Cali–Palmira\nPalmira, Valle del Cauca, Colombia\n📧 Email\na.buritica at cgiar dot org\n\n\n\nWhat you can contact me about\n\nResearch collaboration (impact evaluation, agriculture, environment)\nPolicy analysis and advisory work\nGuest lectures, seminars, and workshops\n\nEmail is the fastest way to reach me."
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html",
+    "href": "cursos/ED/clase2/Clase2_Pract.html",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "",
+    "text": "En esta práctica guiada vamos a conectar la teoría con R:\n\nEstadística descriptiva (media, mediana, moda, varianza, desviación estándar, CV, percentiles).\nPoblación vs. muestra (simulación).\nMuestreo probabilístico vs. no probabilístico (sesgo).\n“Muestras distintas → estadísticos distintos” (variabilidad muestral)."
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#objetivo-de-la-hora",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#objetivo-de-la-hora",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "",
+    "text": "En esta práctica guiada vamos a conectar la teoría con R:\n\nEstadística descriptiva (media, mediana, moda, varianza, desviación estándar, CV, percentiles).\nPoblación vs. muestra (simulación).\nMuestreo probabilístico vs. no probabilístico (sesgo).\n“Muestras distintas → estadísticos distintos” (variabilidad muestral)."
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#un-dataset-simple-horas-de-deportesemana",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#un-dataset-simple-horas-de-deportesemana",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "1) Un dataset simple (horas de deporte/semana)",
+    "text": "1) Un dataset simple (horas de deporte/semana)\nUsaremos un conjunto pequeño para poder calcular e interpretar fácilmente.\n\nx &lt;- c(2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 10, 12)\nx\n\n [1]  2  3  4  4  5  6  6  6  7  8 10 12\n\nlength(x)\n\n[1] 12"
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#media-y-mediana",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#media-y-mediana",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "2) Media y mediana",
+    "text": "2) Media y mediana\n\nmean(x)\n\n[1] 6.083333\n\nmedian(x)\n\n[1] 6"
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#moda-función-casera",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#moda-función-casera",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "3) Moda (función casera)",
+    "text": "3) Moda (función casera)\nR no trae una función “moda” por defecto; la construimos:\n\nmode_stat &lt;- function(v) {\n  tab &lt;- table(v)\n  maxf &lt;- max(tab)\n  modes &lt;- as.numeric(names(tab)[tab == maxf])\n  if (maxf == 1) return(NA_real_)  # no hay moda única\n  modes\n}\n\nmode_stat(x)\n\n[1] 6\n\ntable(x)\n\nx\n 2  3  4  5  6  7  8 10 12 \n 1  1  2  1  3  1  1  1  1"
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#interpretación-guiada",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#interpretación-guiada",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "Interpretación guiada:",
+    "text": "Interpretación guiada:\n\nLa moda es el valor más frecuente.\nPuede no existir o pueden existir varias"
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#visualización-rápida",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#visualización-rápida",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "4) Visualización rápida",
+    "text": "4) Visualización rápida\n\nhist(x, breaks = seq(0, 13, by = 1), main = \"Horas de deporte (muestra)\", xlab = \"Horas\", ylab = \"Frecuencia\")"
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#outliers-por-qué-media-y-mediana-cuentan-historias-distintas",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#outliers-por-qué-media-y-mediana-cuentan-historias-distintas",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "5) Outliers: por qué media y mediana cuentan historias distintas",
+    "text": "5) Outliers: por qué media y mediana cuentan historias distintas\nCambiamos el último valor (12) por un extremo (30).\n\nx_out &lt;- c(2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 10, 30)\n\nc(\n  mean_original = mean(x),\n  median_original = median(x),\n  mean_outlier = mean(x_out),\n  median_outlier = median(x_out)\n)\n\n  mean_original median_original    mean_outlier  median_outlier \n       6.083333        6.000000        7.583333        6.000000"
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#varianza-y-desviación-estándar",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#varianza-y-desviación-estándar",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "6) Varianza y desviación estándar",
+    "text": "6) Varianza y desviación estándar\n\nvar(x)   # varianza muestral (divide por n-1)\n\n[1] 8.265152\n\nsd(x)    # desviación estándar (raíz de la varianza)\n\n[1] 2.874918\n\n\nInterpretación :\n\nLa varianza es una medida de dispersión pero queda en unidades al cuadrado (horas²).\nLa desviación estándar vuelve a “horas”, así que se interpreta mejor:\n“típicamente los datos se alejan unas ~sd horas del promedio”.\n\n7) Coeficiente de variación (CV)\n\ncv &lt;- sd(x) / mean(x)\ncv\n\n[1] 0.4725892\n\n\n8) Ejemplo BA: comparar variabilidad relativa (Fútbol vs Yoga)\n\nfutbol &lt;- c(5, 6, 7, 7, 8, 9)\nyoga   &lt;- c(1, 2, 2, 4, 6, 6)\n\ndata.frame(\n  grupo = c(\"Fútbol\", \"Yoga\"),\n  media = c(mean(futbol), mean(yoga)),\n  sd    = c(sd(futbol), sd(yoga)),\n  cv    = c(sd(futbol)/mean(futbol), sd(yoga)/mean(yoga))\n)\n\n   grupo media       sd        cv\n1 Fútbol   7.0 1.414214 0.2020305\n2   Yoga   3.5 2.167948 0.6194138\n\n\nLectura:\n\nAunque las desviaciones sean parecidas, el grupo con media pequeña suele tener CV más alto."
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#percentiles-con-quantile",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#percentiles-con-quantile",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "9) Percentiles con quantile()",
+    "text": "9) Percentiles con quantile()\n\nquantile(x, probs = c(.25, .5, .75, .9))\n\n 25%  50%  75%  90% \n4.00 6.00 7.25 9.80 \n\n\nInterpretación guiada:\n\nP50 = mediana.\nP90: “el 90% de los estudiantes dedica hasta (ese valor) horas o menos”.\nParte D — Población vs muestra (simulación)\nEn la vida real, la población completa suele ser inobservable. Aquí la simulamos para “ver” lo que normalmente no vemos.\n10) Crear una “población” (ingreso mensual) sesgada a la derecha\n\n\nN &lt;- 100000\npoblacion &lt;- data.frame(\n  id = 1:N,\n  ingreso = rlnorm(N, meanlog = 8.5, sdlog = 0.5)\n)\n\n# Parámetros poblacionales (en la vida real: desconocidos)\nmu_pop  &lt;- mean(poblacion$ingreso)\nsd_pop  &lt;- sd(poblacion$ingreso)\np90_pop &lt;- quantile(poblacion$ingreso, .9)\n\nc(mu_pop = mu_pop, sd_pop = sd_pop, p90_pop = p90_pop)\n\n     mu_pop      sd_pop p90_pop.90% \n   5570.928    2962.890    9328.513"
+  },
+  {
+    "objectID": "cursos/ED/clase2/Clase2_Pract.html#tomar-una-muestra-aleatoria-simple-muestreo-probabilístico",
+    "href": "cursos/ED/clase2/Clase2_Pract.html#tomar-una-muestra-aleatoria-simple-muestreo-probabilístico",
+    "title": "BA2 – Estadística descriptiva + muestreo y sesgo",
+    "section": "11) Tomar una muestra aleatoria simple (muestreo probabilístico)",
+    "text": "11) Tomar una muestra aleatoria simple (muestreo probabilístico)\n\nn &lt;- 400\nmuestra_srs &lt;- poblacion[sample(1:N, n), ]\n\nc(\n  mean_srs = mean(muestra_srs$ingreso),\n  sd_srs   = sd(muestra_srs$ingreso),\n  p90_srs  = quantile(muestra_srs$ingreso, .9)\n)\n\n   mean_srs      sd_srs p90_srs.90% \n   5563.918    2856.608    8690.713 \n\n\nMensaje clave:\n\nUsamos estadísticas muestrales para aproximar parámetros poblacionales.\nParte E — Sesgo: muestreo no probabilístico\n12) Muestra sesgada: “solo responde el top 30%” (sesgo de selección)\nSimulamos una encuesta donde solo aparecen personas con ingresos altos (por ejemplo, “usuarios premium” o “clientes activos”).\n\n\numbral &lt;- quantile(poblacion$ingreso, 0.70)\numbral\n\n     70% \n6399.689 \n\npoblacion_alta &lt;- subset(poblacion, ingreso &gt;= umbral)\n\nmuestra_sesgada &lt;- poblacion_alta[sample(1:nrow(poblacion_alta), n), ]\n\nc(\n  mean_pop     = mu_pop,\n  mean_srs     = mean(muestra_srs$ingreso),\n  mean_sesgada = mean(muestra_sesgada$ingreso)\n)\n\n    mean_pop     mean_srs mean_sesgada \n    5570.928     5563.918     8932.773 \n\n\nMensaje clave (BA):\n\nUna muestra sesgada puede generar conclusiones “precisas” pero equivocadas.\nAumentar n no corrige el sesgo si el mecanismo de selección está mal.\n\n\nVisual rápido (comparación)\n\n\npar(mfrow = c(1, 2))\nhist(muestra_srs$ingreso, breaks = 30, main = \"Muestra aleatoria (SRS)\", xlab = \"Ingreso\")\nhist(muestra_sesgada$ingreso, breaks = 30, main = \"Muestra sesgada (altos ingresos)\", xlab = \"Ingreso\")\n\n\n\n\n\n\n\npar(mfrow = c(1, 1))"
   },
   {
     "objectID": "index.html",

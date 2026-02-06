@@ -1,0 +1,368 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{spanish}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Estadística para la Toma de Decisiones},
+  pdfauthor={Alexander Buriticá Casanova},
+  pdflang={es},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Estadística para la Toma de Decisiones}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Programa del curso -- Pregrado}
+\author{Alexander Buriticá Casanova}
+\date{Periodo académico 2026-1}
+
+\begin{document}
+\maketitle
+
+\hypertarget{informaciuxf3n-general-del-curso}{%
+\subsection{Información general del
+curso}\label{informaciuxf3n-general-del-curso}}
+
+\textbf{Curso:} BA2 -- Estadística para la Toma de Decisiones\\
+\textbf{Curso:} ECO-06326
+
+\textbf{Programa:} Business Analytics\\
+\textbf{Periodo académico:} 2026-1\\
+\textbf{Créditos:} 3
+
+\textbf{Profesor:} Alexander Buriticá Casanova, PhD\\
+\textbf{Monitora:} María Claudia
+
+\textbf{Día y horario:} Lunes, 14:00-16:59\\
+\textbf{Modalidad:} Presencial\\
+\textbf{Lugar:} Salón 303, Edificio C
+
+\hypertarget{descripciuxf3n-del-curso}{%
+\section{Descripción del curso}\label{descripciuxf3n-del-curso}}
+
+Este curso introduce herramientas fundamentales de estadística
+inferencial aplicadas a la toma de decisiones empresariales. El énfasis
+está en el uso de datos reales para formular preguntas relevantes de
+negocio, analizar información, interpretar resultados y sustentar
+decisiones bajo incertidumbre.
+
+El curso combina fundamentos conceptuales con un componente práctico en
+\textbf{R}, permitiendo a los estudiantes desarrollar habilidades
+analíticas transferibles a contextos profesionales en marketing,
+finanzas, economía aplicada y analítica de negocios.
+
+\hypertarget{resultados-de-aprendizaje}{%
+\section{Resultados de aprendizaje}\label{resultados-de-aprendizaje}}
+
+Al finalizar el curso, el estudiante será capaz de:
+
+\begin{itemize}
+\tightlist
+\item
+  Formular preguntas de negocio y traducirlas en preguntas estadísticas.
+\item
+  Describir y explorar datos para identificar patrones relevantes.
+\item
+  Estimar parámetros e interpretar intervalos de confianza.
+\item
+  Diseñar y ejecutar pruebas de hipótesis para apoyar decisiones
+  empresariales.
+\item
+  Aplicar ANOVA y regresión lineal simple para responder preguntas
+  aplicadas.
+\item
+  Utilizar \textbf{R} para análisis de datos, visualización e inferencia
+  estadística.
+\item
+  Comunicar hallazgos de manera clara, indicando supuestos, limitaciones
+  e implicaciones para la toma de decisiones.
+\end{itemize}
+
+\hypertarget{metodologuxeda}{%
+\section{Metodología}\label{metodologuxeda}}
+
+El curso combina clases magistrales breves orientadas a la comprensión
+conceptual con espacios prácticos de aplicación. Cada sesión se
+estructura, en general, en tres momentos:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Exposición conceptual}: presentación de los fundamentos
+  estadísticos, su intuición, supuestos y correcta interpretación.
+\item
+  \textbf{Taller práctico en clase}: análisis de datos reales utilizando
+  \textbf{R}, con énfasis en limpieza de datos, construcción de
+  variables e interpretación de resultados.
+\item
+  \textbf{Actividad corta de verificación}: ejercicio aplicado o quiz
+  breve para consolidar los conceptos trabajados.
+\end{enumerate}
+
+Adicionalmente, el curso incluye quices periódicos y un proyecto
+aplicado progresivo que simula un análisis profesional orientado a la
+toma de decisiones empresariales.
+
+\hypertarget{evaluaciuxf3n}{%
+\section{Evaluación}\label{evaluaciuxf3n}}
+
+\begin{longtable}[]{@{}lc@{}}
+\toprule\noalign{}
+Componente & Porcentaje \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Talleres prácticos en clase & 20\% \\
+Proyecto final (3 entregas) & 25\% \\
+Quices (mínimo 4) & 20\% \\
+Examen parcial (Parcial 1) & 15\% \\
+Examen final acumulativo & 20\% \\
+\textbf{Total} & \textbf{100\%} \\
+\end{longtable}
+
+\hypertarget{descripciuxf3n-de-los-componentes-de-evaluaciuxf3n}{%
+\section{Descripción de los componentes de
+evaluación}\label{descripciuxf3n-de-los-componentes-de-evaluaciuxf3n}}
+
+\hypertarget{talleres-pruxe1cticos-en-clase-20}{%
+\subsection{Talleres prácticos en clase
+(20\%)}\label{talleres-pruxe1cticos-en-clase-20}}
+
+Los talleres constituyen el núcleo aplicado del curso. En ellos, los
+estudiantes trabajan con bases de datos reales de marketing, finanzas y
+economía aplicada, aplicando las herramientas estadísticas vistas en
+clase mediante el uso de \textbf{R}.
+
+Bajo la guía del profesor, los estudiantes limpian datos, construyen
+variables, ejecutan análisis inferenciales e interpretan resultados para
+respaldar decisiones empresariales. Cada taller incluye una actividad
+corta de evaluación asociada al contenido trabajado en la sesión.
+
+\hypertarget{proyecto-final-25}{%
+\subsection{Proyecto final (25\%)}\label{proyecto-final-25}}
+
+El proyecto final es el eje integrador del curso y simula el desarrollo
+de un análisis profesional orientado a la toma de decisiones
+empresariales. Cada grupo debe formular una pregunta de negocio concreta
+y responderla utilizando datos reales y las herramientas estadísticas
+del curso.
+
+\textbf{Ejemplos de preguntas de proyecto:}
+
+\begin{itemize}
+\tightlist
+\item
+  ¿Una nueva campaña aumenta significativamente la tasa de conversión?
+\item
+  ¿Reducir el precio incrementa las ventas netas de manera
+  estadísticamente significativa?
+\item
+  ¿Existen diferencias significativas en el comportamiento entre
+  segmentos de clientes?
+\item
+  ¿Qué factores explican el nivel de ventas o el riesgo de
+  incumplimiento?
+\end{itemize}
+
+\hypertarget{entregas-del-proyecto}{%
+\subsubsection{Entregas del proyecto}\label{entregas-del-proyecto}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Entrega 1 (Semana 5 -- 5\%)}: Contexto del problema,
+  formulación de la pregunta de negocio, preguntas estadísticas,
+  variables relevantes e hipótesis preliminares.
+\item
+  \textbf{Entrega 2 (Semana 10 -- 5\%)}: Base de datos depurada y
+  análisis descriptivo (tablas y gráficos).
+\item
+  \textbf{Entrega 3 (01 de junio de 2026 -- 15\%)}: Análisis final,
+  interpretación de resultados, recomendaciones y sustentación oral.
+\end{itemize}
+
+La sustentación oral es obligatoria. Por limitaciones de tiempo, el
+grupo que presenta y la persona expositora podrán definirse de manera
+aleatoria.
+
+\hypertarget{quices-20}{%
+\subsection{Quices (20\%)}\label{quices-20}}
+
+Se realizarán al menos cuatro quices cortos a lo largo del semestre,
+orientados a evaluar la comprensión conceptual y fomentar el estudio
+continuo. Los quices podrán ser anunciados o aplicados de manera
+sorpresa, y se realizarán en modalidad presencial o virtual según la
+dinámica del curso.
+
+\hypertarget{exuxe1menes-35}{%
+\subsection{Exámenes (35\%)}\label{exuxe1menes-35}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Parcial 1 (15\%)}: Evaluación integradora de los contenidos de
+  fundamentos y estimación.
+\item
+  \textbf{Examen final acumulativo (20\%)}: Evaluación de la totalidad
+  de los contenidos del curso, con énfasis en interpretación, análisis y
+  aplicación.
+\end{itemize}
+
+\hypertarget{cronograma-del-curso}{%
+\section{Cronograma del curso}\label{cronograma-del-curso}}
+
+Las sesiones del curso se dictan únicamente los \textbf{lunes}. El
+cronograma se ajusta a las fechas académicas del periodo 2026-1 y
+excluye dos lunes festivos: \textbf{23 de marzo} y \textbf{18 de mayo}.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0702}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1316}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7982}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Sesión
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fecha (lunes)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tema
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 02-feb-2026 & Introducción al curso. Estadística descriptiva. Repaso
+básico de R para análisis de datos \\
+2 & 09-feb-2026 & Muestreo probabilístico y no probabilístico. Sesgos y
+validez \\
+3 & 16-feb-2026 & Distribuciones muestrales. Variabilidad y error
+estándar \\
+4 & 23-feb-2026 & Teorema del Límite Central. Simulaciones y práctica
+aplicada en R \\
+5 & 02-mar-2026 & Estimación puntual. Incertidumbre y comunicación de
+resultados \\
+6 & 09-mar-2026 & Intervalos de confianza para la media \\
+7 & 16-mar-2026 & Intervalos de confianza para proporciones. Repaso
+Bloques I--II \\
+--- & 23-mar-2026 & \textbf{Festivo (no hay clase)} \\
+8 & 30-mar-2026 & \textbf{Parcial 1} \\
+9 & 06-abr-2026 & Pruebas de hipótesis. p-value. Errores tipo I y II \\
+10 & 13-abr-2026 & Pruebas de hipótesis para una media y una
+proporción \\
+11 & 20-abr-2026 & Comparación de dos medias y análisis de varianza
+básica \\
+12 & 27-abr-2026 & \textbf{Parcial 2} \\
+13 & 04-may-2026 & Análisis de varianza (ANOVA). Supuestos e
+interpretación \\
+14 & 11-may-2026 & Regresión lineal simple. Interpretación aplicada \\
+--- & 18-may-2026 & \textbf{Festivo (no hay clase)} \\
+15 & 25-may-2026 & Regresión lineal: aplicación en R y taller
+integrador \\
+16 & 01-jun-2026 & Integración final. \textbf{Entrega 3 y sustentación
+del proyecto} \\
+\end{longtable}
+
+\hypertarget{reglas-buxe1sicas-del-curso}{%
+\section{Reglas básicas del curso}\label{reglas-buxe1sicas-del-curso}}
+
+\begin{itemize}
+\tightlist
+\item
+  Se espera asistencia y participación activa en los talleres prácticos.
+\item
+  El trabajo en \textbf{R} hace parte central del proceso de aprendizaje
+  y será evaluado.
+\item
+  Las entregas deben presentarse en las fechas establecidas.
+\item
+  Las políticas de retraso y las rúbricas de evaluación se comunicarán
+  oportunamente.
+\item
+  La honestidad académica aplica a todas las actividades del curso.
+\end{itemize}
+
+\end{document}
