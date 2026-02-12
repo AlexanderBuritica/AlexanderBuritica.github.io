@@ -6,8 +6,7 @@ css: custom.css
 
 ## Highlights
 
-Below are photos from my fieldwork activities across different countries and projects.
-Click any image to see it full-size.
+Below are photos from my fieldwork activities across different countries and projects. Click any image to see it full-size.
 
 ```{=html}
 <div class="fieldwork-gallery" id="fw-gallery">
