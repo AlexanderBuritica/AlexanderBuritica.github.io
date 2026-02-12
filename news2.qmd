@@ -24,14 +24,14 @@ This award promotes high-quality research on emerging issues in the global coffe
 ::: news-card
 ### Doctoral Scholarship
 
-**COLCIENCIAS (now Minciencias)** · 2017--2020
+**COLCIENCIAS (now Minciencias)** · 2017–2020
 
 National doctoral scholarship awarded to support PhD studies in Colombia.
 
 [Program information](https://minciencias.gov.co/convocatorias/oportunidades-formacion/convocatoria-doctorados-nacionales-2016){target="_blank"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Conference Presentations
 
@@ -43,18 +43,39 @@ National doctoral scholarship awarded to support PhD studies in Colombia.
 ![](/files/images/infer_logo.jpg){width="30%"}
 :::
 
-------------------------------------------------------------------------
+---
 
 ## Training & Certificates
 
 ::: news-card
 ### Selected Coursera Certificates
 
--   **Los Objetivos de Desarrollo Sostenible para las empresas** [![](/files/images/Coursera_ODS2.PNG){width="260"}](/files/images/Coursera_ODS2.PNG)
-
--   **Combining and Analyzing Complex Data** [![](/files/images/Coursera_Complex2.PNG){width="260"}](/files/images/Coursera_Complex2.PNG)
-
--   **Reproducible Templates for Analysis and Dissemination** [![](/files/images/Coursera_Reprod2.PNG){width="260"}](/files/images/Coursera_Reprod2.PNG)
-
--   **Introduction to Big Data** [![](/files/images/Coursera_Big2.PNG){width="260"}](/files/images/Coursera_Big2.PNG)
+```{=html}
+<div class="cert-grid">
+  <div class="cert-item">
+    <strong>Los Objetivos de Desarrollo Sostenible para las empresas</strong>
+    <a href="/files/images/Coursera_ODS2.PNG" target="_blank">
+      <img src="/files/images/Coursera_ODS2.PNG" alt="Certificate ODS"/>
+    </a>
+  </div>
+  <div class="cert-item">
+    <strong>Combining and Analyzing Complex Data</strong>
+    <a href="/files/images/Coursera_Complex2.PNG" target="_blank">
+      <img src="/files/images/Coursera_Complex2.PNG" alt="Certificate Complex Data"/>
+    </a>
+  </div>
+  <div class="cert-item">
+    <strong>Reproducible Templates for Analysis and Dissemination</strong>
+    <a href="/files/images/Coursera_Reprod2.PNG" target="_blank">
+      <img src="/files/images/Coursera_Reprod2.PNG" alt="Certificate Reproducible"/>
+    </a>
+  </div>
+  <div class="cert-item">
+    <strong>Introduction to Big Data</strong>
+    <a href="/files/images/Coursera_Big2.PNG" target="_blank">
+      <img src="/files/images/Coursera_Big2.PNG" alt="Certificate Big Data"/>
+    </a>
+  </div>
+</div>
+```
 :::

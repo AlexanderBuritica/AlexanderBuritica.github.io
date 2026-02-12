@@ -249,3 +249,76 @@ html { scroll-behavior: smooth; }
 #quarto-reader-toggle { opacity: 0.6; }
 #quarto-reader-toggle:hover { opacity: 1; }
 #hero-heading { display: none; }
+
+
+/* ============================================================
+   FIX: Hide duplicate Quarto title on index
+   ============================================================ */
+.quarto-title-block { display: none; }
+
+/* ============================================================
+   FIX: Center recent-posts listing grid
+   ============================================================ */
+#recent-posts .quarto-listing {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+#recent-posts .list.grid {
+  justify-content: center;
+}
+
+/* ============================================================
+   FIX: Certificates — images below text, not beside
+   ============================================================ */
+.news-card li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.news-card li img,
+.news-card li a > img {
+  margin-top: 0.5rem;
+  display: block;
+  max-width: 280px;
+}
+
+
+/* ============================================================
+   CERTIFICATES GRID — image below title
+   ============================================================ */
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.cert-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cert-item strong {
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.cert-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cert-item img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 600px) {
+  .cert-grid { grid-template-columns: 1fr; }
+}
