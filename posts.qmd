@@ -12,7 +12,6 @@ listing:
   feed: true
   contents: 
       - posts
-      - posts/post-links.yml  # Use this file to add external links
 #      categories: [] 
 
 #page-layout: full
