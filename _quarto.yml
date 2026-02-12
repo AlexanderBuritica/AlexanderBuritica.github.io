@@ -7,82 +7,66 @@ description-meta: "Academic website of Alexander Buriticá Casanova"
 author-meta: "Alexander Buriticá Casanova"
 
 website:
-  title: "Alexander Buritica"
+  title: "Alexander Buriticá"
   favicon: "files/images/icon.png"
   image: "files/images/icon.png"
-  description: "Agricultural and environmental economist. Impact evaluation, sustainable agriculture, and policy-relevant research."
- 
-  navbar:
-    background: light  # You can change the background color here
+  description: "Agricultural and environmental economist."
 
-    left:   # You can comment out all navigation items here if you just like to keep the index page only
-#      - text: Home
-#        href: index.qmd
+  navbar:
+    background: light
+    left:
       - text: News
         menu:
           - text: News
             href: news2.qmd
           - text: Contact
-            href: contact.qmd             
+            href: contact.qmd
       - text: Research
         menu:
-          - text: List of Publications
+          - text: Publications
             href: publications.qmd
           - text: Working Papers
-            href: publications2.qmd            
-#      - text: Teaching # Comment the Teaching part out to remove the Teaching page
-#        href: teaching.qmd
-      - text: Field Work   # Comment the Group part out to remove the Group page
+            href: publications2.qmd
+      - text: Field Work
         href: speakers.qmd
 
-
-    right: 
+    right:
       - text: CV
         href: files/cv_ingles_v3.pdf
       - icon: github
         href: https://github.com/AlexanderBuritica
         target: _blank
-  
-  
+
   page-navigation: true
-  
-  page-footer: 
-    left: "[Alexander](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
+
+  page-footer:
+    left: "© Alexander Buriticá Casanova"
     center: ""
-    right:  
+    right:
       - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
+        href: https://github.com/AlexanderBuritica
         target: _blank
-      - text: "{{< fa brands bluesky >}}" 
-        href: https://bsky.app
-        target: _blank
-      - icon: rss
-        href: posts.xml
-        target: _blank  
-  
+      - icon: envelope
+        href: mailto:a.buritica@cgiar.org
+
   search:
     location: navbar
     type: textbox
-  
+
   reader-mode: true
-
   draft-mode: unlinked
-  
-  repo-url: https://github.com/drganghe/quarto-academic-website-template
-#  repo-actions: [edit, issue, source]
-  
-  open-graph: true
-  
-  twitter-card: true 
-#  card-style: summary      
-  
-  site-url: "https://drganghe.github.io/quarto-academic-website-template"
-  
-  google-analytics:
-    tracking-id: ""  # Please delete or replace with your own tracking ID
-    anonymize-ip: true 
 
-bibliography: references.bib  # Add references.bib to the root folder to enable the bibliography function
+  repo-url: https://github.com/AlexanderBuritica/AlexBuritica.github.io
+
+  open-graph: true
+  twitter-card: true
+  site-url: "https://alexanderburitica.github.io"
+
+  google-analytics:
+    tracking-id: ""
+    anonymize-ip: true
+
+bibliography: references.bib
 
 format:
   html:
@@ -97,5 +81,4 @@ format:
     link-external-icon: false
     link-external-newwindow: true
     email-obfuscation: javascript
-    link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
     include-in-header: "files/includes/_academic.qmd"
