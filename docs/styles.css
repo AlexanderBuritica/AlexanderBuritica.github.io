@@ -1,1 +1,295 @@
-/* css styles */
+
+
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+.contact-card {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 2.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-card h3 { margin-bottom: 0.25rem; }
+.contact-card a { text-decoration: none; }
+.contact-card a:hover { text-decoration: underline; }
+
+/* ============================================================
+   NEWS CARDS
+   ============================================================ */
+.news-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease;
+}
+
+.news-card:hover { box-shadow: var(--shadow-md); }
+.news-card h3 { margin-top: 0; margin-bottom: 0.4rem; }
+.news-card img { margin-top: 0.75rem; border-radius: var(--radius-sm); }
+.news-card ul { margin-top: 0.75rem; }
+.news-card li { margin-bottom: 1rem; }
+
+/* ============================================================
+   FIELDWORK GALLERY — with lightbox
+   ============================================================ */
+.fieldwork-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  transition: transform 0.25s ease, filter 0.25s ease;
+  display: block;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+  filter: brightness(0.92);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5rem 0.8rem 0.6rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.65));
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.gallery-item:hover .gallery-caption { opacity: 1; }
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lightbox-overlay.active { display: flex; }
+
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 88vh;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.15s;
+  background: none;
+  border: none;
+}
+
+.lightbox-close:hover { opacity: 1; }
+
+.lightbox-caption-bar {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 1100px) {
+  .fieldwork-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px) {
+  .fieldwork-gallery { grid-template-columns: 1fr; }
+}
+
+/* Legacy class fix (redirects to gallery) */
+.fieldwork-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.fieldwork-grid img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s ease;
+  display: block;
+}
+.fieldwork-grid img:hover { transform: translateY(-2px); }
+
+/* ============================================================
+   WORKING PAPERS
+   ============================================================ */
+.wp-list li {
+  list-style: disc;
+  margin-bottom: 2.2rem;
+}
+
+.wp-authors {
+  display: block;
+  margin-top: 0.4rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+.wp-figure {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 0.6rem 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.wp-links { display: block; margin-top: 0.4rem; }
+
+.wp-btn {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  margin-right: 0.35rem;
+  transition: all 0.15s ease;
+}
+
+.wp-btn:hover {
+  background: var(--color-accent-light);
+  border-color: var(--color-accent);
+}
+
+/* ============================================================
+   PUBLICATIONS — Clean academic list
+   ============================================================ */
+.pubs-clean { max-width: var(--max-width); }
+
+.pubs-clean .pub-year {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.pubs-clean .pub-list-clean {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.pubs-clean .pub-item-clean {
+  margin-bottom: 1.2rem;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid transparent;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  transition: all 0.15s ease;
+}
+
+.pubs-clean .pub-item-clean:hover {
+  background: var(--color-bg-subtle);
+  border-left-color: var(--color-accent);
+}
+
+.pubs-clean .pub-cite { line-height: 1.5; }
+.pubs-clean .pub-cite strong { font-weight: 750; }
+.pubs-clean .pub-cite em strong,
+.pubs-clean .pub-cite i strong { font-style: italic; font-weight: 750; }
+
+.pubs-clean .pub-actions-clean {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.pubs-clean .pub-actions-clean a {
+  margin-right: 0.7rem;
+  text-decoration: none;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.pubs-clean .pub-actions-clean a:hover { text-decoration: underline; }
+
+/* Altmetric & Dimensions inline */
+span.__dimensions_badge_embed__,
+div.altmetric-embed { display: inline-block; }
+
+/* Journal in bold still looks italic */
+.csl-entry em strong, .csl-entry i strong {
+  font-style: italic;
+  font-weight: 800;
+}
+
+/* Hide default Quarto reference section */
+#refs { display: none; }
+
+/* ============================================================
+   GENERAL UTILITIES
+   ============================================================ */
+.content-narrow { max-width: var(--max-width); margin: 0 auto; }
+
+/* TOC refinements */
+.sidebar nav[role="doc-toc"] {
+  font-size: 0.88rem;
+  border-left: 1px solid var(--color-border);
+}
+
+/* Page title styling */
+.quarto-title h1.title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: -0.5px;
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Reader mode button */
+#quarto-reader-toggle { opacity: 0.6; }
+#quarto-reader-toggle:hover { opacity: 1; }
+
+/* Remove default about template styles to use our custom hero */
+#hero-heading { display: none; }

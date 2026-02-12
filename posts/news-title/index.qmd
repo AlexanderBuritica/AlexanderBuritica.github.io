@@ -1,71 +1,25 @@
 ---
 title: "News & Academic Highlights"
-description-meta: "Awards, talks, and professional development"
-title-block-banner: false
-css: custom.css
+description: "Awards, fellowships, and conference presentations"
+date: "2025-06-01"
+categories: [news]
+image: "/files/images/ICO.png"
 ---
 
-## 🏆 Fellowships & Awards
+## Fellowships & Awards
 
-::: news-card
-### 🏅 ICO Award for Excellence in Coffee-Related Research
+### ICO Award for Excellence in Coffee-Related Research
 
 **International Coffee Organization (ICO)** · June 2019
 
 This award promotes high-quality research on emerging issues in the global coffee sector.
 
-**Related paper:**\
-*Access to High Quality Coffee Markets: Possible for All?*
+**Related paper:** *Access to High Quality Coffee Markets: Possible for All?*
 
-[🔗 Award call](http://www.ico.org/documents/cy2018-19/ed-2295e-call-for-award-competition.pdf)
+[Award call](http://www.ico.org/documents/cy2018-19/ed-2295e-call-for-award-competition.pdf){target="_blank"}
 
-![](/files/images/ICO.png){width="35%"}
-:::
+### Doctoral Scholarship
 
-::: news-card
-### 🎓 Doctoral Scholarship
-
-**COLCIENCIAS (now Minciencias)** · 2017--2020
+**COLCIENCIAS (now Minciencias)** · 2017–2020
 
 National doctoral scholarship awarded to support PhD studies in Colombia.
-
-[🔗 Program information](https://minciencias.gov.co/convocatorias/oportunidades-formacion/convocatoria-doctorados-nacionales-2016)
-:::
-
-------------------------------------------------------------------------
-
-## 🎤 Conference Presentations
-
-::: news-card
-### INFER Workshop on Economic Development Thinking the Environment
-
-**Coimbra, Portugal** · May 2019
-
-![](/files/images/infer_logo.jpg){width="30%"}
-:::
-
-------------------------------------------------------------------------
-
-## 📚 Training & Certificates (Coursera)
-
-::: news-card
-![](/files/images/coursera_logo.jpg){width="30%"}
-
-### Selected Coursera Certificates
-
-> Haz clic en cada certificado para verlo en tamaño completo.
->
-> -   **Los Objetivos de Desarrollo Sostenible para las empresas**\
->     [![](/files/images/Coursera_ODS2.PNG){width="260"}](/files/images/Coursera_ODS2.PNG)
->
->     -   **Combining and Analyzing Complex Data**\
->         [![](/files/images/Coursera_Complex2.PNG){width="260"}](/files/images/Coursera_Complex2.PNG)
->
->     -   **Reproducible Templates for Analysis and Dissemination**\
->         [![](/files/images/Coursera_Reprod2.PNG){width="260"}](/files/images/Coursera_Reprod2.PNG)
->
->     -   **Introduction to Big Data**\
->         [![](/files/images/Coursera_Big2.PNG){width="260"}](/files/images/Coursera_Big2.PNG)
->
->     :::
-:::

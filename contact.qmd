@@ -2,28 +2,46 @@
 title: "Contact"
 description-meta: "Get in touch for research, collaboration, and speaking opportunities"
 title-block-banner: false
+css: custom.css
 ---
 
-### Alexander Buritica
+```{=html}
+<div class="contact-card">
+  <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.1rem;">
+    Alexander Buriticá Casanova
+  </h3>
+  <p style="color: var(--color-text-secondary, #555); margin-top: 0;">
+    Postdoctoral Researcher · Foresight and Applied Economics for Impact<br/>
+    Alliance of Bioversity International & CIAT (CGIAR)
+  </p>
 
-**Foresight and Applied Economics for Impact**\
-Alliance of Bioversity International & CIAT (CGIAR)
+  <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 1.2rem 0;"/>
 
-------------------------------------------------------------------------
+  <p>
+    <i class="fa-solid fa-location-dot" style="width: 20px; color: #1b5e5e;"></i>
+    Km 17 Recta Cali–Palmira, Valle del Cauca, Colombia
+  </p>
+  <p>
+    <i class="fa-solid fa-envelope" style="width: 20px; color: #1b5e5e;"></i>
+    <a href="mailto:a.buritica@cgiar.org">a.buritica@cgiar.org</a>
+  </p>
+  <p>
+    <i class="fa-brands fa-google-scholar" style="width: 20px; color: #1b5e5e;"></i>
+    <a href="https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ" target="_blank">Google Scholar</a>
+  </p>
+  <p>
+    <i class="fa-brands fa-linkedin" style="width: 20px; color: #1b5e5e;"></i>
+    <a href="https://www.linkedin.com/in/alexander-buritica-casanova-738827155/" target="_blank">LinkedIn</a>
+  </p>
 
-📍 **Office address**\
-Km 17 Recta Cali--Palmira\
-Palmira, Valle del Cauca, Colombia
+  <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 1.2rem 0;"/>
 
-📧 **Email**\
-[a.buritica\@cgiar.org](mailto:a.buritica@cgiar.org)
-
-------------------------------------------------------------------------
-
-### What you can contact me about
-
--   Research collaboration (impact evaluation, agriculture, environment)
--   Policy analysis and advisory work
--   Guest lectures, seminars, and workshops
-
-***Email** is the fastest way to reach me.*
+  <h4 style="font-family: var(--font-serif); margin-bottom: 0.5rem;">Open to collaboration on</h4>
+  <p style="line-height: 1.7;">
+    Impact evaluation · Agricultural and environmental economics · Policy analysis and advisory work · Guest lectures, seminars, and workshops
+  </p>
+  <p style="font-size: 0.9rem; color: var(--color-text-secondary, #555); margin-top: 1rem;">
+    <em>Email is the fastest way to reach me.</em>
+  </p>
+</div>
+```

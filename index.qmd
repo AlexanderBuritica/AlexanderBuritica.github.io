@@ -1,71 +1,143 @@
 ---
-title: "Alexander Buritica Casanova"
-description-meta: ""
+title: "Alexander Buriticá Casanova"
+description-meta: "Academic website of Alexander Buriticá Casanova — Agricultural economist, impact evaluation, CGIAR"
 image: "files/images/Alex_Buritaca.JPG"
 page-navigation: false
 toc: false
-#sidebar: false
 page-layout: full
+css: custom.css
 
-about:
-  id: hero-heading
-  template: trestles
-  image-width: 90%
-  links:
-    - icon: envelope
-      text: E-mail
-      href: mailto:a.buritica@cgiar.org    
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/alexander-buritica-casanova-738827155/
-      target: _blank
-    - text: "{{< ai google-scholar >}} Google Scholar"
-      href: https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ&view_op=list_works&sortby=pubdate
-      target: _blank
-#    - text: "{{< ai researchgate >}} Research Gate"
-#      href: https://www.researchgate.net
-#      target: _blank
-
-listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
+listing:
   - id: recent-posts
-    contents: 
+    contents:
       - posts
     exclude:
       title: ""
     type: grid
     max-items: 3
-#    image-height: 150px
-    page-size: 3 #set same as max-times to remove the page number setting
+    page-size: 3
     fields: [image, date, title, subtitle]
     max-description-length: 75
-    sort: 
+    sort:
       - "date desc"
       - "title asc"
 ---
 
-::: {#hero-heading}
-# **About me**
+```{=html}
+<!-- ===== HERO SECTION ===== -->
+<section class="hero-section">
+  <div class="hero-grid">
 
-I am a **PhD economist ,** with expertise in impact evaluation and applied development economics. My research agenda focuses on agriculture, sustainability, and rural development, with particular attention to the impacts of policies, technologies, and market interventions on productivity, livelihoods, and environmental outcomes.
+    <img src="files/images/Alex_Buritaca.JPG"
+         alt="Alexander Buriticá Casanova"
+         class="hero-photo" />
 
-I am currently a **postdoctoral researcher at the** [Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/), where I combine causal inference methods with field data to generate policy-relevant evidence for agri-food systems in developing countries.
+    <div class="hero-text">
+      <h1 class="hero-name">Alexander Buriticá Casanova</h1>
+      <p class="hero-title">
+        Postdoctoral Researcher · Alliance of Bioversity International & CIAT (CGIAR)
+      </p>
 
-## Education
+      <div class="hero-links">
+        <a href="mailto:a.buritica@cgiar.org" class="hero-link">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a href="https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="hero-link">
+          <i class="ai ai-google-scholar"></i> Google Scholar
+        </a>
+        <a href="https://www.linkedin.com/in/alexander-buritica-casanova-738827155/" target="_blank" class="hero-link">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/AlexanderBuritica" target="_blank" class="hero-link">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
 
--   **PhD in Economics (2023)**\
-    Universidad de los Andes, Colombia
--   **MSc in Economics (2023)**\
-    Universidad de los Andes, Colombia
--   **BSc in Economics (2013)**\
-    Universidad del Valle, Colombia
+      <div class="hero-bio">
+        <p>
+          I am a <strong>PhD economist</strong> with expertise in impact evaluation and applied development economics. My research focuses on agriculture, sustainability, and rural development — with particular attention to the impacts of policies, technologies, and market interventions on productivity, livelihoods, and environmental outcomes.
+        </p>
+        <p>
+          Currently a <strong>postdoctoral researcher</strong> at the
+          <a href="https://alliancebioversityciat.org/" target="_blank">Alliance of Bioversity International and CIAT</a>,
+          I combine causal inference methods with field data to generate policy-relevant evidence for agri-food systems in developing countries.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== RESEARCH INTERESTS ===== -->
+<section class="research-section">
+  <h2>Research Interests</h2>
+  <div class="research-pills">
+    <span class="research-pill"><i class="fa-solid fa-chart-line"></i> Impact Evaluation</span>
+    <span class="research-pill"><i class="fa-solid fa-seedling"></i> Sustainable Agriculture</span>
+    <span class="research-pill"><i class="fa-solid fa-tree"></i> Deforestation & Land Use</span>
+    <span class="research-pill"><i class="fa-solid fa-cow"></i> Silvopastoral Systems</span>
+    <span class="research-pill"><i class="fa-solid fa-mug-hot"></i> Coffee Value Chains</span>
+    <span class="research-pill"><i class="fa-solid fa-scale-balanced"></i> Causal Inference</span>
+    <span class="research-pill"><i class="fa-solid fa-people-group"></i> Rural Development</span>
+    <span class="research-pill"><i class="fa-solid fa-earth-americas"></i> Food Security</span>
+    <span class="research-pill"><i class="fa-solid fa-venus-mars"></i> Gender & Inclusion</span>
+  </div>
+</section>
+
+<!-- ===== ACADEMIC TIMELINE ===== -->
+<section class="timeline-section">
+  <h2>Academic & Professional Trajectory</h2>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <span class="tl-date">2023 — Present</span>
+      <h4 class="tl-title">Postdoctoral Researcher</h4>
+      <p class="tl-subtitle">Alliance of Bioversity International & CIAT (CGIAR) · Palmira, Colombia</p>
+    </div>
+
+    <div class="tl-item">
+      <span class="tl-date">2017 — 2023</span>
+      <h4 class="tl-title">PhD in Economics</h4>
+      <p class="tl-subtitle">Universidad de los Andes · Bogotá, Colombia</p>
+    </div>
+
+    <div class="tl-item">
+      <span class="tl-date">2017 — 2023</span>
+      <h4 class="tl-title">MSc in Economics</h4>
+      <p class="tl-subtitle">Universidad de los Andes · Bogotá, Colombia</p>
+    </div>
+
+    <div class="tl-item">
+      <span class="tl-date">2019</span>
+      <h4 class="tl-title">ICO Award for Excellence in Coffee-Related Research</h4>
+      <p class="tl-subtitle">International Coffee Organization</p>
+    </div>
+
+    <div class="tl-item">
+      <span class="tl-date">2017 — 2020</span>
+      <h4 class="tl-title">COLCIENCIAS Doctoral Scholarship</h4>
+      <p class="tl-subtitle">Minciencias · National doctoral fellowship</p>
+    </div>
+
+    <div class="tl-item">
+      <span class="tl-date">2009 — 2013</span>
+      <h4 class="tl-title">BSc in Economics</h4>
+      <p class="tl-subtitle">Universidad del Valle · Cali, Colombia</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== RECENT POSTS ===== -->
+<section class="recent-section">
+  <h2>Recent Publications & News</h2>
+  <p>
+    Browse my <a href="publications.html">publications</a>,
+    <a href="publications2.html">working papers</a>, or
+    <a href="news2.html">news & highlights</a>.
+  </p>
+</section>
+```
+
+::: {#recent-posts}
 :::
-
-## Recent Posts
-
-Check out the latest  [Papers](publications.qmd) ,  [News](news2.qmd) 
-
-<p align="right">
-
-[All Posts »](/news2.qmd)
-
-</p>
