@@ -431,12 +431,12 @@ html { scroll-behavior: smooth; }
    ============================================================ */
 .post-featured-img {
   width: 100%;
-  max-width: 700px;
-  max-height: 380px;
-  object-fit: cover;
-  border-radius: 14px;
+  max-width: 550px;
+  object-fit: contain;
+  border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.08);
   margin: 0.5rem 0 1.5rem 0;
   display: block;
   box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  background: #fafbfc;
 }
