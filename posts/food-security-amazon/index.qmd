@@ -1,0 +1,49 @@
+---
+title: "Food security and forest access in the Colombian and Peruvian Amazon"
+description: "How forest quality and ethnic group membership shape food security outcomes in Amazonian communities."
+subtitle: "*Food Security*"
+author:
+  - name: Alexander Buriticá
+  - name: Martha Vanegas
+  - name: Andres Espada
+  - name: Mary Ngaiwi
+  - name: Deborah Pierce
+  - name: Marcela Quintero
+date: "2026-02-10"
+categories: [paper]
+image: "/images/wp4-01.png"
+
+citation:
+  type: article-journal
+  container-title: "Food Security"
+  doi: "10.1007/s12571-025-01639-0"
+  url: "https://doi.org/10.1007/s12571-025-01639-0"
+  issued: "2026-02-10"
+
+google-scholar: true
+---
+
+<!--Include academic icons or buttons-->
+{{< include /files/includes/_academic.qmd >}}
+
+## Abstract
+
+Tropical forests provide critical ecosystem services that underpin food security for rural communities, yet the pathways linking forest access to household food outcomes remain poorly understood, particularly in Amazonian contexts characterized by ethnic diversity and rapid environmental change. This study examines the relationship between forest access, forest quality, and food security among households in the Colombian and Peruvian Amazon, with particular attention to the mediating role of ethnic group membership. Using household-level survey data from indigenous, Afro-descendant, and mestizo communities across multiple Amazonian departments, we employ multinomial logit models to analyze how forest-derived resources contribute to dietary diversity, food availability, and coping strategies under food stress. Our results reveal that forest quality — measured through proxies of biodiversity, canopy cover, and distance to degraded areas — is a significant predictor of food security status, with higher-quality forests associated with improved dietary outcomes. Ethnic group belonging mediates this relationship: indigenous communities exhibit stronger reliance on forest resources and greater vulnerability to forest degradation, while mestizo households are more integrated into market-based food systems. The findings highlight that deforestation and forest degradation threaten not only environmental sustainability but also the nutritional wellbeing of forest-dependent populations. Policy interventions should integrate food security objectives into conservation strategies and recognize the differentiated needs of ethnically diverse Amazonian communities.
+
+## Links
+
+- [Journal page (Springer)](https://doi.org/10.1007/s12571-025-01639-0)
+- [DOI](https://doi.org/10.1007/s12571-025-01639-0)
+
+```{=html}
+<!-- Altmetric -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1007/s12571-025-01639-0"></div>
+
+<!-- Dimensions -->
+<span class="__dimensions_badge_embed__"
+      data-doi="10.1007/s12571-025-01639-0"
+      data-hide-zero-citations="true"
+      data-style="small_circle"></span>
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+```

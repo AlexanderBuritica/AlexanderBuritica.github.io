@@ -6,20 +6,16 @@ categories: [news]
 image: "/files/images/ICO.png"
 ---
 
-## Fellowships & Awards
-
-### ICO Award for Excellence in Coffee-Related Research
+## ICO Award for Excellence in Coffee-Related Research
 
 **International Coffee Organization (ICO)** · June 2019
 
-This award promotes high-quality research on emerging issues in the global coffee sector.
-
-**Related paper:** *Access to High Quality Coffee Markets: Possible for All?*
+The ICO Award for Excellence in Coffee-Related Research recognizes outstanding contributions to the understanding of emerging issues in the global coffee sector. The award was granted for the paper *Access to High Quality Coffee Markets: Possible for All?*, which examines barriers to specialty market participation among smallholder coffee producers.
 
 [Award call](http://www.ico.org/documents/cy2018-19/ed-2295e-call-for-award-competition.pdf){target="_blank"}
 
-### Doctoral Scholarship
+## COLCIENCIAS Doctoral Scholarship
 
-**COLCIENCIAS (now Minciencias)** · 2017–2020
+**Minciencias (formerly COLCIENCIAS)** · 2017–2020
 
-National doctoral scholarship awarded to support PhD studies in Colombia.
+National doctoral scholarship awarded by Colombia's Department of Science and Technology to support PhD studies in Economics at Universidad de los Andes.

@@ -1,0 +1,46 @@
+---
+title: "Coffee cupping as a quality signal: impacts on smallholder prices and market access in Colombia"
+description: "How coffee cupping practices affect smallholder pricing and market access in Colombian coffee value chains."
+subtitle: "*Journal of Agribusiness in Developing and Emerging Economies*"
+author:
+  - name: Alexander Buriticá Casanova
+  - name: Carolina González
+date: "2026-02-01"
+categories: [paper]
+image: "/images/wp1-01.JPG"
+
+citation:
+  type: article-journal
+  container-title: "Journal of Agribusiness in Developing and Emerging Economies"
+  doi: "10.1108/JADEE-05-2025-0217"
+  url: "https://www.emerald.com/jadee/article-abstract/doi/10.1108/JADEE-05-2025-0217"
+  page: "1-24"
+  issued: "2026-02-01"
+
+google-scholar: true
+---
+
+<!--Include academic icons or buttons-->
+{{< include /files/includes/_academic.qmd >}}
+
+## Abstract
+
+Quality signaling mechanisms play a critical role in specialty coffee markets, yet their effects on smallholder producers remain underexplored. This study examines the impact of coffee cupping — a standardized sensory evaluation protocol — on farmgate prices and market access for smallholder coffee growers in Colombia. Using data from coffee-producing households across multiple departments, we employ instrumental variable and matching strategies to address selection into cupping participation. Our findings indicate that cupping-based quality signals are associated with significant price premiums at the farmgate level, particularly for producers who achieve scores above the specialty threshold. However, access to cupping infrastructure and training remains unevenly distributed, with smaller and more remote producers facing systematic barriers to participation. The results underscore the dual nature of quality signaling: while cupping can improve market outcomes for participating farmers, it may also reinforce existing inequalities in value chain governance. Policy implications point toward expanding cupping access, strengthening cooperative-level quality infrastructure, and designing inclusive certification pathways that reach underserved producers in the Colombian coffee sector.
+
+## Links
+
+- [Journal page (Emerald)](https://www.emerald.com/jadee/article-abstract/doi/10.1108/JADEE-05-2025-0217)
+- [DOI](https://doi.org/10.1108/JADEE-05-2025-0217)
+
+```{=html}
+<!-- Altmetric -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1108/JADEE-05-2025-0217"></div>
+
+<!-- Dimensions -->
+<span class="__dimensions_badge_embed__"
+      data-doi="10.1108/JADEE-05-2025-0217"
+      data-hide-zero-citations="true"
+      data-style="small_circle"></span>
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+```

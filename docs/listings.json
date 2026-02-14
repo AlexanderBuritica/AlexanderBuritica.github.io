@@ -10,6 +10,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/food-security-amazon/index.html",
+      "/posts/coffee-cupping/index.html",
       "/posts/paper-title/index.html",
       "/posts/news-title/index.html"
     ]
@@ -17,6 +19,8 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/food-security-amazon/index.html",
+      "/posts/coffee-cupping/index.html",
       "/posts/paper-title/index.html",
       "/posts/news-title/index.html"
     ]

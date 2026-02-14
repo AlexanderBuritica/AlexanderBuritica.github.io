@@ -17,7 +17,140 @@
 <width>144</width>
 </image>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Thu, 01 Jan 2026 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 10 Feb 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Food security and forest access in the Colombian and Peruvian Amazon</title>
+  <dc:creator>Alexander Buriticá</dc:creator>
+  <dc:creator>Martha Vanegas</dc:creator>
+  <dc:creator>Andres Espada</dc:creator>
+  <dc:creator>Mary Ngaiwi</dc:creator>
+  <dc:creator>Deborah Pierce</dc:creator>
+  <dc:creator>Marcela Quintero</dc:creator>
+  <link>https://alexanderburitica.github.io/posts/food-security-amazon/</link>
+  <description><![CDATA[ 
+
+
+
+
+<!--Include academic icons or buttons-->
+<!-- Google Fonts: Cormorant Garamond + Source Sans 3 -->
+<p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
+<!-- Academicons -->
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></p>
+<!-- Font Awesome (updated) -->
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></p>
+<!-- Altmetric & Dimensions badges -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Tropical forests provide critical ecosystem services that underpin food security for rural communities, yet the pathways linking forest access to household food outcomes remain poorly understood, particularly in Amazonian contexts characterized by ethnic diversity and rapid environmental change. This study examines the relationship between forest access, forest quality, and food security among households in the Colombian and Peruvian Amazon, with particular attention to the mediating role of ethnic group membership. Using household-level survey data from indigenous, Afro-descendant, and mestizo communities across multiple Amazonian departments, we employ multinomial logit models to analyze how forest-derived resources contribute to dietary diversity, food availability, and coping strategies under food stress. Our results reveal that forest quality — measured through proxies of biodiversity, canopy cover, and distance to degraded areas — is a significant predictor of food security status, with higher-quality forests associated with improved dietary outcomes. Ethnic group belonging mediates this relationship: indigenous communities exhibit stronger reliance on forest resources and greater vulnerability to forest degradation, while mestizo households are more integrated into market-based food systems. The findings highlight that deforestation and forest degradation threaten not only environmental sustainability but also the nutritional wellbeing of forest-dependent populations. Policy interventions should integrate food security objectives into conservation strategies and recognize the differentiated needs of ethnically diverse Amazonian communities.</p>
+</section>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<ul>
+<li><a href="https://doi.org/10.1007/s12571-025-01639-0">Journal page (Springer)</a></li>
+<li><a href="https://doi.org/10.1007/s12571-025-01639-0">DOI</a></li>
+</ul>
+<!-- Altmetric -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1007/s12571-025-01639-0"></div>
+
+<!-- Dimensions -->
+<span class="__dimensions_badge_embed__" data-doi="10.1007/s12571-025-01639-0" data-hide-zero-citations="true" data-style="small_circle"></span>
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{buriticá2026,
+  author = {Buriticá, Alexander and Vanegas, Martha and Espada, Andres
+    and Ngaiwi, Mary and Pierce, Deborah and Quintero, Marcela},
+  title = {Food Security and Forest Access in the {Colombian} and
+    {Peruvian} {Amazon}},
+  journal = {Food Security},
+  date = {2026-02-10},
+  url = {https://doi.org/10.1007/s12571-025-01639-0},
+  doi = {10.1007/s12571-025-01639-0},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-buriticá2026" class="csl-entry quarto-appendix-citeas">
+Buriticá, Alexander, Martha Vanegas, Andres Espada, Mary Ngaiwi, Deborah
+Pierce, and Marcela Quintero. 2026. <span>“Food Security and Forest
+Access in the Colombian and Peruvian Amazon.”</span> <em>Food
+Security</em>, February. <a href="https://doi.org/10.1007/s12571-025-01639-0">https://doi.org/10.1007/s12571-025-01639-0</a>.
+</div></div></section></div> ]]></description>
+  <category>paper</category>
+  <guid>https://alexanderburitica.github.io/posts/food-security-amazon/</guid>
+  <pubDate>Tue, 10 Feb 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://alexanderburitica.github.io/images/wp4-01.png" medium="image" type="image/png" height="107" width="144"/>
+</item>
+<item>
+  <title>Coffee cupping as a quality signal: impacts on smallholder prices and market access in Colombia</title>
+  <dc:creator>Alexander Buriticá Casanova</dc:creator>
+  <dc:creator>Carolina González</dc:creator>
+  <link>https://alexanderburitica.github.io/posts/coffee-cupping/</link>
+  <description><![CDATA[ 
+
+
+
+
+<!--Include academic icons or buttons-->
+<!-- Google Fonts: Cormorant Garamond + Source Sans 3 -->
+<p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
+<!-- Academicons -->
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></p>
+<!-- Font Awesome (updated) -->
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></p>
+<!-- Altmetric & Dimensions badges -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>Quality signaling mechanisms play a critical role in specialty coffee markets, yet their effects on smallholder producers remain underexplored. This study examines the impact of coffee cupping — a standardized sensory evaluation protocol — on farmgate prices and market access for smallholder coffee growers in Colombia. Using data from coffee-producing households across multiple departments, we employ instrumental variable and matching strategies to address selection into cupping participation. Our findings indicate that cupping-based quality signals are associated with significant price premiums at the farmgate level, particularly for producers who achieve scores above the specialty threshold. However, access to cupping infrastructure and training remains unevenly distributed, with smaller and more remote producers facing systematic barriers to participation. The results underscore the dual nature of quality signaling: while cupping can improve market outcomes for participating farmers, it may also reinforce existing inequalities in value chain governance. Policy implications point toward expanding cupping access, strengthening cooperative-level quality infrastructure, and designing inclusive certification pathways that reach underserved producers in the Colombian coffee sector.</p>
+</section>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links</h2>
+<ul>
+<li><a href="https://www.emerald.com/jadee/article-abstract/doi/10.1108/JADEE-05-2025-0217">Journal page (Emerald)</a></li>
+<li><a href="https://doi.org/10.1108/JADEE-05-2025-0217">DOI</a></li>
+</ul>
+<!-- Altmetric -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1108/JADEE-05-2025-0217"></div>
+
+<!-- Dimensions -->
+<span class="__dimensions_badge_embed__" data-doi="10.1108/JADEE-05-2025-0217" data-hide-zero-citations="true" data-style="small_circle"></span>
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{buriticá_casanova2026,
+  author = {Buriticá Casanova, Alexander and González, Carolina},
+  title = {Coffee Cupping as a Quality Signal: Impacts on Smallholder
+    Prices and Market Access in {Colombia}},
+  journal = {Journal of Agribusiness in Developing and Emerging
+    Economies},
+  pages = {1-24},
+  date = {2026-02-01},
+  url = {https://www.emerald.com/jadee/article-abstract/doi/10.1108/JADEE-05-2025-0217},
+  doi = {10.1108/JADEE-05-2025-0217},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-buriticá_casanova2026" class="csl-entry quarto-appendix-citeas">
+Buriticá Casanova, Alexander, and Carolina González. 2026. <span>“Coffee
+Cupping as a Quality Signal: Impacts on Smallholder Prices and Market
+Access in Colombia.”</span> <em>Journal of Agribusiness in Developing
+and Emerging Economies</em>, February, 1–24. <a href="https://doi.org/10.1108/JADEE-05-2025-0217">https://doi.org/10.1108/JADEE-05-2025-0217</a>.
+</div></div></section></div> ]]></description>
+  <category>paper</category>
+  <guid>https://alexanderburitica.github.io/posts/coffee-cupping/</guid>
+  <pubDate>Sun, 01 Feb 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://alexanderburitica.github.io/images/wp1-01.JPG" medium="image"/>
+</item>
 <item>
   <title>Advancing sustainable silvopastoral practices for achieving zero deforestation in the Colombian Amazon</title>
   <dc:creator>Alexander Buritica</dc:creator>
@@ -95,22 +228,18 @@ Amazon.”</span> <em>Agricultural Systems</em> 231 (January): 104525. <a href="
 
 
 
-<section id="fellowships-awards" class="level2">
-<h2 class="anchored" data-anchor-id="fellowships-awards">Fellowships &amp; Awards</h2>
-<section id="ico-award-for-excellence-in-coffee-related-research" class="level3">
-<h3 class="anchored" data-anchor-id="ico-award-for-excellence-in-coffee-related-research">ICO Award for Excellence in Coffee-Related Research</h3>
+<section id="ico-award-for-excellence-in-coffee-related-research" class="level2">
+<h2 class="anchored" data-anchor-id="ico-award-for-excellence-in-coffee-related-research">ICO Award for Excellence in Coffee-Related Research</h2>
 <p><strong>International Coffee Organization (ICO)</strong> · June 2019</p>
-<p>This award promotes high-quality research on emerging issues in the global coffee sector.</p>
-<p><strong>Related paper:</strong> <em>Access to High Quality Coffee Markets: Possible for All?</em></p>
+<p>The ICO Award for Excellence in Coffee-Related Research recognizes outstanding contributions to the understanding of emerging issues in the global coffee sector. The award was granted for the paper <em>Access to High Quality Coffee Markets: Possible for All?</em>, which examines barriers to specialty market participation among smallholder coffee producers.</p>
 <p><a href="http://www.ico.org/documents/cy2018-19/ed-2295e-call-for-award-competition.pdf" target="_blank">Award call</a></p>
 </section>
-<section id="doctoral-scholarship" class="level3">
-<h3 class="anchored" data-anchor-id="doctoral-scholarship">Doctoral Scholarship</h3>
-<p><strong>COLCIENCIAS (now Minciencias)</strong> · 2017–2020</p>
-<p>National doctoral scholarship awarded to support PhD studies in Colombia.</p>
+<section id="colciencias-doctoral-scholarship" class="level2">
+<h2 class="anchored" data-anchor-id="colciencias-doctoral-scholarship">COLCIENCIAS Doctoral Scholarship</h2>
+<p><strong>Minciencias (formerly COLCIENCIAS)</strong> · 2017–2020</p>
+<p>National doctoral scholarship awarded by Colombia’s Department of Science and Technology to support PhD studies in Economics at Universidad de los Andes.</p>
 
 
-</section>
 </section>
 
  ]]></description>

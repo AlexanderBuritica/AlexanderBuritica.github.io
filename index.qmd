@@ -16,8 +16,8 @@ listing:
     exclude:
       title: ""
     type: grid
-    max-items: 3
-    page-size: 3
+    max-items: 4
+    page-size: 4
     fields: [image, date, title, subtitle]
     max-description-length: 75
     sort:
