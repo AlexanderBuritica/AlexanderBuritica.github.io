@@ -56,55 +56,134 @@ a:hover { color: #134545; }
 .nav-footer { border-top: 1px solid var(--color-border); font-size: 0.85rem; color: var(--color-text-secondary); padding: 1.2rem 0; }
 
 /* ============================================================
-   HERO SECTION
+   DARK HERO HEADER
    ============================================================ */
-.hero-section { max-width: 1020px; margin: 0 auto; padding: 2.5rem 1.5rem 1.5rem; }
+.dark-hero {
+  background: #2c2c2c;
+  background-image: linear-gradient(135deg, #1a1a2e 0%, #2c2c2c 50%, #1a2a1a 100%);
+  color: #e8e8e8;
+  padding: 3rem 2rem 2.5rem;
+  margin-top: -1px;
+}
 
-.hero-grid {
+.dark-hero-inner {
+  max-width: 1060px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2.2rem;
+  grid-template-columns: 1fr 320px;
+  gap: 3rem;
   align-items: start;
 }
 
-.hero-photo {
-  width: 200px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-md);
-}
-
-.hero-name {
+/* Left: Name, affiliation, icons, bio */
+.dark-hero-name {
   font-family: var(--font-serif);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  margin: 0 0 0.1rem 0;
-  letter-spacing: -0.6px;
+  color: #ffffff;
+  margin: 0 0 0.4rem 0;
+  letter-spacing: -0.5px;
   line-height: 1.1;
 }
 
-.hero-title { font-size: 1rem; color: var(--color-text-secondary); margin-bottom: 0.9rem; font-weight: 400; }
-.hero-links { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.1rem; }
-
-.hero-link {
-  display: inline-flex; align-items: center; gap: 0.35rem;
-  padding: 0.3rem 0.7rem; border: 1px solid var(--color-border);
-  border-radius: 999px; font-size: 0.85rem; color: var(--color-text);
-  transition: all 0.15s ease; background: var(--color-bg);
+.dark-hero-affiliation {
+  font-size: 0.95rem;
+  color: #5ecece;
+  margin-bottom: 1.4rem;
+  line-height: 1.5;
 }
-.hero-link:hover { background: var(--color-accent-light); border-color: var(--color-accent); color: var(--color-accent); }
 
-.hero-bio { font-size: 0.98rem; line-height: 1.7; color: var(--color-text); }
-.hero-bio p { margin-bottom: 0.6rem; }
-.hero-bio strong { font-weight: 650; }
+.dark-hero-affiliation a {
+  color: #5ecece;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(94,206,206,0.4);
+}
 
-@media (max-width: 720px) {
-  .hero-grid { grid-template-columns: 1fr; justify-items: center; text-align: center; }
-  .hero-photo { width: 170px; height: 205px; }
-  .hero-links { justify-content: center; }
-  .hero-name { font-size: 2rem; }
+.dark-hero-affiliation a:hover {
+  color: #7eeaea;
+  border-bottom-style: solid;
+}
+
+.dark-hero-icons {
+  display: flex;
+  gap: 1.1rem;
+  margin-bottom: 1.6rem;
+}
+
+.dark-hero-icons a {
+  color: #d0d0d0;
+  font-size: 1.7rem;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.dark-hero-icons a:hover {
+  color: #5ecece;
+  transform: translateY(-2px);
+}
+
+.dark-hero-bio {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #c8c8c8;
+}
+
+.dark-hero-bio p {
+  margin-bottom: 0.7rem;
+}
+
+.dark-hero-bio strong {
+  color: #ffffff;
+  font-weight: 650;
+}
+
+.dark-hero-bio a {
+  color: #5ecece;
+  border-bottom: 1px dotted rgba(94,206,206,0.4);
+}
+
+.dark-hero-bio a:hover {
+  color: #7eeaea;
+  border-bottom-style: solid;
+}
+
+/* Right: Photo + address */
+.dark-hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dark-hero-photo {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+.dark-hero-address pre {
+  font-family: 'Courier New', monospace;
+  font-size: 0.78rem;
+  color: #aaa;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .dark-hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .dark-hero-right { order: -1; }
+  .dark-hero-photo { width: 200px; height: 200px; }
+  .dark-hero-icons { justify-content: center; }
+  .dark-hero-name { font-size: 2.2rem; }
 }
 
 /* ============================================================
@@ -321,4 +400,19 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 600px) {
   .cert-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   POST FEATURED IMAGE
+   ============================================================ */
+.post-featured-img {
+  width: 100%;
+  max-width: 700px;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.08);
+  margin: 0.5rem 0 1.5rem 0;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
 }

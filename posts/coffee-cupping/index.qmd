@@ -7,7 +7,7 @@ author:
   - name: Carolina González
 date: "2026-02-01"
 categories: [paper]
-image: "/images/wp1-01.JPG"
+image: "/files/images/fieldwork/a13.jpeg"
 
 citation:
   type: article-journal
@@ -22,6 +22,8 @@ google-scholar: true
 
 <!--Include academic icons or buttons-->
 {{< include /files/includes/_academic.qmd >}}
+
+![](/files/images/fieldwork/a13.jpeg){.post-featured-img}
 
 ## Abstract
 

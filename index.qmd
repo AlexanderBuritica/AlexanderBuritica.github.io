@@ -26,36 +26,26 @@ listing:
 ---
 
 ```{=html}
-<!-- ===== HERO SECTION ===== -->
-<section class="hero-section">
-  <div class="hero-grid">
+<!-- ===== DARK HERO HEADER ===== -->
+<section class="dark-hero">
+  <div class="dark-hero-inner">
 
-    <img src="files/images/Alex_Buritaca.JPG"
-         alt="Alexander Buriticá Casanova"
-         class="hero-photo" />
-
-    <div class="hero-text">
-      <h1 class="hero-name">Alexander Buriticá Casanova</h1>
-      <p class="hero-title">
-        About me
+    <div class="dark-hero-left">
+      <h1 class="dark-hero-name">Alexander Buriticá Casanova</h1>
+      <p class="dark-hero-affiliation">
+        <a href="https://economia.uniandes.edu.co" target="_blank">Department of Economics</a>,
+        <a href="https://alliancebioversityciat.org/" target="_blank">Alliance of Bioversity International & CIAT</a> — Palmira, Colombia.
       </p>
 
-      <div class="hero-links">
-        <a href="mailto:a.buritica@cgiar.org" class="hero-link">
-          <i class="fa-solid fa-envelope"></i> Email
-        </a>
-        <a href="https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="hero-link">
-          <i class="ai ai-google-scholar"></i> Scholar
-        </a>
-        <a href="https://www.linkedin.com/in/alexander-buritica-casanova-738827155/" target="_blank" class="hero-link">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://github.com/AlexanderBuritica" target="_blank" class="hero-link">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
+      <div class="dark-hero-icons">
+        <a href="mailto:a.buritica@cgiar.org" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://github.com/AlexanderBuritica" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alexander-buritica-casanova-738827155/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://orcid.org/0000-0001-XXXX-XXXX" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
       </div>
 
-      <div class="hero-bio">
+      <div class="dark-hero-bio">
         <p>
           I am a <strong>PhD economist</strong> with expertise in impact evaluation and applied development economics. My research focuses on agriculture, sustainability, and rural development — with particular attention to the impacts of policies, technologies, and market interventions on productivity, livelihoods, and environmental outcomes.
         </p>
@@ -64,6 +54,21 @@ listing:
           <a href="https://alliancebioversityciat.org/" target="_blank">Alliance of Bioversity International and CIAT</a>,
           I combine causal inference methods with field data to generate policy-relevant evidence for agri-food systems in developing countries.
         </p>
+        <p>
+          You can find my CV <a href="files/cv_ingles_v3.pdf">here</a> and my publications on <a href="publications.html">this page</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="dark-hero-right">
+      <img src="files/images/Alex_Buritaca.JPG"
+           alt="Alexander Buriticá Casanova"
+           class="dark-hero-photo" />
+      <div class="dark-hero-address">
+        <pre>Alliance of Bioversity Int'l & CIAT
+Km 17, Recta Cali–Palmira
+Palmira, Valle del Cauca
+Colombia</pre>
       </div>
     </div>
 

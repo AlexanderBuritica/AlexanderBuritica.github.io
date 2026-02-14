@@ -17,7 +17,7 @@ Below are photos from my fieldwork activities across different countries and pro
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a2.jpg" loading="lazy" alt="Community engagement"/>
-    <div class="gallery-caption">Community engagement</div>
+    <div class="gallery-caption">Field data collection</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a3.jpg" loading="lazy" alt="Survey implementation"/>
@@ -37,11 +37,11 @@ Below are photos from my fieldwork activities across different countries and pro
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a7.jpg" loading="lazy" alt="Livestock systems"/>
-    <div class="gallery-caption">Livestock systems</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a8.jpg" loading="lazy" alt="Data collection in the field"/>
-    <div class="gallery-caption">Data collection in the field</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a9.jpg" loading="lazy" alt="Smallholder farms"/>
@@ -49,39 +49,39 @@ Below are photos from my fieldwork activities across different countries and pro
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a10.jpg" loading="lazy" alt="Agricultural practices"/>
-    <div class="gallery-caption">Agricultural practices</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a11.jpg" loading="lazy" alt="Silvopastoral systems"/>
-    <div class="gallery-caption">Silvopastoral systems</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a12.jpg" loading="lazy" alt="Community workshop"/>
-    <div class="gallery-caption">Community workshop</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a13.jpeg" loading="lazy" alt="Caquetá region"/>
-    <div class="gallery-caption">Caquetá region</div>
+    <div class="gallery-caption">Coffee</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a14.jpeg" loading="lazy" alt="Participatory research"/>
-    <div class="gallery-caption">Participatory research</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a16.jpeg" loading="lazy" alt="Colombian Amazon"/>
-    <div class="gallery-caption">Colombian Amazon</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a18.jpeg" loading="lazy" alt="Sustainable agriculture"/>
-    <div class="gallery-caption">Sustainable agriculture</div>
+    <div class="gallery-caption">Coffee</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a19.jpg" loading="lazy" alt="Coffee production"/>
-    <div class="gallery-caption">Coffee production</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a21.jpeg" loading="lazy" alt="Field experiments"/>
-    <div class="gallery-caption">Field experiments</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a22.jpeg" loading="lazy" alt="Household surveys"/>
@@ -121,15 +121,15 @@ Below are photos from my fieldwork activities across different countries and pro
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a31.jpeg" loading="lazy" alt="Biodiversity assessment"/>
-    <div class="gallery-caption">Biodiversity assessment</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a34.jpeg" loading="lazy" alt="Impact evaluation fieldwork"/>
-    <div class="gallery-caption">Impact evaluation fieldwork</div>
+    <div class="gallery-caption">Fieldwork</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a36.jpeg" loading="lazy" alt="Crop assessment"/>
-    <div class="gallery-caption">Crop assessment</div>
+    <div class="gallery-caption">Crop Varieties</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a37.jpeg" loading="lazy" alt="Collaborative research"/>
@@ -137,11 +137,11 @@ Below are photos from my fieldwork activities across different countries and pro
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a38.jpeg" loading="lazy" alt="Environmental monitoring"/>
-    <div class="gallery-caption">Environmental monitoring</div>
+    <div class="gallery-caption">Collaborative research</div>
   </div>
   <div class="gallery-item" onclick="openLightbox(this)">
     <img src="/files/images/fieldwork/a39.jpeg" loading="lazy" alt="Policy-relevant research"/>
-    <div class="gallery-caption">Policy-relevant research</div>
+    <div class="gallery-caption">Collaborative research</div>
   </div>
 
 </div>
