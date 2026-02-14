@@ -56,12 +56,12 @@ a:hover { color: #134545; }
 .nav-footer { border-top: 1px solid var(--color-border); font-size: 0.85rem; color: var(--color-text-secondary); padding: 1.2rem 0; }
 
 /* ============================================================
-   DARK HERO HEADER
+   HERO HEADER (Light)
    ============================================================ */
 .dark-hero {
-  background: #2c2c2c;
-  background-image: linear-gradient(135deg, #1a1a2e 0%, #2c2c2c 50%, #1a2a1a 100%);
-  color: #e8e8e8;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  color: var(--color-text);
   padding: 3rem 2rem 2.5rem;
   margin-top: -1px;
 }
@@ -80,7 +80,7 @@ a:hover { color: #134545; }
   font-family: var(--font-serif);
   font-size: 2.8rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-text);
   margin: 0 0 0.4rem 0;
   letter-spacing: -0.5px;
   line-height: 1.1;
@@ -88,19 +88,19 @@ a:hover { color: #134545; }
 
 .dark-hero-affiliation {
   font-size: 0.95rem;
-  color: #5ecece;
+  color: var(--color-accent);
   margin-bottom: 1.4rem;
   line-height: 1.5;
 }
 
 .dark-hero-affiliation a {
-  color: #5ecece;
+  color: var(--color-accent);
   text-decoration: none;
-  border-bottom: 1px dotted rgba(94,206,206,0.4);
+  border-bottom: 1px dotted rgba(27,94,94,0.4);
 }
 
 .dark-hero-affiliation a:hover {
-  color: #7eeaea;
+  color: #134545;
   border-bottom-style: solid;
 }
 
@@ -111,20 +111,20 @@ a:hover { color: #134545; }
 }
 
 .dark-hero-icons a {
-  color: #d0d0d0;
+  color: #555;
   font-size: 1.7rem;
   transition: color 0.15s ease, transform 0.15s ease;
 }
 
 .dark-hero-icons a:hover {
-  color: #5ecece;
+  color: var(--color-accent);
   transform: translateY(-2px);
 }
 
 .dark-hero-bio {
   font-size: 0.95rem;
   line-height: 1.75;
-  color: #c8c8c8;
+  color: var(--color-text);
 }
 
 .dark-hero-bio p {
@@ -132,26 +132,26 @@ a:hover { color: #134545; }
 }
 
 .dark-hero-bio strong {
-  color: #ffffff;
+  color: var(--color-text);
   font-weight: 650;
 }
 
 .dark-hero-bio a {
-  color: #5ecece;
-  border-bottom: 1px dotted rgba(94,206,206,0.4);
+  color: var(--color-accent);
+  border-bottom: 1px dotted rgba(27,94,94,0.4);
 }
 
 .dark-hero-bio a:hover {
-  color: #7eeaea;
+  color: #134545;
   border-bottom-style: solid;
 }
 
-/* Right: Photo + address */
+/* Right: Photo + role + address */
 .dark-hero-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.6rem;
 }
 
 .dark-hero-photo {
@@ -159,14 +159,22 @@ a:hover { color: #134545; }
   height: 260px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid rgba(255,255,255,0.15);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  border: 4px solid rgba(0,0,0,0.08);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.dark-hero-role {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 0.3rem;
 }
 
 .dark-hero-address pre {
   font-family: 'Courier New', monospace;
   font-size: 0.78rem;
-  color: #aaa;
+  color: #888;
   line-height: 1.5;
   text-align: center;
   margin: 0;
@@ -230,6 +238,22 @@ a:hover { color: #134545; }
 
 .traj-card.is-award { border-left: 3px solid #c8a415; }
 .traj-card.is-award .traj-date { color: #a88a10; }
+
+/* Hide Quarto auto-generated anchor links in trajectory */
+.trajectory-section .header-section-number,
+.trajectory-section h2 > a.anchor-section,
+.trajectory-section h3 > a.anchor-section,
+.trajectory-section h2 > a[href^="#"],
+.trajectory-section h3 > a[href^="#"],
+.research-section h2 > a.anchor-section,
+.research-section h2 > a[href^="#"],
+.recent-section h2 > a.anchor-section,
+.recent-section h2 > a[href^="#"],
+.trajectory-section .anchorjs-link,
+.research-section .anchorjs-link,
+.recent-section .anchorjs-link {
+  display: none !important;
+}
 
 @media (max-width: 700px) { .trajectory-columns { grid-template-columns: 1fr; } }
 
