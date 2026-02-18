@@ -10,11 +10,9 @@
 <atom:link href="https://alexanderburitica.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Agricultural and environmental economist.</description>
 <image>
-<url>https://alexanderburitica.github.io/files/images/icon.png</url>
+<url>https://alexanderburitica.github.io/files/images/Alex_Buritaca.JPG</url>
 <title>Alexander Buriticá</title>
 <link>https://alexanderburitica.github.io/posts.html</link>
-<height>90</height>
-<width>144</width>
 </image>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Tue, 10 Feb 2026 05:00:00 GMT</lastBuildDate>
