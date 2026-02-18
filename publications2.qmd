@@ -31,12 +31,4 @@ css: custom.css
     [Manuel Moreno; <strong>Alexander Buriticá</strong>; Carolina Gonzalez; Augusto Castro]{.wp-authors}
 
     [[Slides](https://cgspace.cgiar.org/items/e6e0703a-886b-4108-80c0-a9cc8f770a57){.wp-btn}]{.wp-links}
-
--   [**Food security and forest access in the Colombian and Peruvian Amazon: How do forest quality and belonging to an ethnic group play a role?**](https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:dhFuZR0502QC)
-
-    ![](images/wp4-01.png){.wp-figure}
-
-    [<strong>Alexander Buriticá</strong>; Martha Vanegas; Deborah Pierce; Marcela Quintero]{.wp-authors}
-
-    [[Slides](https://cgspace.cgiar.org/items/acb864d8-0b9f-42fb-b84f-79450ef573b2){.wp-btn}]{.wp-links}
 :::
