@@ -89,9 +89,9 @@ a:hover { color: #134545; }
 
 /* Subtitle */
 .hero-eduard-subtitle {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   color: var(--color-text);
-  margin: 0 0 0.15rem 0;
+  margin: 0 0 0.2rem 0;
 }
 
 /* Affiliation */
@@ -191,8 +191,8 @@ a:hover { color: #134545; }
 
 .home-section h2 {
   font-family: var(--font-serif);
-  font-size: 1.85rem;
-  margin: 0 0 1rem 0;
+  font-size: 2.1rem;
+  margin: 0 0 1.1rem 0;
   color: var(--color-text);
   letter-spacing: -0.3px;
 }
@@ -261,8 +261,8 @@ a:hover { color: #134545; }
 
 .cv-item {
   display: grid;
-  grid-template-columns: 52px 1fr;
-  gap: 0.9rem;
+  grid-template-columns: 68px 1fr;
+  gap: 1rem;
   align-items: center;
   padding: 0.75rem 1rem;
   background: var(--color-bg-subtle);
@@ -276,8 +276,8 @@ a:hover { color: #134545; }
 }
 
 .cv-logo {
-  width: 48px;
-  height: 48px;
+  width: 62px;
+  height: 62px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,20 +285,20 @@ a:hover { color: #134545; }
 }
 
 .cv-logo img {
-  max-width: 48px;
-  max-height: 48px;
+  max-width: 62px;
+  max-height: 62px;
   object-fit: contain;
   border-radius: 4px;
 }
 
 .cv-body {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .cv-body strong {
   font-weight: 650;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .cv-date {
