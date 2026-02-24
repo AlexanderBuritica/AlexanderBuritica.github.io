@@ -261,7 +261,7 @@ a:hover { color: #134545; }
 
 .cv-item {
   display: grid;
-  grid-template-columns: 68px 1fr;
+  grid-template-columns: 80px 1fr;
   gap: 1rem;
   align-items: center;
   padding: 0.75rem 1rem;
@@ -276,8 +276,8 @@ a:hover { color: #134545; }
 }
 
 .cv-logo {
-  width: 62px;
-  height: 62px;
+  width: 72px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,8 +285,8 @@ a:hover { color: #134545; }
 }
 
 .cv-logo img {
-  max-width: 62px;
-  max-height: 62px;
+  max-width: 72px;
+  max-height: 72px;
   object-fit: contain;
   border-radius: 4px;
 }

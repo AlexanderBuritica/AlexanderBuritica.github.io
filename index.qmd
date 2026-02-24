@@ -128,7 +128,7 @@ listing:
       <div class="cv-logo"><img src="files/images/logos/alliance-ciat.png" alt="CIAT"></div>
       <div class="cv-body">
         <strong>Postdoctoral Fellow</strong> <span class="cv-date">(2023–Present)</span><br>
-        Alliance of Bioversity Int'l & CIAT (CGIAR)
+        Alliance of Bioversity IntInternational & CIAT (CGIAR)
       </div>
     </div>
 
@@ -136,7 +136,7 @@ listing:
       <div class="cv-logo"><img src="files/images/logos/alliance-ciat.png" alt="CIAT"></div>
       <div class="cv-body">
         <strong>Senior Research Associate</strong> <span class="cv-date">(2022–2023)</span><br>
-        Alliance of Bioversity Int'l & CIAT (CGIAR)
+        Alliance of Bioversity IntInternational & CIAT (CGIAR)
       </div>
     </div>
 
