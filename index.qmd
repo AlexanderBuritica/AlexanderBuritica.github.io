@@ -9,20 +9,6 @@ page-layout: full
 css: custom.css
 title-block-banner: false
 
-listing:
-  - id: recent-posts
-    contents:
-      - posts
-    exclude:
-      title: ""
-    type: grid
-    max-items: 4
-    page-size: 4
-    fields: [image, date, title, subtitle]
-    max-description-length: 75
-    sort:
-      - "date desc"
-      - "title asc"
 ---
 
 ```{=html}
@@ -50,13 +36,13 @@ listing:
         <p>
           I am a <strong>Postdoctoral Researcher</strong> at the
           <a href="https://alliancebioversityciat.org/" target="_blank">Alliance of Bioversity International and CIAT</a>.
-          My research focuses on development economics, applied econometrics, and the use of causal inference methods to address agricultural and environmental policy challenges in Latin America.
+          My research focuses on development economics, applied econometrics, and the use of causal inference methods to address agricultural and environmental policy challenges.
         </p>
         <p>
-          My work applies impact evaluation methods to questions at the intersection of sustainable agriculture, deforestation, and rural livelihoods. Representative examples include evaluating the effects of silvopastoral systems on deforestation in the Colombian Amazon, assessing coffee quality signaling mechanisms on smallholder prices, and studying food security determinants in Amazonian communities.
+          My work applies impact evaluation methods to questions at the intersection of sustainable agriculture, deforestation, and rural livelihoods. Recent projects include the evaluation of silvopastoral systems on deforestation in the Colombian Amazon, the analysis of coffee quality signaling mechanisms on smallholder prices, and the study of food security determinants in Amazonian communities.
         </p>
         <p>
-          You can find my CV <a href="files/cv_ingles_v3.pdf">here</a>.
+          <a href="files/cv_ingles_v3.pdf" class="cv-btn" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
         </p>
       </div>
     </div>
@@ -128,7 +114,7 @@ listing:
       <div class="cv-logo"><img src="files/images/logos/alliance-ciat.png" alt="CIAT"></div>
       <div class="cv-body">
         <strong>Postdoctoral Fellow</strong> <span class="cv-date">(2023–Present)</span><br>
-        Alliance of Bioversity IntInternational & CIAT (CGIAR)
+        Alliance of Bioversity International & CIAT (CGIAR)
       </div>
     </div>
 
@@ -136,7 +122,7 @@ listing:
       <div class="cv-logo"><img src="files/images/logos/alliance-ciat.png" alt="CIAT"></div>
       <div class="cv-body">
         <strong>Senior Research Associate</strong> <span class="cv-date">(2022–2023)</span><br>
-        Alliance of Bioversity IntInternational & CIAT (CGIAR)
+        Alliance of Bioversity International & CIAT (CGIAR)
       </div>
     </div>
 
@@ -195,15 +181,40 @@ listing:
 
 <hr class="section-divider">
 
-<!-- ===== RECENT POSTS ===== -->
+<!-- ===== SELECTED PUBLICATIONS ===== -->
 <section class="home-section">
-  <h2>Recent Publications & News</h2>
-  <p>
-    Browse my <a href="publications.html">publications</a>,
-    <a href="publications2.html">working papers</a>, or
-    <a href="news2.html">news & highlights</a>.
+  <h2>Selected Publications</h2>
+
+  <div class="selected-papers">
+
+    <a href="https://doi.org/10.1108/JADEE-05-2025-0217" target="_blank" class="feat-card">
+      <div class="feat-img"><img src="files/images/journals/p2026_2.png" alt="Coffee cupping"></div>
+      <div class="feat-body">
+        <div class="feat-title">Coffee cupping as a quality signal: Impacts on smallholder prices and market access in Colombia</div>
+        <div class="feat-journal"><em>Journal of Agribusiness in Developing and Emerging Economies</em>, 2026</div>
+      </div>
+    </a>
+
+    <a href="https://doi.org/10.1038/s41598-024-63697-2" target="_blank" class="feat-card">
+      <div class="feat-img"><img src="files/images/journals/p2024_1.PNG" alt="Sustainable livestock"></div>
+      <div class="feat-body">
+        <div class="feat-title">Unlocking sustainable livestock production potential in the Colombian Amazon</div>
+        <div class="feat-journal"><em>Scientific Reports</em>, 2024</div>
+      </div>
+    </a>
+
+    <a href="https://doi.org/10.1007/s10640-025-01011-y" target="_blank" class="feat-card">
+      <div class="feat-img"><img src="files/images/journals/p2025_1.PNG" alt="Sweating bullets"></div>
+      <div class="feat-body">
+        <div class="feat-title">Sweating bullets: Heat, high-stakes evaluations, and the role of incentives</div>
+        <div class="feat-journal"><em>Environmental and Resource Economics</em>, 2025</div>
+      </div>
+    </a>
+
+  </div>
+
+  <p class="selected-more">
+    See all <a href="publications.html">publications</a> · <a href="publications2.html">working papers</a> · <a href="news2.html">news & highlights</a>
   </p>
 </section>
 ```
-::: {#recent-posts}
-:::

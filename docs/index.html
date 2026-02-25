@@ -33,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./files/images/Alex_Buritaca.JPG" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -72,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -126,35 +95,6 @@ gtag('config', '', { 'anonymize_ip': true});
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="custom.css">
@@ -277,13 +217,13 @@ window.Quarto = {
         <p>
           I am a <strong>Postdoctoral Researcher</strong> at the
           <a href="https://alliancebioversityciat.org/" target="_blank">Alliance of Bioversity International and CIAT</a>.
-          My research focuses on development economics, applied econometrics, and the use of causal inference methods to address agricultural and environmental policy challenges in Latin America.
+          My research focuses on development economics, applied econometrics, and the use of causal inference methods to address agricultural and environmental policy challenges.
         </p>
         <p>
-          My work applies impact evaluation methods to questions at the intersection of sustainable agriculture, deforestation, and rural livelihoods. Representative examples include evaluating the effects of silvopastoral systems on deforestation in the Colombian Amazon, assessing coffee quality signaling mechanisms on smallholder prices, and studying food security determinants in Amazonian communities.
+          My work applies impact evaluation methods to questions at the intersection of sustainable agriculture, deforestation, and rural livelihoods. Recent projects include the evaluation of silvopastoral systems on deforestation in the Colombian Amazon, the analysis of coffee quality signaling mechanisms on smallholder prices, and the study of food security determinants in Amazonian communities.
         </p>
         <p>
-          You can find my CV <a href="files/cv_ingles_v3.pdf">here</a>.
+          <a href="files/cv_ingles_v3.pdf" class="cv-btn" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
         </p>
       </div>
     </div>
@@ -353,7 +293,7 @@ window.Quarto = {
       <div class="cv-logo"><img src="files/images/logos/alliance-ciat.png" alt="CIAT"></div>
       <div class="cv-body">
         <strong>Postdoctoral Fellow</strong> <span class="cv-date">(2023–Present)</span><br>
-        Alliance of Bioversity IntInternational &amp; CIAT (CGIAR)
+        Alliance of Bioversity International &amp; CIAT (CGIAR)
       </div>
     </div>
 
@@ -361,7 +301,7 @@ window.Quarto = {
       <div class="cv-logo"><img src="files/images/logos/alliance-ciat.png" alt="CIAT"></div>
       <div class="cv-body">
         <strong>Senior Research Associate</strong> <span class="cv-date">(2022–2023)</span><br>
-        Alliance of Bioversity IntInternational &amp; CIAT (CGIAR)
+        Alliance of Bioversity International &amp; CIAT (CGIAR)
       </div>
     </div>
 
@@ -420,102 +360,42 @@ window.Quarto = {
 
 <hr class="section-divider">
 
-<!-- ===== RECENT POSTS ===== -->
+<!-- ===== SELECTED PUBLICATIONS ===== -->
 <section class="home-section">
-  <h2 class="anchored">Recent Publications &amp; News</h2>
-  <p>
-    Browse my <a href="publications.html">publications</a>,
-    <a href="publications2.html">working papers</a>, or
-    <a href="news2.html">news &amp; highlights</a>.
+  <h2 class="anchored">Selected Publications</h2>
+
+  <div class="selected-papers">
+
+    <a href="https://doi.org/10.1108/JADEE-05-2025-0217" target="_blank" class="feat-card">
+      <div class="feat-img"><img src="files/images/journals/p2026_2.png" alt="Coffee cupping"></div>
+      <div class="feat-body">
+        <div class="feat-title">Coffee cupping as a quality signal: Impacts on smallholder prices and market access in Colombia</div>
+        <div class="feat-journal"><em>Journal of Agribusiness in Developing and Emerging Economies</em>, 2026</div>
+      </div>
+    </a>
+
+    <a href="https://doi.org/10.1038/s41598-024-63697-2" target="_blank" class="feat-card">
+      <div class="feat-img"><img src="files/images/journals/p2024_1.PNG" alt="Sustainable livestock"></div>
+      <div class="feat-body">
+        <div class="feat-title">Unlocking sustainable livestock production potential in the Colombian Amazon</div>
+        <div class="feat-journal"><em>Scientific Reports</em>, 2024</div>
+      </div>
+    </a>
+
+    <a href="https://doi.org/10.1007/s10640-025-01011-y" target="_blank" class="feat-card">
+      <div class="feat-img"><img src="files/images/journals/p2025_1.PNG" alt="Sweating bullets"></div>
+      <div class="feat-body">
+        <div class="feat-title">Sweating bullets: Heat, high-stakes evaluations, and the role of incentives</div>
+        <div class="feat-journal"><em>Environmental and Resource Economics</em>, 2025</div>
+      </div>
+    </a>
+
+  </div>
+
+  <p class="selected-more">
+    See all <a href="publications.html">publications</a> · <a href="publications2.html">working papers</a> · <a href="news2.html">news &amp; highlights</a>
   </p>
 </section>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFwZXI=" data-listing-date-sort="1770699600000" data-listing-file-modified-sort="1771093096426" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
-<a href="./posts/food-security-amazon/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/wp4-01.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Food security and forest access in the Colombian and Peruvian Amazon
-</h5>
-<div class="card-subtitle listing-subtitle">
-<em>Food Security</em>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 10, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="cGFwZXI=" data-listing-date-sort="1769922000000" data-listing-file-modified-sort="1771093090745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="212">
-<a href="./posts/coffee-cupping/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/fieldwork/a13.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Coffee cupping as a quality signal: impacts on smallholder prices and market access in Colombia
-</h5>
-<div class="card-subtitle listing-subtitle">
-<em>Journal of Agribusiness in Developing and Emerging Economies</em>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 1, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cGFwZXI=" data-listing-date-sort="1767243600000" data-listing-file-modified-sort="1771093102008" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="348">
-<a href="./posts/paper-title/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/paper-title/featured.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Advancing sustainable silvopastoral practices for achieving zero deforestation in the Colombian Amazon
-</h5>
-<div class="card-subtitle listing-subtitle">
-<em>Agricultural Systems</em>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jan 1, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="bmV3cw==" data-listing-date-sort="1748754000000" data-listing-file-modified-sort="1771091479279" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
-<a href="./posts/news-title/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/ICO.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-News &amp; Academic Highlights
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 1, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-
 
 
 
@@ -929,13 +809,19 @@ Jun 1, 2025
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Alexander Buriticá Casanova</p>
+<p>© 2026 Alexander Buriticá Casanova</p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
+<p>Built with <a href="https://quarto.org/">Quarto</a> · Hosted on <a href="https://pages.github.com/">GitHub Pages</a></p>
+</div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:a.buritica@cgiar.org">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/AlexanderBuritica" target="_blank">
       <i class="bi bi-github" role="img">
@@ -943,8 +829,8 @@ Jun 1, 2025
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="mailto:a.buritica@cgiar.org">
-      <i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/alexander-buritica-casanova-738827155/" target="_blank">
+      <i class="bi bi-linkedin" role="img">
 </i> 
     </a>
   </li>  

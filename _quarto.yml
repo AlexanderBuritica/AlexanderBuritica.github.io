@@ -40,14 +40,17 @@ website:
   page-navigation: true
 
   page-footer:
-    left: "© Alexander Buriticá Casanova"
-    center: ""
+    left: "© 2026 Alexander Buriticá Casanova"
+    center: "Built with [Quarto](https://quarto.org/) · Hosted on [GitHub Pages](https://pages.github.com/)"
     right:
+      - icon: envelope
+        href: mailto:a.buritica@cgiar.org
       - icon: github
         href: https://github.com/AlexanderBuritica
         target: _blank
-      - icon: envelope
-        href: mailto:a.buritica@cgiar.org
+      - icon: linkedin
+        href: https://www.linkedin.com/in/alexander-buritica-casanova-738827155/
+        target: _blank
 
   search:
     location: navbar
