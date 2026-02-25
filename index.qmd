@@ -8,7 +8,6 @@ toc: false
 page-layout: full
 css: custom.css
 title-block-banner: false
-
 ---
 
 ```{=html}
@@ -196,7 +195,7 @@ title-block-banner: false
     </a>
 
     <a href="https://doi.org/10.1038/s41598-024-63697-2" target="_blank" class="feat-card">
-      <div class="feat-img"><img src="files/images/journals/p2024_1.PNG" alt="Sustainable livestock"></div>
+      <div class="feat-img"><img src="files/images/journals/p2024_1.png" alt="Sustainable livestock"></div>
       <div class="feat-body">
         <div class="feat-title">Unlocking sustainable livestock production potential in the Colombian Amazon</div>
         <div class="feat-journal"><em>Scientific Reports</em>, 2024</div>
@@ -204,7 +203,7 @@ title-block-banner: false
     </a>
 
     <a href="https://doi.org/10.1007/s10640-025-01011-y" target="_blank" class="feat-card">
-      <div class="feat-img"><img src="files/images/journals/p2025_1.PNG" alt="Sweating bullets"></div>
+      <div class="feat-img"><img src="files/images/journals/p2025_1.png" alt="Sweating bullets"></div>
       <div class="feat-body">
         <div class="feat-title">Sweating bullets: Heat, high-stakes evaluations, and the role of incentives</div>
         <div class="feat-journal"><em>Environmental and Resource Economics</em>, 2025</div>
