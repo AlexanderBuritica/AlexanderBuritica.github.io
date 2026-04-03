@@ -76,6 +76,24 @@ toc: false
   </div>
 </div>
 
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="files/images/journals/p2026_4.png" alt="Landscape peacebuilding">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Using landscape approaches to understand peacebuilding policy coherence: a case study of Caquetá, Colombia</div>
+    <div class="pub-card-authors">Deborah A. Pierce, Sara E. Collazos Acosta, Fanny Howland, <strong>Alexander Buriticá Casanova</strong>, Augusto Castro-Nunez</div>
+    <div class="pub-card-journal"><em>Ecology and Society</em>, vol. 31(2):1, 2026</div>
+    <div class="pub-card-links">
+      <button class="pub-btn pub-abs-toggle" onclick="toggleAbstract(this)">ABS</button>
+      <a href="https://www.ecologyandsociety.org/vol31/iss2/art1/" target="_blank" class="pub-btn">Journal</a>
+    </div>
+    <div class="pub-abstract">
+      We analyzed policy coherence within the Colombian Integrated Rural Reform (Reforma Rural Integral; RRI) peacebuilding policy, using landscape approaches (LAs). Landscape approaches link agricultural practices, institutions, and policies, providing an effective conceptual framework for coherence in policy objectives, instruments, and implementation for effective landscape governance. We empirically examined coherence across and within the RRI, as well as the extent to which the RRI is consistent with LAs. We analyzed the programs with a focus on territorial development (PDETs), and the RRI's implementation mechanism in four municipalities in the Department of Caquetá, Colombia. The study identified incoherence within PDET initiatives and problem and vision statements, specifically regarding land initiatives, although stronger coherence was noted between the RRI and PDET vision statements. Our findings show that the current peacebuilding policy instruments in Colombia fall short of being consistent with LAs, especially in principles concerned with participation and rights in implementation.
+    </div>
+  </div>
+</div>
+
 <hr class="pub-divider">
 
 <!-- ==================== 2025 ==================== -->

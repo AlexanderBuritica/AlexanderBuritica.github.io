@@ -1,7 +1,7 @@
-<!-- Google Fonts: Cormorant Garamond + Source Sans 3 -->
+<!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
 <!-- Academicons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -13,3 +13,46 @@
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+<!-- Dark mode: apply saved theme before paint -->
+<script>
+(function(){
+  var t = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+
+<!-- Navbar scroll shadow + Dark mode toggle (runs after DOM ready) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Navbar scroll shadow
+  var nb = document.querySelector('.navbar');
+  if (nb) {
+    window.addEventListener('scroll', function() {
+      nb.classList.toggle('scrolled', window.scrollY > 10);
+    });
+  }
+
+  // Dark mode toggle button
+  var navRight = document.querySelector('.navbar-nav.navbar-nav-scroll.ms-auto');
+  if (!navRight) navRight = document.querySelector('.navbar .navbar-collapse');
+  if (navRight) {
+    var btn = document.createElement('button');
+    btn.className = 'theme-toggle';
+    btn.title = 'Toggle dark mode';
+    btn.innerHTML = document.documentElement.getAttribute('data-theme') === 'dark'
+      ? '<i class="fa-solid fa-sun"></i>'
+      : '<i class="fa-solid fa-moon"></i>';
+    btn.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      btn.innerHTML = next === 'dark'
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
+    });
+    navRight.appendChild(btn);
+  }
+});
+</script>

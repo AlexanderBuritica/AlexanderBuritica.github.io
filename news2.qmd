@@ -51,6 +51,17 @@ css: styles.css
       </div>
     </div>
 
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">2026</span>
+        <h3>New paper in <em>Ecology and Society</em></h3>
+        <p>Using landscape approaches to understand peacebuilding policy coherence: a case study of Caquetá, Colombia.</p>
+        <a href="https://www.ecologyandsociety.org/vol31/iss2/art1/" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
     <!-- ══════════ 2025 ══════════ -->
     <div class="tl-year">2025</div>
 

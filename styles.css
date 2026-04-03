@@ -5,7 +5,7 @@
 
 :root {
   --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans: 'Inter', 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --color-text: #1d1d1f;
   --color-text-secondary: #555;
   --color-accent: #1b5e5e;
@@ -13,12 +13,37 @@
   --color-border: rgba(0, 0, 0, 0.1);
   --color-bg: #ffffff;
   --color-bg-subtle: #f8f9fa;
+  --color-card: #ffffff;
   --radius-sm: 8px;
   --radius-md: 12px;
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.07);
   --max-width: 960px;
 }
+
+/* ── Dark mode ── */
+[data-theme="dark"] {
+  --color-text: #e4e4e7;
+  --color-text-secondary: #a1a1aa;
+  --color-accent: #4db8b8;
+  --color-accent-light: #1a2e2e;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-bg: #18181b;
+  --color-bg-subtle: #1f1f23;
+  --color-card: #27272a;
+}
+[data-theme="dark"] body { background: var(--color-bg); color: var(--color-text); }
+[data-theme="dark"] .navbar { background: var(--color-bg) !important; border-color: var(--color-border) !important; }
+[data-theme="dark"] .navbar .navbar-brand, [data-theme="dark"] .nav-link { color: var(--color-text) !important; }
+[data-theme="dark"] .feat-card, [data-theme="dark"] .tl-content, [data-theme="dark"] .pub-card { background: var(--color-card); border-color: var(--color-border); }
+[data-theme="dark"] .feat-title, [data-theme="dark"] .tl-content h3 { color: var(--color-text); }
+[data-theme="dark"] .quarto-footer { background: var(--color-bg-subtle); border-color: var(--color-border); color: var(--color-text-secondary); }
+[data-theme="dark"] .hero-eduard-photo { border-color: var(--color-border); }
+[data-theme="dark"] hr.section-divider { border-color: var(--color-border); }
+[data-theme="dark"] .cv-btn { background: var(--color-accent); }
+[data-theme="dark"] .cv-btn:hover { background: #3a9a9a; }
+[data-theme="dark"] .tl-dot { background: var(--color-bg); }
+[data-theme="dark"] .tl-year::before { border-color: var(--color-bg); }
 
 body {
   font-family: var(--font-sans);
@@ -47,7 +72,29 @@ a:hover { color: #134545; }
   border-bottom: 1px solid var(--color-border) !important;
   box-shadow: none !important;
   font-family: var(--font-sans);
+  position: sticky !important;
+  top: 0;
+  z-index: 1030;
+  background: var(--color-bg) !important;
+  transition: box-shadow 0.3s ease;
 }
+.navbar.scrolled {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
+}
+
+/* Dark mode toggle in navbar */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  padding: 0.35rem 0.5rem;
+  color: var(--color-text-secondary);
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+.theme-toggle:hover { color: var(--color-accent); }
 .navbar-brand { font-family: var(--font-serif); font-weight: 600; font-size: 1.2rem; }
 .navbar .nav-link { font-weight: 500; font-size: 0.95rem; text-transform: none; letter-spacing: 0.1px; }
 
@@ -58,9 +105,15 @@ a:hover { color: #134545; }
    HERO — Eduard style
    ============================================================ */
 .hero-eduard {
-  background: var(--color-bg);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-accent-light) 100%);
   border-bottom: 1px solid var(--color-border);
   padding: 2.5rem 2rem 2rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-eduard-inner {
@@ -116,7 +169,7 @@ a:hover { color: #134545; }
 }
 
 .hero-eduard-icons a {
-  color: #333;
+  color: var(--color-text);
   font-size: 1.65rem;
   transition: color 0.15s ease, transform 0.15s ease;
 }
@@ -154,8 +207,13 @@ a:hover { color: #134545; }
   height: 230px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--color-border);
-  box-shadow: var(--shadow-md);
+  border: 4px solid var(--color-bg);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12), 0 0 0 1px var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-eduard-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.16), 0 0 0 1px var(--color-border);
 }
 
 .hero-eduard-meta {
@@ -692,17 +750,17 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
 .feat-card {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   overflow: hidden;
   text-decoration: none !important;
   color: var(--color-text) !important;
-  transition: box-shadow 0.2s, transform 0.15s;
+  transition: box-shadow 0.25s, transform 0.2s;
 }
 .feat-card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
 }
 
 .feat-img {
@@ -852,14 +910,15 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
 
 /* Content card */
 .tl-content {
-  background: #fff;
+  background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: 1rem 1.2rem;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.25s, transform 0.2s;
 }
 .tl-content:hover {
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
 }
 .tl-content h3 {
   font-family: var(--font-sans);
