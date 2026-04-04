@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./files/images/Alex_Buritaca.JPG" rel="icon" type="image/jpeg">
+<link href="./files/images/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -79,10 +79,10 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { 'anonymize_ip': true});
 </script>
-<!-- Google Fonts: Cormorant Garamond + Source Sans 3 -->
+<!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Academicons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -94,6 +94,34 @@ gtag('config', '', { 'anonymize_ip': true});
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+<!-- Navbar scroll shadow + Scroll animations -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Navbar scroll shadow
+  var nb = document.querySelector('.navbar');
+  if (nb) {
+    window.addEventListener('scroll', function() {
+      nb.classList.toggle('scrolled', window.scrollY > 10);
+    });
+  }
+
+  // Scroll fade-in animations
+  var targets = document.querySelectorAll('.home-section, .feat-card, .cv-item, .ra-card, .tl-item, .pub-card');
+  targets.forEach(function(el) { el.classList.add('fade-in'); });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  targets.forEach(function(el) { observer.observe(el); });
+});
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -123,39 +151,25 @@ gtag('config', '', { 'anonymize_ip': true});
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">News</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-news">    
-        <li>
-    <a class="dropdown-item" href="./news2.html">
- <span class="dropdown-text">News</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./contact.html">
- <span class="dropdown-text">Contact</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="./publications.html">
- <span class="dropdown-text">Publications</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./news2.html"> 
+<span class="menu-text">News</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./publications2.html">
- <span class="dropdown-text">Working Papers</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="./speakers.html"> 
 <span class="menu-text">Field Work</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">

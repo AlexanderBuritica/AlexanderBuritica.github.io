@@ -58,18 +58,6 @@ title-block-banner: false
 
 <hr class="section-divider">
 
-<!-- ===== RESEARCH INTERESTS ===== -->
-<section class="home-section">
-  <h2>Research Interests</h2>
-  <div class="research-pills-compact">
-    <span class="research-pill"><i class="fa-solid fa-chart-line"></i> Impact Evaluation</span>
-    <span class="research-pill"><i class="fa-solid fa-seedling"></i> Sustainable Agriculture</span>
-    <span class="research-pill"><i class="fa-solid fa-people-group"></i> Rural Development</span>
-  </div>
-</section>
-
-<hr class="section-divider">
-
 <!-- ===== EDUCATION ===== -->
 <section class="home-section">
   <h2>Education</h2>
@@ -213,7 +201,7 @@ title-block-banner: false
   </div>
 
   <p class="selected-more">
-    See all <a href="publications.html">publications</a> · <a href="publications2.html">working papers</a> · <a href="news2.html">news & highlights</a>
+    See all <a href="publications.html">publications & working papers</a> · <a href="research.html">research areas</a> · <a href="news2.html">news & highlights</a>
   </p>
 </section>
 ```

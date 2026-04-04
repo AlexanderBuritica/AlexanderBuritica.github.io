@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: "Publications & Working Papers"
 description-meta: "Peer-reviewed publications by Alexander Buriticá Casanova"
 page-layout: article
 title-block-banner: false
@@ -246,6 +246,68 @@ toc: false
     </div>
     <div class="pub-abstract">
       This paper examines the effect of specialty coffee certification on household livelihood strategies and agricultural specialisation among smallholder coffee producers in Colombia. Using survey data and propensity score matching, we find that certified households exhibit higher levels of coffee specialisation and derive a larger share of income from coffee production. However, certification does not uniformly improve overall household welfare, suggesting that the benefits of certification are mediated by market access conditions and household-level characteristics.
+    </div>
+  </div>
+</div>
+
+<hr class="pub-divider">
+
+<!-- ==================== WORKING PAPERS ==================== -->
+<h2 class="pub-year-heading" id="working-papers">Working Papers</h2>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="images/wp1-01.JPG" alt="Dairy value chain">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Silvopastoral systems in practice: Evidence from a dairy value chain intervention in Caquetá, Colombia</div>
+    <div class="pub-card-authors"><strong>Alexander Buriticá</strong></div>
+    <div class="pub-card-journal"><em>Working Paper</em></div>
+    <div class="pub-card-links">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:RGFaLdJalmkC" target="_blank" class="pub-btn">Scholar</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="images/wp2-01.jpg" alt="Community seed banks Ethiopia">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Impacts of Community Seed Banks on seed security and food access outcomes in Ethiopia: A multinomial logit analysis</div>
+    <div class="pub-card-authors">Mary Eyeniyeh Ngaiwi, <strong>Alexander Buriticá</strong>, Carolina González, Dejene Kassahun Mengistu, Eric Junior Bomdzele, Elisabetta Gotor, Augusto Castro-Nunez</div>
+    <div class="pub-card-journal"><em>Working Paper</em></div>
+    <div class="pub-card-links">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:BqipwSGYUEgC" target="_blank" class="pub-btn">Scholar</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="images/wp3.png" alt="Gender dynamics Colombia">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Gendered dynamics in Colombian public policy: Assessing impact and investment towards equitable development</div>
+    <div class="pub-card-authors"><strong>Alexander Buriticá</strong>, Diana Carolina Lopera, Maria Blanco, Jorge Rueda, Fanny Howland</div>
+    <div class="pub-card-journal"><em>Working Paper</em></div>
+    <div class="pub-card-links">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:hC7cP41nSMkC" target="_blank" class="pub-btn">Scholar</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="images/wp5-01.png" alt="FARC land markets">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">A case study of the FARC peace agreement impact on land markets in Caquetá, Colombia</div>
+    <div class="pub-card-authors">Manuel Moreno, <strong>Alexander Buriticá</strong>, Carolina González, Augusto Castro</div>
+    <div class="pub-card-journal"><em>Working Paper</em></div>
+    <div class="pub-card-links">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=es&user=43WzRV4AAAAJ&sortby=pubdate&citation_for_view=43WzRV4AAAAJ:hFOr9nPyWt4C" target="_blank" class="pub-btn">Scholar</a>
+      <a href="https://cgspace.cgiar.org/items/e6e0703a-886b-4108-80c0-a9cc8f770a57" target="_blank" class="pub-btn">Slides</a>
     </div>
   </div>
 </div>

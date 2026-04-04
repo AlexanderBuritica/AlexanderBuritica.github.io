@@ -21,30 +21,6 @@
   --max-width: 960px;
 }
 
-/* ── Dark mode ── */
-[data-theme="dark"] {
-  --color-text: #e4e4e7;
-  --color-text-secondary: #a1a1aa;
-  --color-accent: #4db8b8;
-  --color-accent-light: #1a2e2e;
-  --color-border: rgba(255, 255, 255, 0.1);
-  --color-bg: #18181b;
-  --color-bg-subtle: #1f1f23;
-  --color-card: #27272a;
-}
-[data-theme="dark"] body { background: var(--color-bg); color: var(--color-text); }
-[data-theme="dark"] .navbar { background: var(--color-bg) !important; border-color: var(--color-border) !important; }
-[data-theme="dark"] .navbar .navbar-brand, [data-theme="dark"] .nav-link { color: var(--color-text) !important; }
-[data-theme="dark"] .feat-card, [data-theme="dark"] .tl-content, [data-theme="dark"] .pub-card { background: var(--color-card); border-color: var(--color-border); }
-[data-theme="dark"] .feat-title, [data-theme="dark"] .tl-content h3 { color: var(--color-text); }
-[data-theme="dark"] .quarto-footer { background: var(--color-bg-subtle); border-color: var(--color-border); color: var(--color-text-secondary); }
-[data-theme="dark"] .hero-eduard-photo { border-color: var(--color-border); }
-[data-theme="dark"] hr.section-divider { border-color: var(--color-border); }
-[data-theme="dark"] .cv-btn { background: var(--color-accent); }
-[data-theme="dark"] .cv-btn:hover { background: #3a9a9a; }
-[data-theme="dark"] .tl-dot { background: var(--color-bg); }
-[data-theme="dark"] .tl-year::before { border-color: var(--color-bg); }
-
 body {
   font-family: var(--font-sans);
   color: var(--color-text);
@@ -81,20 +57,6 @@ a:hover { color: #134545; }
 .navbar.scrolled {
   box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
 }
-
-/* Dark mode toggle in navbar */
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.15rem;
-  padding: 0.35rem 0.5rem;
-  color: var(--color-text-secondary);
-  transition: color 0.2s;
-  display: flex;
-  align-items: center;
-}
-.theme-toggle:hover { color: var(--color-accent); }
 .navbar-brand { font-family: var(--font-serif); font-weight: 600; font-size: 1.2rem; }
 .navbar .nav-link { font-weight: 500; font-size: 0.95rem; text-transform: none; letter-spacing: 0.1px; }
 
@@ -1029,3 +991,168 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   .tl-cert-grid { grid-template-columns: 1fr; }
   .timeline-page { padding: 1rem; }
 }
+
+/* ============================================================
+   RESEARCH PAGE
+   ============================================================ */
+.research-page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+.research-page-title {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.research-page-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 720px;
+}
+
+/* Research area card */
+.ra-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.ra-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.ra-card-reverse {
+  grid-template-columns: 1fr 280px;
+}
+.ra-card-reverse .ra-visual {
+  order: 2;
+}
+.ra-card-reverse .ra-body {
+  order: 1;
+}
+
+/* Image */
+.ra-visual img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+/* Body */
+.ra-body h2 {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.3rem 0 0.6rem;
+  color: var(--color-text);
+}
+.ra-body p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.8rem;
+}
+
+/* Label */
+.ra-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+}
+.ra-label i {
+  margin-right: 0.25rem;
+}
+
+/* Key papers */
+.ra-papers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.ra-papers-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.1rem;
+}
+.ra-papers a {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--color-accent);
+  line-height: 1.4;
+  transition: border-color 0.15s, padding-left 0.15s;
+}
+.ra-papers a:hover {
+  border-left-width: 3px;
+  padding-left: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .ra-card, .ra-card-reverse {
+    grid-template-columns: 1fr;
+  }
+  .ra-card-reverse .ra-visual { order: 0; }
+  .ra-card-reverse .ra-body { order: 0; }
+  .ra-visual img { height: 160px; }
+}
+
+/* ============================================================
+   GOOGLE SCHOLAR BADGE
+   ============================================================ */
+.gs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-decoration: none !important;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+.gs-badge:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.gs-badge i {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   SCROLL ANIMATIONS
+   ============================================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.fade-in:nth-child(2) { transition-delay: 0.08s; }
+.fade-in:nth-child(3) { transition-delay: 0.16s; }
+.fade-in:nth-child(4) { transition-delay: 0.24s; }

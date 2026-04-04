@@ -9,7 +9,7 @@
 <meta name="author" content="Alexander Buriticá Casanova">
 <meta name="description" content="Peer-reviewed publications by Alexander Buriticá Casanova">
 
-<title>Publications – Alexander Buriticá</title>
+<title>Publications &amp; Working Papers – Alexander Buriticá</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./files/images/Alex_Buritaca.JPG" rel="icon" type="image/jpeg">
+<link href="./files/images/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -79,10 +79,10 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { 'anonymize_ip': true});
 </script>
-<!-- Google Fonts: Cormorant Garamond + Source Sans 3 -->
+<!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
 
 <!-- Academicons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -95,17 +95,45 @@ gtag('config', '', { 'anonymize_ip': true});
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
+<!-- Navbar scroll shadow + Scroll animations -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Navbar scroll shadow
+  var nb = document.querySelector('.navbar');
+  if (nb) {
+    window.addEventListener('scroll', function() {
+      nb.classList.toggle('scrolled', window.scrollY > 10);
+    });
+  }
+
+  // Scroll fade-in animations
+  var targets = document.querySelectorAll('.home-section, .feat-card, .cv-item, .ra-card, .tl-item, .pub-card');
+  targets.forEach(function(el) { el.classList.add('fade-in'); });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  targets.forEach(function(el) { observer.observe(el); });
+});
+</script>
+
 
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="custom.css">
-<meta property="og:title" content="Publications – Alexander Buriticá">
+<meta property="og:title" content="Publications &amp; Working Papers – Alexander Buriticá">
 <meta property="og:description" content="Agricultural and environmental economist.">
 <meta property="og:image" content="https://alexanderburitica.github.io/files/images/journals/p2026_2.png">
 <meta property="og:site_name" content="Alexander Buriticá">
 <meta property="og:image:alt" content="Coffee cupping">
 <meta property="og:image:height" content="430">
 <meta property="og:image:width" content="647">
-<meta name="twitter:title" content="Publications – Alexander Buriticá">
+<meta name="twitter:title" content="Publications &amp; Working Papers – Alexander Buriticá">
 <meta name="twitter:description" content="Agricultural and environmental economist.">
 <meta name="twitter:image" content="https://alexanderburitica.github.io/files/images/journals/p2026_2.png">
 <meta name="twitter:image:alt" content="Coffee cupping">
@@ -131,39 +159,25 @@ gtag('config', '', { 'anonymize_ip': true});
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">News</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-news">    
-        <li>
-    <a class="dropdown-item" href="./news2.html">
- <span class="dropdown-text">News</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./contact.html">
- <span class="dropdown-text">Contact</span></a>
+  <li class="nav-item">
+    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+<span class="menu-text">Publications</span></a>
   </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="./publications.html">
- <span class="dropdown-text">Publications</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./news2.html"> 
+<span class="menu-text">News</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./publications2.html">
- <span class="dropdown-text">Working Papers</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="./speakers.html"> 
 <span class="menu-text">Field Work</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -198,7 +212,7 @@ gtag('config', '', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publications</h1>
+<h1 class="title">Publications &amp; Working Papers</h1>
 </div>
 
 
@@ -216,8 +230,8 @@ gtag('config', '', { 'anonymize_ip': true});
 
 
 <!--Include academic icons or buttons-->
-<!-- Google Fonts: Cormorant Garamond + Source Sans 3 -->
-<p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
+<!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
+<p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
 <!-- Academicons -->
 <p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></p>
 <!-- Font Awesome (updated) -->
@@ -226,6 +240,33 @@ gtag('config', '', { 'anonymize_ip': true});
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+<!-- Navbar scroll shadow + Scroll animations -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Navbar scroll shadow
+  var nb = document.querySelector('.navbar');
+  if (nb) {
+    window.addEventListener('scroll', function() {
+      nb.classList.toggle('scrolled', window.scrollY > 10);
+    });
+  }
+
+  // Scroll fade-in animations
+  var targets = document.querySelectorAll('.home-section, .feat-card, .cv-item, .ra-card, .tl-item, .pub-card');
+  targets.forEach(function(el) { el.classList.add('fade-in'); });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  targets.forEach(function(el) { observer.observe(el); });
+});
+</script>
 <p class="pub-intro">
   This section presents my peer-reviewed publications. Additional information, PDFs, and data repositories are linked when available. Click <strong>ABS</strong> to view the abstract.
 </p>
@@ -286,6 +327,24 @@ gtag('config', '', { 'anonymize_ip': true});
     </div>
     <div class="pub-abstract">
       This paper evaluates the adoption and effectiveness of silvopastoral practices as a strategy for achieving zero deforestation in the Colombian Amazon. Using farm-level data from Caquetá, we assess whether silvopastoral systems reduce deforestation pressure while maintaining or improving livestock productivity. Results show that adopters of silvopastoral practices exhibit significantly lower rates of forest clearing and higher milk yields per hectare, suggesting that sustainable intensification can be compatible with conservation goals in frontier regions.
+    </div>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="files/images/journals/p2026_4.png" alt="Landscape peacebuilding">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Using landscape approaches to understand peacebuilding policy coherence: a case study of Caquetá, Colombia</div>
+    <div class="pub-card-authors">Deborah A. Pierce, Sara E. Collazos Acosta, Fanny Howland, <strong>Alexander Buriticá Casanova</strong>, Augusto Castro-Nunez</div>
+    <div class="pub-card-journal"><em>Ecology and Society</em>, vol. 31(2):1, 2026</div>
+    <div class="pub-card-links">
+      <button class="pub-btn pub-abs-toggle" onclick="toggleAbstract(this)">ABS</button>
+      <a href="https://www.ecologyandsociety.org/vol31/iss2/art1/" target="_blank" class="pub-btn">Journal</a>
+    </div>
+    <div class="pub-abstract">
+      We analyzed policy coherence within the Colombian Integrated Rural Reform (Reforma Rural Integral; RRI) peacebuilding policy, using landscape approaches (LAs). Landscape approaches link agricultural practices, institutions, and policies, providing an effective conceptual framework for coherence in policy objectives, instruments, and implementation for effective landscape governance. We empirically examined coherence across and within the RRI, as well as the extent to which the RRI is consistent with LAs. We analyzed the programs with a focus on territorial development (PDETs), and the RRI's implementation mechanism in four municipalities in the Department of Caquetá, Colombia. The study identified incoherence within PDET initiatives and problem and vision statements, specifically regarding land initiatives, although stronger coherence was noted between the RRI and PDET vision statements. Our findings show that the current peacebuilding policy instruments in Colombia fall short of being consistent with LAs, especially in principles concerned with participation and rights in implementation.
     </div>
   </div>
 </div>
@@ -442,6 +501,68 @@ gtag('config', '', { 'anonymize_ip': true});
     </div>
     <div class="pub-abstract">
       This paper examines the effect of specialty coffee certification on household livelihood strategies and agricultural specialisation among smallholder coffee producers in Colombia. Using survey data and propensity score matching, we find that certified households exhibit higher levels of coffee specialisation and derive a larger share of income from coffee production. However, certification does not uniformly improve overall household welfare, suggesting that the benefits of certification are mediated by market access conditions and household-level characteristics.
+    </div>
+  </div>
+</div>
+
+<hr class="pub-divider">
+
+<!-- ==================== WORKING PAPERS ==================== -->
+<h2 class="pub-year-heading anchored" id="working-papers">Working Papers</h2>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="images/wp1-01.JPG" alt="Dairy value chain">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Silvopastoral systems in practice: Evidence from a dairy value chain intervention in Caquetá, Colombia</div>
+    <div class="pub-card-authors"><strong>Alexander Buriticá</strong></div>
+    <div class="pub-card-journal"><em>Working Paper</em></div>
+    <div class="pub-card-links">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:RGFaLdJalmkC" target="_blank" class="pub-btn">Scholar</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="images/wp2-01.jpg" alt="Community seed banks Ethiopia">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Impacts of Community Seed Banks on seed security and food access outcomes in Ethiopia: A multinomial logit analysis</div>
+    <div class="pub-card-authors">Mary Eyeniyeh Ngaiwi, <strong>Alexander Buriticá</strong>, Carolina González, Dejene Kassahun Mengistu, Eric Junior Bomdzele, Elisabetta Gotor, Augusto Castro-Nunez</div>
+    <div class="pub-card-journal"><em>Working Paper</em></div>
+    <div class="pub-card-links">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:BqipwSGYUEgC" target="_blank" class="pub-btn">Scholar</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="images/wp3.png" alt="Gender dynamics Colombia">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Gendered dynamics in Colombian public policy: Assessing impact and investment towards equitable development</div>
+    <div class="pub-card-authors"><strong>Alexander Buriticá</strong>, Diana Carolina Lopera, Maria Blanco, Jorge Rueda, Fanny Howland</div>
+    <div class="pub-card-journal"><em>Working Paper</em></div>
+    <div class="pub-card-links">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:hC7cP41nSMkC" target="_blank" class="pub-btn">Scholar</a>
+    </div>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="images/wp5-01.png" alt="FARC land markets">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">A case study of the FARC peace agreement impact on land markets in Caquetá, Colombia</div>
+    <div class="pub-card-authors">Manuel Moreno, <strong>Alexander Buriticá</strong>, Carolina González, Augusto Castro</div>
+    <div class="pub-card-journal"><em>Working Paper</em></div>
+    <div class="pub-card-links">
+      <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=es&amp;user=43WzRV4AAAAJ&amp;sortby=pubdate&amp;citation_for_view=43WzRV4AAAAJ:hFOr9nPyWt4C" target="_blank" class="pub-btn">Scholar</a>
+      <a href="https://cgspace.cgiar.org/items/e6e0703a-886b-4108-80c0-a9cc8f770a57" target="_blank" class="pub-btn">Slides</a>
     </div>
   </div>
 </div>

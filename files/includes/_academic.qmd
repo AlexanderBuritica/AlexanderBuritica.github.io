@@ -14,15 +14,7 @@
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-<!-- Dark mode: apply saved theme before paint -->
-<script>
-(function(){
-  var t = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', t);
-})();
-</script>
-
-<!-- Navbar scroll shadow + Dark mode toggle (runs after DOM ready) -->
+<!-- Navbar scroll shadow + Scroll animations -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Navbar scroll shadow
@@ -33,26 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Dark mode toggle button
-  var navRight = document.querySelector('.navbar-nav.navbar-nav-scroll.ms-auto');
-  if (!navRight) navRight = document.querySelector('.navbar .navbar-collapse');
-  if (navRight) {
-    var btn = document.createElement('button');
-    btn.className = 'theme-toggle';
-    btn.title = 'Toggle dark mode';
-    btn.innerHTML = document.documentElement.getAttribute('data-theme') === 'dark'
-      ? '<i class="fa-solid fa-sun"></i>'
-      : '<i class="fa-solid fa-moon"></i>';
-    btn.addEventListener('click', function() {
-      var current = document.documentElement.getAttribute('data-theme');
-      var next = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      btn.innerHTML = next === 'dark'
-        ? '<i class="fa-solid fa-sun"></i>'
-        : '<i class="fa-solid fa-moon"></i>';
+  // Scroll fade-in animations
+  var targets = document.querySelectorAll('.home-section, .feat-card, .cv-item, .ra-card, .tl-item, .pub-card');
+  targets.forEach(function(el) { el.classList.add('fade-in'); });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-    navRight.appendChild(btn);
-  }
+  }, { threshold: 0.08 });
+
+  targets.forEach(function(el) { observer.observe(el); });
 });
 </script>

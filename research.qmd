@@ -1,0 +1,94 @@
+---
+title: ""
+pagetitle: "Research — Alexander Buriticá"
+description-meta: "Research areas: impact evaluation, sustainable agriculture, food security, and policy coherence"
+title-block-banner: false
+toc: false
+page-layout: full
+css: styles.css
+---
+
+```{=html}
+<section class="research-page">
+  <h1 class="research-page-title">Research</h1>
+  <p class="research-page-subtitle">My research uses causal inference methods to address agricultural, environmental, and policy challenges in developing countries, with a focus on Latin America and Sub-Saharan Africa.</p>
+
+  <!-- ═══ Area 1 ═══ -->
+  <div class="ra-card">
+    <div class="ra-visual">
+      <img src="files/images/journals/p2026_1.png" alt="Silvopastoral systems">
+    </div>
+    <div class="ra-body">
+      <span class="ra-label"><i class="fa-solid fa-seedling"></i> Research Area</span>
+      <h2>Sustainable Agriculture &amp; Deforestation</h2>
+      <p>
+        How can agricultural intensification reduce deforestation without unintended rebound effects? I study the adoption and impacts of silvopastoral systems, zero-deforestation agreements, and sustainable livestock practices in the Colombian Amazon. Using farm-level panel data and quasi-experimental designs (DiD, CSDID, event-study), my work evaluates whether productivity gains translate into genuine conservation outcomes or inadvertently incentivize further land clearing.
+      </p>
+      <div class="ra-papers">
+        <span class="ra-papers-label">Key papers:</span>
+        <a href="https://doi.org/10.1016/j.agsy.2025.104525" target="_blank">Silvopastoral &amp; zero deforestation (Agric. Systems, 2026)</a>
+        <a href="https://doi.org/10.1038/s41598-024-63697-2" target="_blank">Sustainable livestock (Scientific Reports, 2024)</a>
+        <a href="https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/csp2.495" target="_blank">Unintended deforestation risk (Cons. Sci. &amp; Practice, 2021)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Area 2 ═══ -->
+  <div class="ra-card ra-card-reverse">
+    <div class="ra-visual">
+      <img src="files/images/journals/p2025_1.png" alt="Impact evaluation">
+    </div>
+    <div class="ra-body">
+      <span class="ra-label"><i class="fa-solid fa-chart-line"></i> Research Area</span>
+      <h2>Impact Evaluation &amp; Applied Econometrics</h2>
+      <p>
+        I apply rigorous causal inference methods—including difference-in-differences, randomization inference, instrumental variables, and RCT designs—to evaluate development programs and environmental policies. Current work includes a multi-country impact evaluation of Climate Information Services and Climate-Smart Agriculture across six African countries (Kenya, Mali, Ethiopia, Senegal, Ghana, Zambia), as well as research on how environmental shocks like heat exposure affect human capital outcomes.
+      </p>
+      <div class="ra-papers">
+        <span class="ra-papers-label">Key papers:</span>
+        <a href="https://doi.org/10.1007/s10640-025-01011-y" target="_blank">Heat &amp; high-stakes evaluations (Env. &amp; Resource Econ., 2025)</a>
+        <a href="https://doi.org/10.1108/JADEE-05-2025-0217" target="_blank">Coffee quality signals (JADEE, 2026)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Area 3 ═══ -->
+  <div class="ra-card">
+    <div class="ra-visual">
+      <img src="files/images/journals/p2026_3.png" alt="Food security Amazon">
+    </div>
+    <div class="ra-body">
+      <span class="ra-label"><i class="fa-solid fa-bowl-food"></i> Research Area</span>
+      <h2>Food Security &amp; Rural Livelihoods</h2>
+      <p>
+        What determines food security in remote, forest-dependent communities? I study the relationship between forest access, ethnic group membership, and dietary diversity in indigenous and non-indigenous households of the Colombian and Peruvian Amazon. I also investigate how value chain mechanisms—such as coffee cupping protocols and specialty certifications—affect smallholder prices, market access, and livelihood strategies.
+      </p>
+      <div class="ra-papers">
+        <span class="ra-papers-label">Key papers:</span>
+        <a href="https://link.springer.com/article/10.1007/s12571-025-01639-0" target="_blank">Food security &amp; forest access (Food Security, 2026)</a>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0306919215000810" target="_blank">Coffee certification &amp; livelihoods (Food Policy, 2015)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Area 4 ═══ -->
+  <div class="ra-card ra-card-reverse">
+    <div class="ra-visual">
+      <img src="files/images/conflicto3.png" alt="Policy coherence peacebuilding">
+    </div>
+    <div class="ra-body">
+      <span class="ra-label"><i class="fa-solid fa-scale-balanced"></i> Research Area</span>
+      <h2>Policy Coherence &amp; Peacebuilding</h2>
+      <p>
+        How coherent are post-conflict policies designed to transform rural landscapes? I analyze policy coherence within Colombia's Integrated Rural Reform (RRI) peacebuilding framework using landscape approaches. This line of research examines whether cross-sectoral policy instruments—including territorial development programs (PDETs)—are internally consistent and aligned with principles of participation, rights, and effective landscape governance in conflict-affected regions like Caquetá.
+      </p>
+      <div class="ra-papers">
+        <span class="ra-papers-label">Key papers:</span>
+        <a href="https://www.ecologyandsociety.org/vol31/iss2/art1/" target="_blank">Landscape approaches &amp; peacebuilding (Ecology &amp; Society, 2026)</a>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0143622817301662" target="_blank">Land grievances &amp; forest cover (Applied Geography, 2017)</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+```

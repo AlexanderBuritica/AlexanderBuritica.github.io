@@ -5,7 +5,7 @@
 
 :root {
   --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans: 'Inter', 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --color-text: #1d1d1f;
   --color-text-secondary: #555;
   --color-accent: #1b5e5e;
@@ -13,6 +13,7 @@
   --color-border: rgba(0, 0, 0, 0.1);
   --color-bg: #ffffff;
   --color-bg-subtle: #f8f9fa;
+  --color-card: #ffffff;
   --radius-sm: 8px;
   --radius-md: 12px;
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -47,6 +48,14 @@ a:hover { color: #134545; }
   border-bottom: 1px solid var(--color-border) !important;
   box-shadow: none !important;
   font-family: var(--font-sans);
+  position: sticky !important;
+  top: 0;
+  z-index: 1030;
+  background: var(--color-bg) !important;
+  transition: box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
 }
 .navbar-brand { font-family: var(--font-serif); font-weight: 600; font-size: 1.2rem; }
 .navbar .nav-link { font-weight: 500; font-size: 0.95rem; text-transform: none; letter-spacing: 0.1px; }
@@ -58,9 +67,15 @@ a:hover { color: #134545; }
    HERO — Eduard style
    ============================================================ */
 .hero-eduard {
-  background: var(--color-bg);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-accent-light) 100%);
   border-bottom: 1px solid var(--color-border);
   padding: 2.5rem 2rem 2rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-eduard-inner {
@@ -116,7 +131,7 @@ a:hover { color: #134545; }
 }
 
 .hero-eduard-icons a {
-  color: #333;
+  color: var(--color-text);
   font-size: 1.65rem;
   transition: color 0.15s ease, transform 0.15s ease;
 }
@@ -154,8 +169,13 @@ a:hover { color: #134545; }
   height: 230px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--color-border);
-  box-shadow: var(--shadow-md);
+  border: 4px solid var(--color-bg);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12), 0 0 0 1px var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-eduard-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.16), 0 0 0 1px var(--color-border);
 }
 
 .hero-eduard-meta {
@@ -692,17 +712,17 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
 .feat-card {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   overflow: hidden;
   text-decoration: none !important;
   color: var(--color-text) !important;
-  transition: box-shadow 0.2s, transform 0.15s;
+  transition: box-shadow 0.25s, transform 0.2s;
 }
 .feat-card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
 }
 
 .feat-img {
@@ -852,14 +872,15 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
 
 /* Content card */
 .tl-content {
-  background: #fff;
+  background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: 1rem 1.2rem;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.25s, transform 0.2s;
 }
 .tl-content:hover {
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
 }
 .tl-content h3 {
   font-family: var(--font-sans);
@@ -970,3 +991,168 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   .tl-cert-grid { grid-template-columns: 1fr; }
   .timeline-page { padding: 1rem; }
 }
+
+/* ============================================================
+   RESEARCH PAGE
+   ============================================================ */
+.research-page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+.research-page-title {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.research-page-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 720px;
+}
+
+/* Research area card */
+.ra-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.ra-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.ra-card-reverse {
+  grid-template-columns: 1fr 280px;
+}
+.ra-card-reverse .ra-visual {
+  order: 2;
+}
+.ra-card-reverse .ra-body {
+  order: 1;
+}
+
+/* Image */
+.ra-visual img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+/* Body */
+.ra-body h2 {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.3rem 0 0.6rem;
+  color: var(--color-text);
+}
+.ra-body p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.8rem;
+}
+
+/* Label */
+.ra-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+}
+.ra-label i {
+  margin-right: 0.25rem;
+}
+
+/* Key papers */
+.ra-papers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.ra-papers-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.1rem;
+}
+.ra-papers a {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--color-accent);
+  line-height: 1.4;
+  transition: border-color 0.15s, padding-left 0.15s;
+}
+.ra-papers a:hover {
+  border-left-width: 3px;
+  padding-left: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .ra-card, .ra-card-reverse {
+    grid-template-columns: 1fr;
+  }
+  .ra-card-reverse .ra-visual { order: 0; }
+  .ra-card-reverse .ra-body { order: 0; }
+  .ra-visual img { height: 160px; }
+}
+
+/* ============================================================
+   GOOGLE SCHOLAR BADGE
+   ============================================================ */
+.gs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-decoration: none !important;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+.gs-badge:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.gs-badge i {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   SCROLL ANIMATIONS
+   ============================================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.fade-in:nth-child(2) { transition-delay: 0.08s; }
+.fade-in:nth-child(3) { transition-delay: 0.16s; }
+.fade-in:nth-child(4) { transition-delay: 0.24s; }

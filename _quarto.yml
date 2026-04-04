@@ -15,20 +15,16 @@ website:
   navbar:
     background: light
     left:
-      - text: News
-        menu:
-          - text: News
-            href: news2.qmd
-          - text: Contact
-            href: contact.qmd
       - text: Research
-        menu:
-          - text: Publications
-            href: publications.qmd
-          - text: Working Papers
-            href: publications2.qmd
+        href: research.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: News
+        href: news2.qmd
       - text: Field Work
         href: speakers.qmd
+      - text: Contact
+        href: contact.qmd
 
     right:
       - text: CV
