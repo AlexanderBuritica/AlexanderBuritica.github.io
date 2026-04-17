@@ -47,6 +47,7 @@ css: styles.css
       <div class="ra-papers">
         <span class="ra-papers-label">Key papers:</span>
         <a href="https://doi.org/10.1007/s10640-025-01011-y" target="_blank">Heat &amp; high-stakes evaluations (Env. &amp; Resource Econ., 2025)</a>
+        <a href="https://doi.org/10.1080/23311932.2026.2651483" target="_blank">Ecuador's input subsidy for rice (Cogent Food &amp; Agric., 2026)</a>
         <a href="https://doi.org/10.1108/JADEE-05-2025-0217" target="_blank">Coffee quality signals (JADEE, 2026)</a>
       </div>
     </div>
@@ -85,6 +86,7 @@ css: styles.css
       <div class="ra-papers">
         <span class="ra-papers-label">Key papers:</span>
         <a href="https://www.ecologyandsociety.org/vol31/iss2/art1/" target="_blank">Landscape approaches &amp; peacebuilding (Ecology &amp; Society, 2026)</a>
+        <a href="https://doi.org/10.1016/j.jrurstud.2026.104167" target="_blank">Gender &amp; land restitution (J. Rural Studies, 2026)</a>
         <a href="https://www.sciencedirect.com/science/article/abs/pii/S0143622817301662" target="_blank">Land grievances &amp; forest cover (Applied Geography, 2017)</a>
       </div>
     </div>

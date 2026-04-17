@@ -94,6 +94,42 @@ toc: false
   </div>
 </div>
 
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="files/images/journals/p2026_5.png" alt="Ecuador rice subsidy">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Technology access without impact? An evaluation of Ecuador's input subsidy program for rice</div>
+    <div class="pub-card-authors"><strong>Alexander Buriticá Casanova</strong>, Diego Armando Marín Salazar, Nicolás Fajardo Reyes, Robert Andrade</div>
+    <div class="pub-card-journal"><em>Cogent Food & Agriculture</em>, vol. 12(1), 2651483, 2026</div>
+    <div class="pub-card-links">
+      <button class="pub-btn pub-abs-toggle" onclick="toggleAbstract(this)">ABS</button>
+      <a href="https://doi.org/10.1080/23311932.2026.2651483" target="_blank" class="pub-btn">Journal</a>
+    </div>
+    <div class="pub-abstract">
+      This study assesses Ecuador's Agricultural Input Kit (KIA) program, which distributed over 1 million subsidized packages of certified seeds, fertilizers, and agrochemicals to improve rice productivity. Using household survey data collected in two waves (2014/2015 and 2019/2020), we estimate causal effects on adoption, yields, and costs using a Difference-in-Differences approach with Propensity Score Matching. Results show a 37% increase in improved variety adoption among large farms, but no significant yield effects and an 18% decline in adoption among smallholders. These heterogeneous impacts reflect persistent constraints including credit inaccessibility, lack of irrigation, and weak extension systems.
+    </div>
+  </div>
+</div>
+
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="files/images/journals/p2026_6.png" alt="Land restitution gender">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Rural women's voices and gender dynamics in Colombian land restitution policy: A case study review in Valle del Cauca, Colombia</div>
+    <div class="pub-card-authors">Maria Blanco, Fanny Howland, <strong>Alexander Buriticá</strong>, Carolina González</div>
+    <div class="pub-card-journal"><em>Journal of Rural Studies</em>, vol. 124, 104167, 2026</div>
+    <div class="pub-card-links">
+      <button class="pub-btn pub-abs-toggle" onclick="toggleAbstract(this)">ABS</button>
+      <a href="https://doi.org/10.1016/j.jrurstud.2026.104167" target="_blank" class="pub-btn">Journal</a>
+    </div>
+    <div class="pub-abstract">
+      Colombia's Land Restitution Program seeks to restore land rights to millions displaced by decades of armed conflict. Through a gender lens, this study examines how the design and implementation of the program shapes policy outcomes and women's experiences. We apply qualitative methods and cluster analysis to in-depth interviews with 19 female beneficiaries in Valle del Cauca. Cluster analysis reveals three patterns: women formally restituted but materially excluded, women compensated but with unmet needs, and women achieving substantial empowerment. The study finds that policies may symbolically include women but frequently fail to enable real empowerment, particularly when intersectional factors such as age and household category are ignored.
+    </div>
+  </div>
+</div>
+
 <hr class="pub-divider">
 
 <!-- ==================== 2025 ==================== -->
