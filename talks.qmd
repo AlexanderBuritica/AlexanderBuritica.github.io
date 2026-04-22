@@ -1,0 +1,126 @@
+---
+title: ""
+pagetitle: "Talks & Presentations — Alexander Buriticá"
+description-meta: "Conference presentations, invited talks, and workshops by Alexander Buriticá Casanova"
+title-block-banner: false
+toc: false
+page-layout: full
+css: styles.css
+---
+
+```{=html}
+<section class="talks-page">
+  <h1 class="talks-page-title">Talks &amp; Presentations</h1>
+  <p class="talks-page-subtitle">Conference papers, invited seminars, and policy engagement. Slides are linked when available.</p>
+
+  <!-- ═══ 2024 ═══ -->
+  <h2 class="talks-year">2024</h2>
+
+  <div class="talk-item">
+    <div class="talk-date">Dec 2024</div>
+    <div class="talk-body">
+      <h3>Silvopastoral projects in Colombia: Impacts on livestock productivity and deforestation</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT, Palmira</p>
+      <a href="https://cgspace.cgiar.org/items/43c1e40e-9f38-4a64-9b89-f65d2f96c584" target="_blank" class="tl-link">Slides (CGSpace) →</a>
+    </div>
+  </div>
+
+  <div class="talk-item">
+    <div class="talk-date">2024</div>
+    <div class="talk-body">
+      <h3>Rice varietal innovation in Colombia: Adoption, seed systems, and pathways to scale</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT</p>
+      <a href="https://cgspace.cgiar.org/items/d09e4c98-2a28-4dbc-b0eb-de2ca5605281" target="_blank" class="tl-link">Slides (CGSpace) →</a>
+    </div>
+  </div>
+
+  <div class="talk-item">
+    <div class="talk-date">2024</div>
+    <div class="talk-body">
+      <h3>Advancing sustainable silvopastoral practices for zero deforestation in the Colombian Amazon</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT</p>
+      <a href="https://cgspace.cgiar.org/items/a6102866-08ec-49be-b315-a5ad4980d964" target="_blank" class="tl-link">Slides (CGSpace) →</a>
+    </div>
+  </div>
+
+  <div class="talk-item">
+    <div class="talk-date">2024</div>
+    <div class="talk-body">
+      <h3>Gendered dynamics in Colombian public policy: Assessing impact and investment</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT</p>
+      <a href="https://cgspace.cgiar.org/items/caf502b1-e423-48de-ad65-bb87b856e40b" target="_blank" class="tl-link">Slides (CGSpace) →</a>
+    </div>
+  </div>
+
+  <div class="talk-item">
+    <div class="talk-date">2024</div>
+    <div class="talk-body">
+      <h3>Strengthening food security through Community Seed Banks in conflict-affected Ethiopia</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT</p>
+      <a href="https://cgspace.cgiar.org/items/c3f9a4ea-0c9a-445a-8685-0952fe22bf17" target="_blank" class="tl-link">Slides (CGSpace) →</a>
+    </div>
+  </div>
+
+  <div class="talk-item">
+    <div class="talk-date">2024</div>
+    <div class="talk-body">
+      <h3>Inclusion of gender and intersectionality in land, food and climate change policy: A feminist institutional approach</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT</p>
+      <a href="https://cgspace.cgiar.org/items/c6440c81-ce74-46ae-be19-160ade5436bb" target="_blank" class="tl-link">Slides (CGSpace) →</a>
+    </div>
+  </div>
+
+  <div class="talk-item">
+    <div class="talk-date">2024</div>
+    <div class="talk-body">
+      <h3>Climate-information systems as a tool to promote women's adoption of climate-smart agricultural practices</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT</p>
+      <a href="https://cgspace.cgiar.org/items/bbd47286-9aff-4c86-8675-db76510cb404" target="_blank" class="tl-link">Slides (CGSpace) →</a>
+    </div>
+  </div>
+
+  <div class="talk-item">
+    <div class="talk-date">2024</div>
+    <div class="talk-body">
+      <h3>Gender inclusion and intersectionality in policies related to climate change, land and food — Colombian case</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT</p>
+      <a href="https://cgspace.cgiar.org/items/7becc789-97a6-446e-a21f-ff95ced15564" target="_blank" class="tl-link">Slides (CGSpace) →</a>
+    </div>
+  </div>
+
+  <!-- ═══ 2023 ═══ -->
+  <h2 class="talks-year">2023</h2>
+
+  <div class="talk-item talk-highlight">
+    <div class="talk-date">Nov 2023</div>
+    <div class="talk-body">
+      <h3>EXPOSENA 2023 — Palmira, Colombia</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> SENA, Palmira, Valle del Cauca</p>
+      <p class="talk-desc">Bioeconomy, Food Security, and Sustainability: Contributions to Sustainable Rural Development. Presented findings from "Food Systems in Colombia: Coherence in Water, Land, and Food Policies."</p>
+      <a href="https://alliancebioversityciat.org/stories/connecting-science-and-innovation-insights-exposena-2023" target="_blank" class="tl-link">Alliance blog →</a>
+    </div>
+  </div>
+
+  <div class="talk-item">
+    <div class="talk-date">2023</div>
+    <div class="talk-body">
+      <h3>Introducción a la evaluación de impacto basada en contrafactual</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Alliance of Bioversity International and CIAT (internal training)</p>
+      <p class="talk-desc">Training module: when to use impact evaluation, which methods, and what data.</p>
+      <a href="https://cgspace.cgiar.org/items/c917623f-0bf1-4f10-b23d-51392de83e78" target="_blank" class="tl-link">Materials (CGSpace) →</a>
+    </div>
+  </div>
+
+  <!-- ═══ 2019 ═══ -->
+  <h2 class="talks-year">2019</h2>
+
+  <div class="talk-item">
+    <div class="talk-date">May 2019</div>
+    <div class="talk-body">
+      <h3>INFER Workshop on Economic Development Thinking the Environment</h3>
+      <p class="talk-venue"><i class="fa-solid fa-location-dot"></i> Coimbra, Portugal</p>
+    </div>
+  </div>
+
+</section>
+```

@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/projects.html",
+    "items": []
+  },
+  {
+    "listing": "/people.html",
+    "items": []
+  },
+  {
     "listing": "/posts.html",
     "items": [
       "/posts/food-security-amazon/index.html",
@@ -7,13 +15,5 @@
       "/posts/paper-title/index.html",
       "/posts/news-title/index.html"
     ]
-  },
-  {
-    "listing": "/people.html",
-    "items": []
-  },
-  {
-    "listing": "/projects.html",
-    "items": []
   }
 ]

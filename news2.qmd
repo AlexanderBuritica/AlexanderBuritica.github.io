@@ -126,21 +126,6 @@ css: styles.css
     <div class="tl-item">
       <div class="tl-dot tl-talk"></div>
       <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Conference</span>
-        <span class="tl-date">September 2024</span>
-        <h3>Tropentag 2024 — Vienna, Austria</h3>
-        <p>Presentations on gender and intersectionality in agricultural policy, FARC peace agreement impacts on land markets, and zero deforestation agreements in Colombia.</p>
-        <div class="tl-sublinks">
-          <a href="https://cgspace.cgiar.org/items/93ff5ea3-7b26-4210-93ae-680f01b7a3da" target="_blank" class="tl-link">Gender &amp; intersectionality →</a>
-          <a href="https://cgspace.cgiar.org/items/92831ed2-844c-4bfd-964b-3ecabc8c9f81" target="_blank" class="tl-link">FARC &amp; land markets →</a>
-          <a href="https://cgspace.cgiar.org/items/f2deb881-371b-4993-8604-e26c2fd63566" target="_blank" class="tl-link">Zero deforestation agreements →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
         <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
         <span class="tl-date">2024</span>
         <h3>Rice varietal innovation in Colombia: Adoption, seed systems, and pathways to scale</h3>

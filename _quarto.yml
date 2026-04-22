@@ -8,7 +8,7 @@ author-meta: "Alexander Buriticá Casanova"
 
 website:
   title: "Alexander Buriticá"
-  favicon: "files/images/favicon.svg"
+  favicon: "files/images/icon.PNG"
   image: "files/images/Alex_Buritaca.JPG"
   description: "Agricultural and environmental economist."
 
@@ -19,6 +19,10 @@ website:
         href: research.qmd
       - text: Publications
         href: publications.qmd
+      - text: Talks
+        href: talks.qmd
+      - text: Teaching
+        href: teaching.qmd
       - text: News
         href: news2.qmd
       - text: Field Work
