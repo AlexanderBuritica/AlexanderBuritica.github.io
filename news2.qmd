@@ -1,7 +1,7 @@
 ---
 title: ""
 pagetitle: "News & Highlights — Alexander Buriticá"
-description-meta: "Awards, conference presentations, and professional development"
+description-meta: "Awards, grants, media coverage, and milestones"
 title-block-banner: false
 toc: false
 page-layout: full
@@ -11,139 +11,12 @@ css: styles.css
 ```{=html}
 <section class="timeline-page">
   <h1 class="timeline-title">News &amp; Highlights</h1>
-  <p class="timeline-subtitle">Publications, conferences, policy engagement, and professional development</p>
+  <p class="timeline-subtitle">Awards, grants, policy engagement, reports, and media coverage. For publications see <a href="publications.html">Publications</a>; for conference presentations see <a href="talks.html">Talks</a>.</p>
 
   <div class="timeline">
 
-    <!-- ══════════ 2026 ══════════ -->
-    <div class="tl-year">2026</div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-pub"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
-        <span class="tl-date">2026</span>
-        <h3>New paper in <em>Journal of Agribusiness in Developing and Emerging Economies</em></h3>
-        <p>Coffee cupping as a quality signal: Impacts on smallholder prices and market access in Colombia.</p>
-        <a href="https://doi.org/10.1108/JADEE-05-2025-0217" target="_blank" class="tl-link">DOI →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-pub"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
-        <span class="tl-date">2026</span>
-        <h3>New paper in <em>Agricultural Systems</em></h3>
-        <p>Advancing sustainable silvopastoral practices for achieving zero deforestation in the Colombian Amazon.</p>
-        <a href="https://doi.org/10.1016/j.agsy.2025.104525" target="_blank" class="tl-link">DOI →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-pub"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
-        <span class="tl-date">2026</span>
-        <h3>New paper in <em>Food Security</em></h3>
-        <p>Food security and forest access in the Colombian and Peruvian Amazon.</p>
-        <a href="publications.html" class="tl-link">See publications →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-pub"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
-        <span class="tl-date">2026</span>
-        <h3>New paper in <em>Ecology and Society</em></h3>
-        <p>Using landscape approaches to understand peacebuilding policy coherence: a case study of Caquetá, Colombia.</p>
-        <a href="https://www.ecologyandsociety.org/vol31/iss2/art1/" target="_blank" class="tl-link">Journal →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-pub"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
-        <span class="tl-date">April 2026</span>
-        <h3>New paper in <em>Cogent Food & Agriculture</em></h3>
-        <p>Technology access without impact? An evaluation of Ecuador's input subsidy program for rice.</p>
-        <a href="https://doi.org/10.1080/23311932.2026.2651483" target="_blank" class="tl-link">Journal →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-pub"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
-        <span class="tl-date">April 2026</span>
-        <h3>New paper in <em>Journal of Rural Studies</em></h3>
-        <p>Rural women's voices and gender dynamics in Colombian land restitution policy: A case study review in Valle del Cauca.</p>
-        <a href="https://doi.org/10.1016/j.jrurstud.2026.104167" target="_blank" class="tl-link">Journal →</a>
-      </div>
-    </div>
-
-    <!-- ══════════ 2025 ══════════ -->
-    <div class="tl-year">2025</div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-pub"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
-        <span class="tl-date">2025</span>
-        <h3>New paper in <em>Environmental and Resource Economics</em></h3>
-        <p>Sweating bullets: Heat, high-stakes evaluations, and the role of incentives.</p>
-        <a href="https://doi.org/10.1007/s10640-025-01011-y" target="_blank" class="tl-link">DOI →</a>
-      </div>
-    </div>
-
     <!-- ══════════ 2024 ══════════ -->
     <div class="tl-year">2024</div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-pub"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
-        <span class="tl-date">2024</span>
-        <h3>New paper in <em>Scientific Reports</em></h3>
-        <p>Unlocking sustainable livestock production potential in the Colombian Amazon.</p>
-        <a href="https://doi.org/10.1038/s41598-024-63697-2" target="_blank" class="tl-link">DOI →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Conference</span>
-        <span class="tl-date">December 2024</span>
-        <h3>Silvopastoral projects in Colombia: Impacts on livestock productivity and deforestation</h3>
-        <p>Presentation at the Alliance of Bioversity International and CIAT.</p>
-        <a href="https://cgspace.cgiar.org/items/43c1e40e-9f38-4a64-9b89-f65d2f96c584" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
-        <span class="tl-date">2024</span>
-        <h3>Rice varietal innovation in Colombia: Adoption, seed systems, and pathways to scale</h3>
-        <p>Alliance of Bioversity International and CIAT.</p>
-        <a href="https://cgspace.cgiar.org/items/d09e4c98-2a28-4dbc-b0eb-de2ca5605281" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
-        <span class="tl-date">2024</span>
-        <h3>Advancing sustainable silvopastoral practices for achieving zero deforestation in the Colombian Amazon</h3>
-        <p>Alliance of Bioversity International and CIAT.</p>
-        <a href="https://cgspace.cgiar.org/items/a6102866-08ec-49be-b315-a5ad4980d964" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
 
     <div class="tl-item">
       <div class="tl-dot tl-report"></div>
@@ -151,6 +24,7 @@ css: styles.css
         <span class="tl-badge tl-badge-report"><i class="fa-solid fa-book"></i> Report</span>
         <span class="tl-date">2024</span>
         <h3>Evaluating Alliance Bioversity &amp; CIAT's role in transforming National Food Systems in Vietnam (2023–2030)</h3>
+        <p>MELIA study for the CGIAR CASP program on Climate Information Services.</p>
         <a href="https://cgspace.cgiar.org/items/0dc208ef-7d15-4ef6-8a23-b6f21ead2334" target="_blank" class="tl-link">CGSpace →</a>
       </div>
     </div>
@@ -161,57 +35,8 @@ css: styles.css
         <span class="tl-badge tl-badge-report"><i class="fa-solid fa-book"></i> Handbook</span>
         <span class="tl-date">2024</span>
         <h3>Methodological handbook for analyzing policy coherence: Enhancing synergies and avoiding redundancies</h3>
+        <p>Co-authored methodological guide for CGIAR and national partners.</p>
         <a href="https://cgspace.cgiar.org/items/4010e635-05f4-47eb-bb7a-7b7c6613145b" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
-        <span class="tl-date">2024</span>
-        <h3>Gendered dynamics in Colombian public policy: Assessing impact and investment towards equitable development</h3>
-        <a href="https://cgspace.cgiar.org/items/caf502b1-e423-48de-ad65-bb87b856e40b" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
-        <span class="tl-date">2024</span>
-        <h3>Strengthening food security outcomes through Community Seed Banks in conflict-affected Ethiopia</h3>
-        <a href="https://cgspace.cgiar.org/items/c3f9a4ea-0c9a-445a-8685-0952fe22bf17" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
-        <span class="tl-date">2024</span>
-        <h3>Inclusion of gender and intersectionality in land, food and climate change policy: A feminist institutional approach</h3>
-        <a href="https://cgspace.cgiar.org/items/c6440c81-ce74-46ae-be19-160ade5436bb" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
-        <span class="tl-date">2024</span>
-        <h3>Climate-information systems as a tool to promote women's adoption of climate-smart agricultural practices</h3>
-        <a href="https://cgspace.cgiar.org/items/bbd47286-9aff-4c86-8675-db76510cb404" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
-        <span class="tl-date">2024</span>
-        <h3>Gender inclusion and intersectionality in policies related to climate change, land and food issues — Colombian case</h3>
-        <a href="https://cgspace.cgiar.org/items/7becc789-97a6-446e-a21f-ff95ced15564" target="_blank" class="tl-link">CGSpace →</a>
       </div>
     </div>
 
@@ -221,10 +46,10 @@ css: styles.css
     <div class="tl-item">
       <div class="tl-dot tl-talk"></div>
       <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Presentation</span>
+        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Policy Engagement</span>
         <span class="tl-date">November 2023</span>
         <h3>EXPOSENA 2023 — Palmira, Colombia</h3>
-        <p>Bioeconomy, Food Security, and Sustainability: Contributions to Sustainable Rural Development in Valle del Cauca. Presented findings from "Food Systems in Colombia: Coherence in Water, Land, and Food Policies."</p>
+        <p>Invited presentation on Bioeconomy, Food Security, and Sustainability. Presented findings from "Food Systems in Colombia: Coherence in Water, Land, and Food Policies" to policymakers and stakeholders in Valle del Cauca.</p>
         <a href="https://alliancebioversityciat.org/stories/connecting-science-and-innovation-insights-exposena-2023" target="_blank" class="tl-link">Alliance blog →</a>
       </div>
     </div>
@@ -249,17 +74,6 @@ css: styles.css
       </div>
     </div>
 
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Training</span>
-        <span class="tl-date">2023</span>
-        <h3>Introducción a la evaluación de impacto basada en contrafactual</h3>
-        <p>En qué momento, para qué y con qué información.</p>
-        <a href="https://cgspace.cgiar.org/items/c917623f-0bf1-4f10-b23d-51392de83e78" target="_blank" class="tl-link">CGSpace →</a>
-      </div>
-    </div>
-
     <!-- ══════════ 2019 ══════════ -->
     <div class="tl-year">2019</div>
 
@@ -272,16 +86,6 @@ css: styles.css
         <p>International Coffee Organization (ICO). Award promoting high-quality research on emerging issues in the global coffee sector.</p>
         <p class="tl-related">Related paper: <em>Access to High Quality Coffee Markets: Possible for All?</em></p>
         <a href="http://www.ico.org/documents/cy2018-19/ed-2295e-call-for-award-competition.pdf" target="_blank" class="tl-link">Award call →</a>
-      </div>
-    </div>
-
-    <div class="tl-item">
-      <div class="tl-dot tl-talk"></div>
-      <div class="tl-content">
-        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Conference</span>
-        <span class="tl-date">May 2019</span>
-        <h3>INFER Workshop on Economic Development Thinking the Environment</h3>
-        <p>Coimbra, Portugal.</p>
       </div>
     </div>
 
