@@ -21,12 +21,8 @@ website:
         href: publications.qmd
       - text: Talks
         href: talks.qmd
-      - text: Teaching
-        href: teaching.qmd
       - text: News
         href: news2.qmd
-      - text: Field Work
-        href: speakers.qmd
       - text: Contact
         href: contact.qmd
 
