@@ -201,7 +201,7 @@ title-block-banner: false
   </div>
 
   <p class="selected-more">
-    See all <a href="publications.html">publications & working papers</a> · <a href="research.html">research areas</a> · <a href="news2.html">news & highlights</a>
+    See all <a href="publications.html">publications & working papers</a> · <a href="news2.html">news & highlights</a>
   </p>
 </section>
 ```
