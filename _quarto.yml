@@ -15,8 +15,6 @@ website:
   navbar:
     background: light
     left:
-      - text: About
-        href: about.qmd
       - text: Research
         href: research.qmd
       - text: Publications

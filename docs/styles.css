@@ -67,26 +67,10 @@ a:hover { color: #134545; }
    HERO — Eduard style
    ============================================================ */
 .hero-eduard {
-  position: relative;
   background: #ffffff;
   border-bottom: 1px solid var(--color-border);
   padding: 2.5rem 2rem 2rem;
   animation: fadeInUp 0.6s ease-out;
-  overflow: hidden;
-}
-.hero-eduard::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('files/images/fieldwork/a16.jpeg');
-  background-size: cover;
-  background-position: center 35%;
-  opacity: 0.08;
-  z-index: 0;
-}
-.hero-eduard-inner {
-  position: relative;
-  z-index: 1;
 }
 
 @keyframes fadeInUp {
@@ -139,6 +123,18 @@ a:hover { color: #134545; }
 
 .hero-eduard-affiliation a {
   color: var(--color-accent);
+}
+
+/* Location chip */
+.hero-eduard-location {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin: -0.6rem 0 1rem 0;
+  padding-left: 1rem;
+}
+.hero-eduard-location i {
+  color: var(--color-accent);
+  margin-right: 0.3rem;
 }
 
 /* Icons — circular buttons */

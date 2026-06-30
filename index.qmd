@@ -22,6 +22,7 @@ title-block-banner: false
       <p class="hero-eduard-affiliation">
         <a href="https://alliancebioversityciat.org/" target="_blank">Alliance of Bioversity International and CIAT</a>.
       </p>
+      <p class="hero-eduard-location"><i class="fa-solid fa-location-dot"></i> Cali, Colombia</p>
 
       <div class="hero-eduard-icons">
         <a href="mailto:a.buritica@cgiar.org" title="Email"><i class="fa-solid fa-envelope"></i></a>
