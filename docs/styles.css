@@ -89,13 +89,15 @@ a:hover { color: #134545; }
 
 /* Name */
 .hero-eduard-name {
-  font-family: var(--font-sans);
-  font-size: 2.6rem;
-  font-weight: 800;
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
   color: var(--color-text);
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.2rem 0;
   letter-spacing: -0.5px;
-  line-height: 1.15;
+  line-height: 1.1;
+  padding-left: 1rem;
+  border-left: 4px solid var(--color-accent);
 }
 
 .hero-name-light {
@@ -104,9 +106,10 @@ a:hover { color: #134545; }
 
 /* Subtitle */
 .hero-eduard-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--color-text);
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0.15rem 0;
+  padding-left: 1rem;
 }
 
 /* Affiliation */
@@ -114,30 +117,40 @@ a:hover { color: #134545; }
   font-size: 1rem;
   font-style: italic;
   color: var(--color-accent);
-  margin: 0 0 0.8rem 0;
+  margin: 0 0 1rem 0;
+  padding-left: 1rem;
 }
 
 .hero-eduard-affiliation a {
   color: var(--color-accent);
 }
 
-/* Icons */
+/* Icons — circular buttons */
 .hero-eduard-icons {
   display: flex;
-  gap: 0.8rem;
+  gap: 0.7rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1.2rem;
+  padding-left: 1rem;
   border-bottom: 1px solid var(--color-border);
 }
 
 .hero-eduard-icons a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f2f4f4;
   color: var(--color-text);
-  font-size: 1.65rem;
-  transition: color 0.15s ease, transform 0.15s ease;
+  font-size: 1.1rem;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
 }
 
 .hero-eduard-icons a:hover {
-  color: var(--color-accent);
+  background: var(--color-accent);
+  color: #fff;
   transform: translateY(-2px);
 }
 
@@ -145,6 +158,7 @@ a:hover { color: #134545; }
 .hero-eduard-bio {
   font-size: 0.97rem;
   line-height: 1.75;
+  padding-left: 1rem;
 }
 
 .hero-eduard-bio p {
@@ -155,27 +169,28 @@ a:hover { color: #134545; }
   font-weight: 650;
 }
 
-/* Right: Photo + meta */
+/* Right: Photo + actions */
 .hero-eduard-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.9rem;
   padding-top: 0.5rem;
 }
 
+/* Square photo (Variant 2 style) */
 .hero-eduard-photo {
-  width: 300px;
-  height: 300px;
+  width: 290px;
+  height: 330px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid var(--color-bg);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12), 0 0 0 1px var(--color-border);
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.14);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .hero-eduard-photo:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.16), 0 0 0 1px var(--color-border);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.18);
 }
 
 .hero-eduard-meta {
@@ -194,8 +209,8 @@ a:hover { color: #134545; }
     grid-template-columns: 1fr;
   }
   .hero-eduard-right { order: -1; }
-  .hero-eduard-photo { width: 240px; height: 240px; }
-  .hero-eduard-name { font-size: 2rem; }
+  .hero-eduard-photo { width: 240px; height: 280px; }
+  .hero-eduard-name { font-size: 2.3rem; }
   .hero-eduard-icons { justify-content: center; }
   .hero-eduard-bio { text-align: center; }
 }
@@ -1144,21 +1159,20 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.3rem 0.7rem;
-  background: var(--color-bg-subtle);
+  padding: 0.35rem 0.85rem;
+  background: #f2f4f4;
   border: 1px solid var(--color-border);
   border-radius: 999px;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-text-secondary);
   text-decoration: none !important;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  margin-left: 0.3rem;
-  vertical-align: middle;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
 }
 .gs-badge:hover {
   border-color: var(--color-accent);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
 }
 .gs-badge i {
   color: var(--color-accent);
