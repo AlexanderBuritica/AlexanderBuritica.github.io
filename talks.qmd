@@ -9,9 +9,15 @@ css: styles.css
 ---
 
 ```{=html}
+<div class="page-banner" style="background-image:url('files/images/fieldwork/a37.jpeg');">
+  <div class="page-banner-overlay">
+    <h1 class="page-banner-title">Talks &amp; Presentations</h1>
+    <p class="page-banner-sub">Conference papers, invited seminars, and policy engagement</p>
+  </div>
+</div>
+
 <section class="talks-page">
-  <h1 class="talks-page-title">Talks &amp; Presentations</h1>
-  <p class="talks-page-subtitle">Conference papers, invited seminars, and policy engagement. Slides are linked when available.</p>
+  <p class="talks-page-subtitle">Slides are linked when available.</p>
 
   <!-- ═══ 2024 ═══ -->
   <h2 class="talks-year">2024</h2>

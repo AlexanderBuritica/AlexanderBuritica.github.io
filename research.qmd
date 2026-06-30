@@ -35,7 +35,7 @@ css: styles.css
   <!-- ═══ Area 1 ═══ -->
   <div class="ra-card">
     <div class="ra-visual">
-      <img src="files/images/journals/p2026_1.png" alt="Silvopastoral systems">
+      <img src="files/images/fieldwork/a11.jpg" alt="Technology adoption">
     </div>
     <div class="ra-body">
       <span class="ra-label"><i class="fa-solid fa-seedling"></i> Research Area</span>
@@ -55,7 +55,7 @@ css: styles.css
   <!-- ═══ Area 2 ═══ -->
   <div class="ra-card ra-card-reverse">
     <div class="ra-visual">
-      <img src="files/images/journals/p2025_1.png" alt="Impact evaluation">
+      <img src="files/images/fieldwork/a22.jpeg" alt="Impact evaluation">
     </div>
     <div class="ra-body">
       <span class="ra-label"><i class="fa-solid fa-chart-line"></i> Research Area</span>
@@ -75,7 +75,7 @@ css: styles.css
   <!-- ═══ Area 3 ═══ -->
   <div class="ra-card">
     <div class="ra-visual">
-      <img src="files/images/journals/p2026_3.png" alt="Food security Amazon">
+      <img src="files/images/fieldwork/a13.jpeg" alt="Food security">
     </div>
     <div class="ra-body">
       <span class="ra-label"><i class="fa-solid fa-bowl-food"></i> Research Area</span>
@@ -95,7 +95,7 @@ css: styles.css
   <!-- ═══ Area 4 ═══ -->
   <div class="ra-card ra-card-reverse">
     <div class="ra-visual">
-      <img src="files/images/conflicto3.png" alt="Policy coherence peacebuilding">
+      <img src="files/images/fieldwork/a30.jpeg" alt="Policy coherence peacebuilding">
     </div>
     <div class="ra-body">
       <span class="ra-label"><i class="fa-solid fa-scale-balanced"></i> Research Area</span>

@@ -9,9 +9,15 @@ css: styles.css
 ---
 
 ```{=html}
+<div class="page-banner" style="background-image:url('files/images/fieldwork/a16.jpeg');">
+  <div class="page-banner-overlay">
+    <h1 class="page-banner-title">News &amp; Highlights</h1>
+    <p class="page-banner-sub">Awards, grants, reports, and media coverage</p>
+  </div>
+</div>
+
 <section class="timeline-page">
-  <h1 class="timeline-title">News &amp; Highlights</h1>
-  <p class="timeline-subtitle">Awards, grants, policy engagement, reports, and media coverage. For publications see <a href="publications.html">Publications</a>; for conference presentations see <a href="talks.html">Talks</a>.</p>
+  <p class="timeline-subtitle">For publications see <a href="publications.html">Publications</a>; for conference presentations see <a href="talks.html">Talks</a>.</p>
 
   <div class="timeline">
 

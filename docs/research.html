@@ -120,22 +120,34 @@ document.addEventListener('DOMContentLoaded', function() {
   }, { threshold: 0.08 });
 
   targets.forEach(function(el) { observer.observe(el); });
+
+  // Inject mini fieldwork gallery into footer (all pages)
+  var footer = document.querySelector('.nav-footer .quarto-secondary-nav, .nav-footer .nav-footer-center, .nav-footer');
+  var footerEl = document.querySelector('.nav-footer');
+  if (footerEl && !document.querySelector('.footer-gallery')) {
+    var imgs = ['a1.jpg','a13.jpeg','a30.jpeg','a18.jpeg'];
+    var gal = document.createElement('div');
+    gal.className = 'footer-gallery';
+    var inner = '<span class="footer-gallery-label">From the field</span><div class="footer-gallery-imgs">';
+    imgs.forEach(function(im){
+      inner += '<a href="speakers.html"><img src="files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
+    });
+    inner += '</div>';
+    gal.innerHTML = inner;
+    footerEl.parentNode.insertBefore(gal, footerEl);
+  }
 });
 </script>
 
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Research — Alexander Buriticá">
-<meta property="og:image" content="https://alexanderburitica.github.io/files/images/journals/p2026_1.png">
+<meta property="og:image" content="https://alexanderburitica.github.io/files/images/fieldwork/a11.jpg">
 <meta property="og:site_name" content="Alexander Buriticá">
-<meta property="og:image:alt" content="Silvopastoral systems">
-<meta property="og:image:height" content="411">
-<meta property="og:image:width" content="787">
+<meta property="og:image:alt" content="Technology adoption">
 <meta name="twitter:title" content="Research — Alexander Buriticá">
-<meta name="twitter:image" content="https://alexanderburitica.github.io/files/images/journals/p2026_1.png">
-<meta name="twitter:image:alt" content="Silvopastoral systems">
-<meta name="twitter:image-height" content="411">
-<meta name="twitter:image-width" content="787">
+<meta name="twitter:image" content="https://alexanderburitica.github.io/files/images/fieldwork/a11.jpg">
+<meta name="twitter:image:alt" content="Technology adoption">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -157,12 +169,24 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./research.html" aria-current="page"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./talks.html"> 
 <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./speakers.html"> 
+<span class="menu-text">Field Work</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./news2.html"> 
@@ -232,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <!-- ═══ Area 1 ═══ -->
   <div class="ra-card">
     <div class="ra-visual">
-      <img src="files/images/journals/p2026_1.png" alt="Silvopastoral systems">
+      <img src="files/images/fieldwork/a11.jpg" alt="Technology adoption">
     </div>
     <div class="ra-body">
       <span class="ra-label"><i class="fa-solid fa-seedling"></i> Research Area</span>
@@ -252,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <!-- ═══ Area 2 ═══ -->
   <div class="ra-card ra-card-reverse">
     <div class="ra-visual">
-      <img src="files/images/journals/p2025_1.png" alt="Impact evaluation">
+      <img src="files/images/fieldwork/a22.jpeg" alt="Impact evaluation">
     </div>
     <div class="ra-body">
       <span class="ra-label"><i class="fa-solid fa-chart-line"></i> Research Area</span>
@@ -272,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <!-- ═══ Area 3 ═══ -->
   <div class="ra-card">
     <div class="ra-visual">
-      <img src="files/images/journals/p2026_3.png" alt="Food security Amazon">
+      <img src="files/images/fieldwork/a13.jpeg" alt="Food security">
     </div>
     <div class="ra-body">
       <span class="ra-label"><i class="fa-solid fa-bowl-food"></i> Research Area</span>
@@ -292,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <!-- ═══ Area 4 ═══ -->
   <div class="ra-card ra-card-reverse">
     <div class="ra-visual">
-      <img src="files/images/conflicto3.png" alt="Policy coherence peacebuilding">
+      <img src="files/images/fieldwork/a30.jpeg" alt="Policy coherence peacebuilding">
     </div>
     <div class="ra-body">
       <span class="ra-label"><i class="fa-solid fa-scale-balanced"></i> Research Area</span>

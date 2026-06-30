@@ -1,9 +1,44 @@
 ---
-title: "About"
+title: ""
+pagetitle: "About — Alexander Buriticá"
+description-meta: "About Alexander Buriticá Casanova — agricultural economist and impact evaluation specialist"
+title-block-banner: false
+toc: false
+page-layout: full
+css: styles.css
 ---
 
-About this site
+```{=html}
+<section class="about-page">
 
-```{r}
-1 + 1
+  <div class="about-hero">
+    <img src="files/images/fieldwork/a4.jpg" alt="Alexander Buriticá in the field" class="about-hero-img">
+  </div>
+
+  <h1 class="about-title">About</h1>
+
+  <div class="about-body">
+    <p>
+      I am an agricultural and development economist whose work sits at the intersection of <strong>technology adoption, impact evaluation, and rural development</strong>. My path into research began at the <strong>Universidad del Valle</strong> in Cali, where I trained as an economist, and continued at the <strong>Universidad de los Andes</strong> in Bogotá, where I completed my MSc and PhD in Economics with a focus on applied microeconomics and causal inference.
+    </p>
+    <p>
+      For more than a decade I have worked with the <strong>Alliance of Bioversity International and CIAT</strong> (part of CGIAR), beginning as a research assistant and progressing to my current role as a Postdoctoral Fellow in the Applied Economics and Impact Evaluation group. This trajectory has given me a rare combination of skills: the econometric rigor of academic economics, paired with deep, hands-on experience designing and implementing field research in some of the most challenging rural contexts in Latin America and Sub-Saharan Africa.
+    </p>
+    <p>
+      My research asks a deceptively simple question: <em>when does access to agricultural technology actually improve farmers' lives?</em> Across studies of input subsidies in Ecuador, silvopastoral systems in the Colombian Amazon, coffee value chains, and climate-smart agriculture in Africa, I have found that the answer almost always depends on context—on credit, institutions, markets, and whether programs are designed with the most constrained farmers in mind. Documenting these conditions, and identifying what makes agricultural policy more effective and equitable, is the throughline of my work.
+    </p>
+    <p>
+      Beyond the numbers, I care deeply about the communities behind the data. Much of my fieldwork has taken place in post-conflict regions of Colombia, where questions of land, gender, and peacebuilding are inseparable from questions of agriculture. This has shaped a parallel research interest in policy coherence and the gendered outcomes of rural reform.
+    </p>
+    <p>
+      I teach applied statistics for decision-making and have trained researchers across the CGIAR system in impact evaluation methods. When I am not analyzing data or in the field, I maintain this site as a record of my work and a way to connect with collaborators, students, and anyone interested in the economics of agricultural development.
+    </p>
+
+    <div class="about-cta">
+      <a href="files/cv_ingles_v3.pdf" target="_blank" class="cv-btn"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
+      <a href="research.html" class="about-link-btn">Explore my research →</a>
+    </div>
+  </div>
+
+</section>
 ```

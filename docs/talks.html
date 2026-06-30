@@ -120,6 +120,22 @@ document.addEventListener('DOMContentLoaded', function() {
   }, { threshold: 0.08 });
 
   targets.forEach(function(el) { observer.observe(el); });
+
+  // Inject mini fieldwork gallery into footer (all pages)
+  var footer = document.querySelector('.nav-footer .quarto-secondary-nav, .nav-footer .nav-footer-center, .nav-footer');
+  var footerEl = document.querySelector('.nav-footer');
+  if (footerEl && !document.querySelector('.footer-gallery')) {
+    var imgs = ['a1.jpg','a13.jpeg','a30.jpeg','a18.jpeg'];
+    var gal = document.createElement('div');
+    gal.className = 'footer-gallery';
+    var inner = '<span class="footer-gallery-label">From the field</span><div class="footer-gallery-imgs">';
+    imgs.forEach(function(im){
+      inner += '<a href="speakers.html"><img src="files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
+    });
+    inner += '</div>';
+    gal.innerHTML = inner;
+    footerEl.parentNode.insertBefore(gal, footerEl);
+  }
 });
 </script>
 
@@ -153,12 +169,24 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./talks.html" aria-current="page"> 
 <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./speakers.html"> 
+<span class="menu-text">Field Work</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./news2.html"> 
@@ -197,14 +225,20 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="page-banner-title title display-7">Talks &amp; Presentations</h1></header>
 
 
 
+
+<div class="page-banner" style="background-image:url('files/images/fieldwork/a37.jpeg');">
+  <div class="page-banner-overlay">
+    
+    <p class="page-banner-sub">Conference papers, invited seminars, and policy engagement</p>
+  </div>
+</div>
 
 <section class="talks-page">
-  <h1 class="talks-page-title">Talks &amp; Presentations</h1>
-  <p class="talks-page-subtitle">Conference papers, invited seminars, and policy engagement. Slides are linked when available.</p>
+  <p class="talks-page-subtitle">Slides are linked when available.</p>
 
   <!-- ═══ 2024 ═══ -->
   <h2 class="talks-year anchored">2024</h2>

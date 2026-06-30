@@ -55,6 +55,16 @@ title-block-banner: false
   </div>
 </section>
 
+<!-- ===== FIELDWORK STRIP ===== -->
+<div class="fw-strip">
+  <a href="speakers.html" class="fw-strip-item"><img src="files/images/fieldwork/a4.jpg" loading="lazy" alt="Fieldwork"></a>
+  <a href="speakers.html" class="fw-strip-item"><img src="files/images/fieldwork/a13.jpeg" loading="lazy" alt="Fieldwork"></a>
+  <a href="speakers.html" class="fw-strip-item"><img src="files/images/fieldwork/a22.jpeg" loading="lazy" alt="Fieldwork"></a>
+  <a href="speakers.html" class="fw-strip-item"><img src="files/images/fieldwork/a11.jpg" loading="lazy" alt="Fieldwork"></a>
+  <a href="speakers.html" class="fw-strip-item"><img src="files/images/fieldwork/a30.jpeg" loading="lazy" alt="Fieldwork"></a>
+  <div class="fw-strip-label"><span>Fieldwork</span></div>
+</div>
+
 <hr class="section-divider">
 
 <!-- ===== EDUCATION ===== -->

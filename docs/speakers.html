@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alexander Buriticá Casanova">
-<meta name="description" content="Academic website of Alexander Buriticá Casanova">
+<meta name="description" content="Fieldwork and primary data collection across Latin America and Sub-Saharan Africa">
 
-<title>Fieldwork – Alexander Buriticá</title>
+<title>Field Work — Alexander Buriticá – Alexander Buriticá</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -120,18 +120,33 @@ document.addEventListener('DOMContentLoaded', function() {
   }, { threshold: 0.08 });
 
   targets.forEach(function(el) { observer.observe(el); });
+
+  // Inject mini fieldwork gallery into footer (all pages)
+  var footer = document.querySelector('.nav-footer .quarto-secondary-nav, .nav-footer .nav-footer-center, .nav-footer');
+  var footerEl = document.querySelector('.nav-footer');
+  if (footerEl && !document.querySelector('.footer-gallery')) {
+    var imgs = ['a1.jpg','a13.jpeg','a30.jpeg','a18.jpeg'];
+    var gal = document.createElement('div');
+    gal.className = 'footer-gallery';
+    var inner = '<span class="footer-gallery-label">From the field</span><div class="footer-gallery-imgs">';
+    imgs.forEach(function(im){
+      inner += '<a href="speakers.html"><img src="files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
+    });
+    inner += '</div>';
+    gal.innerHTML = inner;
+    footerEl.parentNode.insertBefore(gal, footerEl);
+  }
 });
 </script>
 
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="custom.css">
-<meta property="og:title" content="Fieldwork – Alexander Buriticá">
+<meta property="og:title" content="Field Work — Alexander Buriticá">
 <meta property="og:description" content="Agricultural and environmental economist.">
 <meta property="og:image" content="https://alexanderburitica.github.io/files/images/fieldwork/a1.jpg">
 <meta property="og:site_name" content="Alexander Buriticá">
 <meta property="og:image:alt" content="Field data collection">
-<meta name="twitter:title" content="Fieldwork – Alexander Buriticá">
+<meta name="twitter:title" content="Field Work — Alexander Buriticá">
 <meta name="twitter:description" content="Agricultural and environmental economist.">
 <meta name="twitter:image" content="https://alexanderburitica.github.io/files/images/fieldwork/a1.jpg">
 <meta name="twitter:image:alt" content="Field data collection">
@@ -156,12 +171,24 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./talks.html"> 
 <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./speakers.html" aria-current="page"> 
+<span class="menu-text">Field Work</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./news2.html"> 
@@ -198,176 +225,122 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#highlights" id="toc-highlights" class="nav-link active" data-scroll-target="#highlights">Highlights</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Fieldwork</h1>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page-left">
 
-    
-  
-    
-  </div>
-  
+<section class="fw-page">
+  <h1 class="fw-page-title">Field Work</h1>
+  <p class="fw-page-subtitle">
+    Rigorous impact evaluation begins in the field. Over the past decade I have led and participated in primary data collection across Colombia, Ecuador, and Sub-Saharan Africa — designing household surveys, conducting farm visits, running focus groups, and working alongside smallholder communities. These images document that work: the people, landscapes, and production systems behind the data. Click any photo to enlarge.
+  </p>
 
+  <div class="fieldwork-gallery" id="fw-gallery">
 
-</header>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a1.jpg" loading="lazy" alt="Field data collection">
+      <div class="gallery-caption">Household survey data collection</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a4.jpg" loading="lazy" alt="Farm visits">
+      <div class="gallery-caption">Farm visit, Caquetá</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a13.jpeg" loading="lazy" alt="Coffee production">
+      <div class="gallery-caption">Coffee value chains</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a9.jpg" loading="lazy" alt="Smallholder farms">
+      <div class="gallery-caption">Smallholder production systems</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a5.jpg" loading="lazy" alt="Rural landscape">
+      <div class="gallery-caption">Rural landscapes</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a22.jpeg" loading="lazy" alt="Household surveys">
+      <div class="gallery-caption">Household interviews</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a11.jpg" loading="lazy" alt="Silvopastoral systems">
+      <div class="gallery-caption">Silvopastoral systems</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a18.jpeg" loading="lazy" alt="Coffee">
+      <div class="gallery-caption">Coffee cupping &amp; quality</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a24.jpeg" loading="lazy" alt="Training sessions">
+      <div class="gallery-caption">Enumerator training</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a25.jpeg" loading="lazy" alt="Value chain analysis">
+      <div class="gallery-caption">Value chain analysis</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a27.jpeg" loading="lazy" alt="Local stakeholders">
+      <div class="gallery-caption">Working with local stakeholders</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a28.jpeg" loading="lazy" alt="Rural communities">
+      <div class="gallery-caption">Rural communities</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a30.jpeg" loading="lazy" alt="Forest conservation">
+      <div class="gallery-caption">Forest &amp; conservation frontiers</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a36.jpeg" loading="lazy" alt="Crop assessment">
+      <div class="gallery-caption">Crop variety assessment</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a29.jpeg" loading="lazy" alt="Land use mapping">
+      <div class="gallery-caption">Land-use mapping</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a37.jpeg" loading="lazy" alt="Collaborative research">
+      <div class="gallery-caption">Collaborative research</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a3.jpg" loading="lazy" alt="Survey implementation">
+      <div class="gallery-caption">Survey implementation</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a6.jpg" loading="lazy" alt="Fieldwork team">
+      <div class="gallery-caption">The field team</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a14.jpeg" loading="lazy" alt="Participatory research">
+      <div class="gallery-caption">Participatory research</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a16.jpeg" loading="lazy" alt="Colombian Amazon">
+      <div class="gallery-caption">Colombian Amazon</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a19.jpg" loading="lazy" alt="Coffee production">
+      <div class="gallery-caption">Coffee farms</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a21.jpeg" loading="lazy" alt="Field experiments">
+      <div class="gallery-caption">Field measurement</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a23.jpeg" loading="lazy" alt="Project coordination">
+      <div class="gallery-caption">Project coordination</div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(this)">
+      <img src="./files/images/fieldwork/a26.jpeg" loading="lazy" alt="Monitoring and evaluation">
+      <div class="gallery-caption">Monitoring &amp; evaluation</div>
+    </div>
 
-
-<section id="highlights" class="level2">
-<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
-<p>Below are photos from my fieldwork activities across different countries and projects. Click any image to see it full-size.</p>
-<div class="fieldwork-gallery" id="fw-gallery">
-
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a1.jpg" loading="lazy" alt="Field data collection">
-    <div class="gallery-caption">Field data collection</div>
   </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a2.jpg" loading="lazy" alt="Community engagement">
-    <div class="gallery-caption">Field data collection</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a3.jpg" loading="lazy" alt="Survey implementation">
-    <div class="gallery-caption">Survey implementation</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a4.jpg" loading="lazy" alt="Farm visits">
-    <div class="gallery-caption">Farm visits</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a5.jpg" loading="lazy" alt="Rural landscape">
-    <div class="gallery-caption">Rural landscape</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a6.jpg" loading="lazy" alt="Fieldwork team">
-    <div class="gallery-caption">Fieldwork team</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a7.jpg" loading="lazy" alt="Livestock systems">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a8.jpg" loading="lazy" alt="Data collection in the field">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a9.jpg" loading="lazy" alt="Smallholder farms">
-    <div class="gallery-caption">Smallholder farms</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a10.jpg" loading="lazy" alt="Agricultural practices">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a11.jpg" loading="lazy" alt="Silvopastoral systems">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a12.jpg" loading="lazy" alt="Community workshop">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a13.jpeg" loading="lazy" alt="Caquetá region">
-    <div class="gallery-caption">Coffee</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a14.jpeg" loading="lazy" alt="Participatory research">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a16.jpeg" loading="lazy" alt="Colombian Amazon">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a18.jpeg" loading="lazy" alt="Sustainable agriculture">
-    <div class="gallery-caption">Coffee</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a19.jpg" loading="lazy" alt="Coffee production">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a21.jpeg" loading="lazy" alt="Field experiments">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a22.jpeg" loading="lazy" alt="Household surveys">
-    <div class="gallery-caption">Household surveys</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a23.jpeg" loading="lazy" alt="Project coordination">
-    <div class="gallery-caption">Project coordination</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a24.jpeg" loading="lazy" alt="Training sessions">
-    <div class="gallery-caption">Training sessions</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a25.jpeg" loading="lazy" alt="Value chain analysis">
-    <div class="gallery-caption">Value chain analysis</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a26.jpeg" loading="lazy" alt="Monitoring and evaluation">
-    <div class="gallery-caption">Monitoring and evaluation</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a27.jpeg" loading="lazy" alt="Local stakeholders">
-    <div class="gallery-caption">Local stakeholders</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a28.jpeg" loading="lazy" alt="Rural communities">
-    <div class="gallery-caption">Rural communities</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a29.jpeg" loading="lazy" alt="Land use mapping">
-    <div class="gallery-caption">Land use mapping</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a30.jpeg" loading="lazy" alt="Forest conservation">
-    <div class="gallery-caption">Forest conservation</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a31.jpeg" loading="lazy" alt="Biodiversity assessment">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a34.jpeg" loading="lazy" alt="Impact evaluation fieldwork">
-    <div class="gallery-caption">Fieldwork</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a36.jpeg" loading="lazy" alt="Crop assessment">
-    <div class="gallery-caption">Crop Varieties</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a37.jpeg" loading="lazy" alt="Collaborative research">
-    <div class="gallery-caption">Collaborative research</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a38.jpeg" loading="lazy" alt="Environmental monitoring">
-    <div class="gallery-caption">Collaborative research</div>
-  </div>
-  <div class="gallery-item" onclick="openLightbox(this)">
-    <img src="./files/images/fieldwork/a39.jpeg" loading="lazy" alt="Policy-relevant research">
-    <div class="gallery-caption">Collaborative research</div>
-  </div>
-
-</div>
+</section>
 
 <!-- Lightbox overlay -->
 <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
@@ -400,7 +373,6 @@ document.addEventListener('keydown', function(e){
 </script>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
