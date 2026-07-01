@@ -17,7 +17,7 @@ title-block-banner: false
 
     <!-- LEFT: Name + affiliation + icons + bio -->
     <div class="hero-eduard-left">
-      <h1 class="hero-eduard-name">Alexander Buriticá</h1>
+      <h1 class="hero-eduard-name">Alexander Buriticá Casanova</h1>
       <p class="hero-eduard-subtitle"><strong>PhD Economist · Postdoctoral Researcher</strong></p>
       <p class="hero-eduard-affiliation">
         <a href="https://alliancebioversityciat.org/" target="_blank">Alliance of Bioversity International and CIAT</a>.

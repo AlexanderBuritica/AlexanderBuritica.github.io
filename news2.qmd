@@ -1,7 +1,7 @@
 ---
 title: ""
 pagetitle: "News & Highlights — Alexander Buriticá"
-description-meta: "Awards, grants, media coverage, and milestones"
+description-meta: "Publications, grants, awards, talks, and milestones"
 title-block-banner: false
 toc: false
 page-layout: full
@@ -12,17 +12,143 @@ css: styles.css
 <div class="page-banner" style="background-image:url('files/images/fieldwork/a16.jpeg');">
   <div class="page-banner-overlay">
     <h1 class="page-banner-title">News &amp; Highlights</h1>
-    <p class="page-banner-sub">Awards, grants, reports, and media coverage</p>
+    <p class="page-banner-sub">Publications, grants, awards, talks &amp; milestones</p>
   </div>
 </div>
 
 <section class="timeline-page">
-  <p class="timeline-subtitle">For publications see <a href="publications.html">Publications</a>; for conference presentations see <a href="talks.html">Talks</a>.</p>
+  <p class="timeline-subtitle">A chronological record of publications, grants, awards, presentations, and professional milestones.</p>
 
   <div class="timeline">
 
+    <!-- ══════════ 2026 ══════════ -->
+    <div class="tl-year">2026</div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-award"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-award"><i class="fa-solid fa-award"></i> Grant</span>
+        <span class="tl-date">June 2026</span>
+        <h3>BlueSky Grant — CGIAR Multifunctional Landscapes Science Program</h3>
+        <p>Awarded a competitive BlueSky research grant from the Multifunctional Landscapes area of CGIAR to pursue innovative, high-risk research on agricultural landscapes.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">April 2026</span>
+        <h3>Impact of community seed banks on seed security and food access outcomes in Ethiopia</h3>
+        <p><em>Discover Sustainability</em> (Springer Nature).</p>
+        <a href="https://link.springer.com/article/10.1007/s43621-026-03209-6" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">April 2026</span>
+        <h3>Rural women's voices and gender dynamics in Colombian land restitution policy</h3>
+        <p><em>Journal of Rural Studies</em>.</p>
+        <a href="https://doi.org/10.1016/j.jrurstud.2026.104167" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">April 2026</span>
+        <h3>Technology access without impact? An evaluation of Ecuador's input subsidy program for rice</h3>
+        <p><em>Cogent Food &amp; Agriculture</em>.</p>
+        <a href="https://doi.org/10.1080/23311932.2026.2651483" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">2026</span>
+        <h3>Using landscape approaches to understand peacebuilding policy coherence: a case study of Caquetá</h3>
+        <p><em>Ecology and Society</em>.</p>
+        <a href="https://www.ecologyandsociety.org/vol31/iss2/art1/" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">2026</span>
+        <h3>Advancing sustainable silvopastoral practices for achieving zero deforestation in the Colombian Amazon</h3>
+        <p><em>Agricultural Systems</em>.</p>
+        <a href="https://doi.org/10.1016/j.agsy.2025.104525" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">2026</span>
+        <h3>Coffee cupping as a quality signal: Impacts on smallholder prices and market access in Colombia</h3>
+        <p><em>Journal of Agribusiness in Developing and Emerging Economies</em>.</p>
+        <a href="https://doi.org/10.1108/JADEE-05-2025-0217" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">2026</span>
+        <h3>Food security and forest access in the Colombian and Peruvian Amazon</h3>
+        <p><em>Food Security</em>.</p>
+        <a href="https://link.springer.com/article/10.1007/s12571-025-01639-0" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <!-- ══════════ 2025 ══════════ -->
+    <div class="tl-year">2025</div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">2025</span>
+        <h3>Sweating bullets: Heat, high-stakes evaluations, and the role of incentives</h3>
+        <p><em>Environmental and Resource Economics</em>.</p>
+        <a href="https://doi.org/10.1007/s10640-025-01011-y" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
     <!-- ══════════ 2024 ══════════ -->
     <div class="tl-year">2024</div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">2024</span>
+        <h3>Unlocking sustainable livestock production potential in the Colombian Amazon</h3>
+        <p><em>Scientific Reports</em>.</p>
+        <a href="https://doi.org/10.1038/s41598-024-63697-2" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-talk"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Talk</span>
+        <span class="tl-date">Dec 2024</span>
+        <h3>Silvopastoral projects in Colombia: Impacts on livestock productivity and deforestation</h3>
+        <p>Alliance of Bioversity International and CIAT, Palmira.</p>
+        <a href="https://cgspace.cgiar.org/items/43c1e40e-9f38-4a64-9b89-f65d2f96c584" target="_blank" class="tl-link">Slides →</a>
+      </div>
+    </div>
 
     <div class="tl-item">
       <div class="tl-dot tl-report"></div>
@@ -43,6 +169,24 @@ css: styles.css
         <h3>Methodological handbook for analyzing policy coherence: Enhancing synergies and avoiding redundancies</h3>
         <p>Co-authored methodological guide for CGIAR and national partners.</p>
         <a href="https://cgspace.cgiar.org/items/4010e635-05f4-47eb-bb7a-7b7c6613145b" target="_blank" class="tl-link">CGSpace →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-talk"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Talks</span>
+        <span class="tl-date">2024</span>
+        <h3>Multiple presentations at Alliance Bioversity &amp; CIAT</h3>
+        <p>On rice varietal innovation, silvopastoral practices, gendered dynamics in public policy, community seed banks in Ethiopia, gender and intersectionality in policy, and climate-information systems.</p>
+        <div class="tl-sublinks">
+          <a href="https://cgspace.cgiar.org/items/d09e4c98-2a28-4dbc-b0eb-de2ca5605281" target="_blank" class="tl-link">Rice varietal innovation →</a>
+          <a href="https://cgspace.cgiar.org/items/a6102866-08ec-49be-b315-a5ad4980d964" target="_blank" class="tl-link">Silvopastoral practices →</a>
+          <a href="https://cgspace.cgiar.org/items/caf502b1-e423-48de-ad65-bb87b856e40b" target="_blank" class="tl-link">Gendered dynamics in policy →</a>
+          <a href="https://cgspace.cgiar.org/items/c3f9a4ea-0c9a-445a-8685-0952fe22bf17" target="_blank" class="tl-link">Community seed banks, Ethiopia →</a>
+          <a href="https://cgspace.cgiar.org/items/c6440c81-ce74-46ae-be19-160ade5436bb" target="_blank" class="tl-link">Gender in land &amp; climate policy →</a>
+          <a href="https://cgspace.cgiar.org/items/bbd47286-9aff-4c86-8675-db76510cb404" target="_blank" class="tl-link">Climate-information systems →</a>
+        </div>
       </div>
     </div>
 
@@ -92,6 +236,16 @@ css: styles.css
         <p>International Coffee Organization (ICO). Award promoting high-quality research on emerging issues in the global coffee sector.</p>
         <p class="tl-related">Related paper: <em>Access to High Quality Coffee Markets: Possible for All?</em></p>
         <a href="http://www.ico.org/documents/cy2018-19/ed-2295e-call-for-award-competition.pdf" target="_blank" class="tl-link">Award call →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-talk"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-talk"><i class="fa-solid fa-microphone"></i> Conference</span>
+        <span class="tl-date">May 2019</span>
+        <h3>INFER Workshop on Economic Development Thinking the Environment</h3>
+        <p>Coimbra, Portugal.</p>
       </div>
     </div>
 
