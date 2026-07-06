@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análisis y Mejoras — Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{--serif:'Cormorant Garamond',serif;--sans:'Inter',sans-serif;--text:#1d1d1f;--text2:#555;--accent:#1b5e5e;--accent-l:#e8f4f4;--border:rgba(0,0,0,.1);}
+*{box-sizing:border-box;}
+body{font-family:var(--sans);color:var(--text);margin:0;background:#eef0f2;line-height:1.65;}
+.head{max-width:1000px;margin:0 auto;padding:2.5rem 2rem .5rem;}
+.head h1{font-family:var(--serif);font-size:2.1rem;margin:0 0 .3rem;}
+.head p{color:var(--text2);font-size:.92rem;margin:0;}
+.imp{max-width:1000px;margin:1.2rem auto;padding:1.2rem 1.6rem;background:#fff3cd;border:1px solid #ffc107;border-radius:10px;font-size:.9rem;}
+.imp strong{color:#856404;}
+.lbl{max-width:1000px;margin:2.6rem auto 0;padding:0 2rem;}
+.lbl .tag{display:inline-block;background:var(--accent);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .7rem;border-radius:4px;}
+.lbl h2{font-size:1.05rem;font-weight:700;margin:.55rem 0 .15rem;}
+.lbl .why{font-size:.85rem;color:var(--text2);margin:0;}
+.box{max-width:1000px;margin:.9rem auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 22px rgba(0,0,0,.07);padding:2.2rem;}
+
+/* ═══ 1. METRICS STRIP ═══ */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.metric{text-align:center;padding:1.3rem .8rem;background:#fafbfb;border:1px solid var(--border);border-radius:10px;transition:.2s;}
+.metric:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.07);}
+.metric .num{font-family:var(--serif);font-size:2.3rem;font-weight:700;color:var(--accent);line-height:1;}
+.metric .cap{font-size:.8rem;font-weight:600;color:var(--text2);margin-top:.4rem;text-transform:uppercase;letter-spacing:.05em;}
+.metric i{color:var(--accent);opacity:.5;font-size:1rem;margin-bottom:.4rem;display:block;}
+
+/* ═══ 2. NUMBERED RESEARCH AREAS ═══ */
+.ra{display:grid;grid-template-columns:270px 1fr;gap:1.8rem;align-items:start;padding-bottom:1.8rem;margin-bottom:1.8rem;border-bottom:1px solid var(--border);}
+.ra:last-child{border:none;margin:0;padding:0;}
+.ra-vis{position:relative;}
+.ra-vis img{width:100%;height:190px;object-fit:cover;border-radius:10px;border:1px solid var(--border);}
+.ra-num{position:absolute;top:-14px;left:-14px;width:52px;height:52px;background:var(--accent);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.5rem;font-weight:700;box-shadow:0 4px 14px rgba(27,94,94,.35);}
+.ra h3{font-size:1.2rem;font-weight:700;margin:.1rem 0 .5rem;font-family:var(--sans);}
+.ra p{font-size:.92rem;color:var(--text2);margin:0 0 .7rem;}
+.ra-papers a{display:block;font-size:.85rem;color:var(--accent);text-decoration:none;padding-left:.6rem;border-left:2px solid var(--accent);margin-bottom:.3rem;}
+
+/* ═══ 3. PUBLICATIONS BAR + FILTERS ═══ */
+.pub-stats{display:flex;gap:1.4rem;flex-wrap:wrap;align-items:center;padding:1rem 1.3rem;background:var(--accent-l);border-radius:10px;margin-bottom:1.2rem;font-size:.9rem;}
+.pub-stats b{font-family:var(--serif);font-size:1.35rem;color:var(--accent);}
+.pub-stats .sep{color:var(--border);}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.4rem;}
+.filter{padding:.35rem .9rem;border:1.5px solid var(--border);border-radius:999px;font-size:.82rem;font-weight:600;cursor:pointer;background:#fff;transition:.15s;}
+.filter.on,.filter:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.pubrow{display:grid;grid-template-columns:150px 1fr;gap:1.1rem;padding:1rem 0;border-bottom:1px solid rgba(0,0,0,.06);align-items:start;}
+.pubrow img{width:150px;height:105px;object-fit:cover;border-radius:8px;border:1px solid var(--border);}
+.pubrow .t{font-family:var(--serif);font-size:1.05rem;font-weight:700;line-height:1.3;}
+.pubrow .a{font-size:.84rem;color:var(--text2);margin:.2rem 0;}
+.pubrow .a b{color:var(--text);}
+.pubrow .j{font-size:.84rem;color:var(--text2);font-style:italic;}
+.ptag{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:.15rem .5rem;border-radius:4px;background:var(--accent-l);color:var(--accent);margin-bottom:.3rem;}
+
+/* ═══ 4. SELECTED PUBS w/ YEAR BADGE ═══ */
+.selgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;}
+.selcard{position:relative;background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:.25s;text-decoration:none;color:var(--text);}
+.selcard:hover{box-shadow:0 10px 28px rgba(0,0,0,.13);transform:translateY(-4px);}
+.selcard img{width:100%;height:130px;object-fit:cover;}
+.yrbadge{position:absolute;top:.6rem;right:.6rem;background:var(--accent);color:#fff;font-size:.72rem;font-weight:700;padding:.2rem .55rem;border-radius:999px;}
+.newbadge{position:absolute;top:.6rem;left:.6rem;background:#d4a017;color:#fff;font-size:.68rem;font-weight:800;padding:.2rem .5rem;border-radius:4px;letter-spacing:.05em;}
+.selbody{padding:.85rem .95rem;}
+.selbody .t{font-size:.9rem;font-weight:650;line-height:1.32;margin-bottom:.35rem;}
+.selbody .j{font-size:.8rem;color:var(--text2);font-style:italic;}
+
+/* ═══ 5. CONTACT CARD ═══ */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;}
+.ccard{padding:1.6rem;border:1px solid var(--border);border-radius:12px;background:#fafbfb;}
+.ccard h4{margin:0 0 1rem;font-size:1.05rem;display:flex;align-items:center;gap:.5rem;}
+.ccard h4 i{color:var(--accent);}
+.crow{display:flex;align-items:center;gap:.8rem;margin-bottom:.8rem;font-size:.9rem;}
+.crow i{width:36px;height:36px;background:var(--accent-l);color:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ctopic{display:inline-block;padding:.3rem .75rem;background:#fff;border:1px solid var(--border);border-radius:999px;font-size:.8rem;font-weight:500;margin:.2rem .2rem .2rem 0;}
+.ctopic i{color:var(--accent);margin-right:.3rem;font-size:.72rem;}
+
+/* fix table */
+.fixes{width:100%;border-collapse:collapse;font-size:.88rem;}
+.fixes th{text-align:left;padding:.55rem .7rem;background:var(--accent);color:#fff;font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;}
+.fixes td{padding:.6rem .7rem;border-bottom:1px solid var(--border);vertical-align:top;}
+.fixes .bad{color:#b02a37;font-weight:600;}
+.fixes .good{color:#1e7e34;font-weight:600;}
+@media(max-width:760px){.metrics{grid-template-columns:1fr 1fr;}.ra{grid-template-columns:1fr;}.selgrid{grid-template-columns:1fr;}.cgrid{grid-template-columns:1fr;}.pubrow{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <h1>Análisis integral del sitio — 7 mejoras propuestas</h1>
+  <p>Cada bloque muestra cómo quedaría la mejora implementada, con su justificación. Basado en convenciones de sitios académicos de referencia (Michaillat, Chetty, ganadores del Best Academic Website Contest) y principios establecidos de usabilidad web.</p>
+</div>
+
+<div class="imp">
+  <strong>⚠️ Hallazgo crítico (Mejora 7):</strong> tu foto principal <code>Alex_Buritaca.JPG</code> pesa <strong>14.4 MB</strong> y el favicon <code>icon.PNG</code> pesa <strong>1.4 MB</strong>. Un visitante con conexión promedio espera varios segundos solo para cargar el home. El estándar web es &lt;300 KB por imagen de héroe. Esto afecta también el posicionamiento en Google (Core Web Vitals). La solución no es visual sino técnica — instrucciones al final.
+</div>
+
+<!-- ═══════════ MEJORA 1 ═══════════ -->
+<div class="lbl">
+  <span class="tag">Mejora 1 · Home</span>
+  <h2>Franja de métricas de impacto ("at a glance")</h2>
+  <p class="why">Por qué: los comités de contratación y colaboradores escanean un sitio en ~10 segundos. Una franja de indicadores cuantitativos entre el hero y Education comunica productividad inmediatamente — práctica común en sitios de economistas senior. Se actualiza fácil (2 números por año).</p>
+</div>
+<div class="box">
+  <div class="metrics">
+    <div class="metric"><i class="fa-solid fa-file-lines"></i><div class="num">12</div><div class="cap">Peer-reviewed articles</div></div>
+    <div class="metric"><i class="fa-solid fa-quote-right"></i><div class="num">374</div><div class="cap">Citations · h-index 5</div></div>
+    <div class="metric"><i class="fa-solid fa-award"></i><div class="num">3</div><div class="cap">Grants &amp; awards</div></div>
+    <div class="metric"><i class="fa-solid fa-earth-americas"></i><div class="num">4</div><div class="cap">Countries of fieldwork</div></div>
+  </div>
+</div>
+
+<!-- ═══════════ MEJORA 2 ═══════════ -->
+<div class="lbl">
+  <span class="tag">Mejora 2 · Research</span>
+  <h2>Áreas de investigación numeradas (estilo editorial)</h2>
+  <p class="why">Por qué: la numeración (01–04) crea jerarquía visual y sugiere una agenda estructurada — no una lista de temas sueltos. Reemplaza el label repetitivo "Research Area" que hoy aparece 4 veces idéntico.</p>
+</div>
+<div class="box">
+  <div class="ra">
+    <div class="ra-vis"><div class="ra-num">01</div><img src="files/images/fieldwork/a11.jpg" alt=""></div>
+    <div>
+      <h3>Technology Adoption &amp; Agricultural Productivity</h3>
+      <p>Why do some farmers adopt improved technologies while others do not, and when does adoption translate into actual productivity gains? Recent work evaluates input subsidy programs, silvopastoral adoption, and improved variety diffusion in Colombia and Ecuador.</p>
+      <div class="ra-papers">
+        <a href="#">Ecuador's input subsidy for rice (Cogent Food &amp; Agric., 2026)</a>
+        <a href="#">Silvopastoral &amp; zero deforestation (Agric. Systems, 2026)</a>
+      </div>
+    </div>
+  </div>
+  <div class="ra">
+    <div class="ra-vis"><div class="ra-num">02</div><img src="files/images/fieldwork/a22.jpeg" alt=""></div>
+    <div>
+      <h3>Impact Evaluation &amp; Program Design</h3>
+      <p>I evaluate the causal effects of agricultural and environmental programs using state-of-the-art econometric methods, with attention to whether interventions reach the most constrained populations.</p>
+      <div class="ra-papers">
+        <a href="#">Heat &amp; high-stakes evaluations (Env. &amp; Resource Econ., 2025)</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ MEJORA 3 ═══════════ -->
+<div class="lbl">
+  <span class="tag">Mejora 3 · Publications</span>
+  <h2>Barra de resumen + filtros temáticos + etiquetas por área</h2>
+  <p class="why">Por qué: con 12+ papers y 4 working papers, la página es larga. Los filtros permiten a un visitante interesado en un tema (ej. food security) ver solo lo relevante. La barra superior resume el volumen. Cada paper lleva una etiqueta temática que refuerza la coherencia de tu agenda.</p>
+</div>
+<div class="box">
+  <div class="pub-stats">
+    <span><b>12</b> peer-reviewed</span><span class="sep">|</span>
+    <span><b>4</b> working papers</span><span class="sep">|</span>
+    <span><b>374</b> citations</span><span class="sep">|</span>
+    <span><b>10</b> journals</span>
+  </div>
+  <div class="filters">
+    <span class="filter on">All</span>
+    <span class="filter">Technology Adoption</span>
+    <span class="filter">Impact Evaluation</span>
+    <span class="filter">Food Security</span>
+    <span class="filter">Policy &amp; Gender</span>
+  </div>
+  <div class="pubrow">
+    <img src="files/images/fieldwork/a13.jpeg" alt="">
+    <div>
+      <span class="ptag">Technology Adoption</span>
+      <div class="t">Technology access without impact? An evaluation of Ecuador's input subsidy program for rice</div>
+      <div class="a"><b>Alexander Buriticá Casanova</b>, D. Marín Salazar, N. Fajardo Reyes, R. Andrade</div>
+      <div class="j">Cogent Food &amp; Agriculture, 2026</div>
+    </div>
+  </div>
+  <div class="pubrow">
+    <img src="files/images/fieldwork/a30.jpeg" alt="">
+    <div>
+      <span class="ptag">Policy &amp; Gender</span>
+      <div class="t">Rural women's voices and gender dynamics in Colombian land restitution policy</div>
+      <div class="a">M. Blanco, F. Howland, <b>Alexander Buriticá</b>, C. González</div>
+      <div class="j">Journal of Rural Studies, 2026</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ MEJORA 4 ═══════════ -->
+<div class="lbl">
+  <span class="tag">Mejora 4 · Home</span>
+  <h2>Selected Publications con badge de año y etiqueta "NEW"</h2>
+  <p class="why">Por qué: hoy las 3 cards no señalan recencia. El badge de año en la esquina + la etiqueta dorada "NEW" en papers de los últimos 6 meses comunican que el sitio (y tu agenda) están activos. Además propongo rotar las cards a tus 3 papers más recientes de 2026.</p>
+</div>
+<div class="box">
+  <div class="selgrid">
+    <a class="selcard" href="#">
+      <span class="newbadge">NEW</span><span class="yrbadge">2026</span>
+      <img src="files/images/fieldwork/a13.jpeg" alt="">
+      <div class="selbody">
+        <div class="t">Technology access without impact? Ecuador's input subsidy program for rice</div>
+        <div class="j">Cogent Food &amp; Agriculture</div>
+      </div>
+    </a>
+    <a class="selcard" href="#">
+      <span class="newbadge">NEW</span><span class="yrbadge">2026</span>
+      <img src="files/images/fieldwork/a30.jpeg" alt="">
+      <div class="selbody">
+        <div class="t">Using landscape approaches to understand peacebuilding policy coherence</div>
+        <div class="j">Ecology and Society</div>
+      </div>
+    </a>
+    <a class="selcard" href="#">
+      <span class="yrbadge">2025</span>
+      <img src="files/images/fieldwork/a22.jpeg" alt="">
+      <div class="selbody">
+        <div class="t">Sweating bullets: Heat, high-stakes evaluations, and the role of incentives</div>
+        <div class="j">Environmental and Resource Economics</div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════ MEJORA 5 ═══════════ -->
+<div class="lbl">
+  <span class="tag">Mejora 5 · Contact</span>
+  <h2>Contact en dos columnas con íconos y temas de colaboración clickeables</h2>
+  <p class="why">Por qué: tu Contact actual es texto plano centrado. Una estructura de dos tarjetas (datos de contacto / temas de colaboración) con íconos hace la página escaneable y transmite apertura profesional a colaboración — el propósito real de la página.</p>
+</div>
+<div class="box">
+  <div class="cgrid">
+    <div class="ccard">
+      <h4><i class="fa-solid fa-address-card"></i> Get in touch</h4>
+      <div class="crow"><i class="fa-solid fa-envelope"></i><span>a.buritica@cgiar.org<br><small style="color:var(--text2)">Email is the fastest way to reach me</small></span></div>
+      <div class="crow"><i class="fa-solid fa-location-dot"></i><span>Km 17 Recta Cali–Palmira<br><small style="color:var(--text2)">Valle del Cauca, Colombia</small></span></div>
+      <div class="crow"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn · Google Scholar · ORCID</span></div>
+    </div>
+    <div class="ccard">
+      <h4><i class="fa-solid fa-handshake"></i> Open to collaboration on</h4>
+      <span class="ctopic"><i class="fa-solid fa-chart-line"></i>Impact evaluation</span>
+      <span class="ctopic"><i class="fa-solid fa-seedling"></i>Agricultural economics</span>
+      <span class="ctopic"><i class="fa-solid fa-scale-balanced"></i>Policy analysis</span>
+      <span class="ctopic"><i class="fa-solid fa-person-chalkboard"></i>Guest lectures &amp; workshops</span>
+      <span class="ctopic"><i class="fa-solid fa-database"></i>Survey design &amp; field data</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ MEJORA 6 ═══════════ -->
+<div class="lbl">
+  <span class="tag">Mejora 6 · Contenido</span>
+  <h2>Correcciones de precisión académica (detectadas en la revisión)</h2>
+  <p class="why">Por qué: en un sitio académico la precisión es credibilidad. Detecté 3 inconsistencias en la versión publicada.</p>
+</div>
+<div class="box">
+  <table class="fixes">
+    <tr><th>Ubicación</th><th>Ahora dice</th><th>Debería decir</th></tr>
+    <tr>
+      <td><b>Home → Education</b></td>
+      <td class="bad">MSc in Economics (2016–2023)</td>
+      <td class="good">Fechas reales del MSc (¿2016–2018?) — hoy duplica las del PhD</td>
+    </tr>
+    <tr>
+      <td><b>Research → "In the Field"</b></td>
+      <td class="bad">"...across Latin America and Sub-Saharan Africa... fieldwork in Colombia, Ecuador, and Ethiopia"</td>
+      <td class="good">"...across Latin America... fieldwork in Colombia and Ecuador" (pediste quitar África; esta mención quedó)</td>
+    </tr>
+    <tr>
+      <td><b>Home → Bio</b></td>
+      <td class="bad">No menciona el BlueSky Grant 2026</td>
+      <td class="good">Añadir frase: "My research is supported by a BlueSky Grant from CGIAR's Multifunctional Landscapes Science Program (2026)."</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════ MEJORA 7 ═══════════ -->
+<div class="lbl">
+  <span class="tag">Mejora 7 · Técnica</span>
+  <h2>Optimización de imágenes (rendimiento y SEO)</h2>
+  <p class="why">Por qué: Google penaliza sitios lentos en resultados de búsqueda (Core Web Vitals). Con 38 fotos de fieldwork + una foto de 14 MB, tu sitio carga mucho más lento de lo necesario.</p>
+</div>
+<div class="box">
+  <table class="fixes">
+    <tr><th>Archivo</th><th>Peso actual</th><th>Objetivo</th></tr>
+    <tr><td>Alex_Buritaca.JPG (foto principal)</td><td class="bad">14.4 MB</td><td class="good">~250 KB (redimensionar a 600×680px, calidad 82%)</td></tr>
+    <tr><td>icon.PNG (favicon)</td><td class="bad">1.4 MB</td><td class="good">~30 KB (redimensionar a 64×64px)</td></tr>
+    <tr><td>Fotos fieldwork (38 archivos)</td><td class="bad">varias &gt;2 MB</td><td class="good">~200 KB c/u (máx 1200px de ancho)</td></tr>
+  </table>
+  <p style="font-size:.88rem;color:var(--text2);margin-top:1rem;">Puedo generar un script de Python (Pillow) que comprime todo automáticamente manteniendo copias de respaldo — un solo comando y listo.</p>
+</div>
+
+<div style="max-width:1000px;margin:2rem auto 4rem;padding:0 2rem;color:#777;font-size:.85rem;">
+  Dime cuáles mejoras aplico (ej. "1, 3, 6 y 7") y las implemento en el sitio real. Todas son independientes entre sí.
+</div>
+
+</body>
+</html>

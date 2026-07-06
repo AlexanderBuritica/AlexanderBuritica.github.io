@@ -16,12 +16,30 @@ toc: false
   This section presents my peer-reviewed publications. Additional information, PDFs, and data repositories are linked when available. Click <strong>ABS</strong> to view the abstract.
 </p>
 
+<div class="pub-stats-bar">
+  <span><b>14</b> peer-reviewed</span>
+  <span class="pub-stats-sep">|</span>
+  <span><b>3</b> working papers</span>
+  <span class="pub-stats-sep">|</span>
+  <span><b>374</b> citations</span>
+  <span class="pub-stats-sep">|</span>
+  <span><b>11</b> journals</span>
+</div>
+
+<div class="pub-filters">
+  <button class="pub-filter pub-filter-on" onclick="filterPubs(this,'all')">All</button>
+  <button class="pub-filter" onclick="filterPubs(this,'tech')">Technology Adoption</button>
+  <button class="pub-filter" onclick="filterPubs(this,'impact')">Impact Evaluation</button>
+  <button class="pub-filter" onclick="filterPubs(this,'food')">Food Security</button>
+  <button class="pub-filter" onclick="filterPubs(this,'policy')">Policy &amp; Gender</button>
+</div>
+
 <hr class="pub-divider">
 
 <!-- ==================== 2026 ==================== -->
 <h2 class="pub-year-heading">2026</h2>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="food">
   <div class="pub-card-img">
     <img src="files/images/journals/p2026_2.png" alt="Coffee cupping">
   </div>
@@ -39,7 +57,7 @@ toc: false
   </div>
 </div>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="food">
   <div class="pub-card-img">
     <img src="files/images/journals/p2026_3.png" alt="Food security Amazon">
   </div>
@@ -57,7 +75,7 @@ toc: false
   </div>
 </div>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="tech">
   <div class="pub-card-img">
     <img src="files/images/journals/p2026_1.png" alt="Silvopastoral systems">
   </div>
@@ -76,7 +94,7 @@ toc: false
   </div>
 </div>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="policy">
   <div class="pub-card-img">
     <img src="files/images/journals/p2026_4.png" alt="Landscape peacebuilding">
   </div>
@@ -94,7 +112,7 @@ toc: false
   </div>
 </div>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="tech impact">
   <div class="pub-card-img">
     <img src="files/images/journals/p2026_5.png" alt="Ecuador rice subsidy">
   </div>
@@ -112,7 +130,7 @@ toc: false
   </div>
 </div>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="policy">
   <div class="pub-card-img">
     <img src="files/images/journals/p2026_6.png" alt="Land restitution gender">
   </div>
@@ -130,7 +148,7 @@ toc: false
   </div>
 </div>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="food impact">
   <div class="pub-card-img">
     <img src="images/wp2-01.jpg" alt="Community seed banks Ethiopia">
   </div>
@@ -153,7 +171,7 @@ toc: false
 <!-- ==================== 2025 ==================== -->
 <h2 class="pub-year-heading">2025</h2>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="impact">
   <div class="pub-card-img">
     <img src="files/images/journals/p2025_1.png" alt="Heat and evaluations">
   </div>
@@ -176,7 +194,7 @@ toc: false
 <!-- ==================== 2024 ==================== -->
 <h2 class="pub-year-heading">2024</h2>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="tech">
   <div class="pub-card-img">
     <img src="files/images/journals/p2024_1.png" alt="Sustainable livestock">
   </div>
@@ -199,7 +217,7 @@ toc: false
 <!-- ==================== 2021 ==================== -->
 <h2 class="pub-year-heading">2021</h2>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="tech impact">
   <div class="pub-card-img">
     <img src="files/images/journals/p2021_1.png" alt="Deforestation risk">
   </div>
@@ -222,7 +240,7 @@ toc: false
 <!-- ==================== 2017 ==================== -->
 <h2 class="pub-year-heading">2017</h2>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="policy">
   <div class="pub-card-img">
     <img src="files/images/journals/p2017_2.jpg" alt="Land grievances">
   </div>
@@ -240,7 +258,7 @@ toc: false
   </div>
 </div>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="food">
   <div class="pub-card-img">
     <img src="files/images/journals/p2017_1.jpg" alt="Iron biofortified bean">
   </div>
@@ -263,7 +281,7 @@ toc: false
 <!-- ==================== 2016 ==================== -->
 <h2 class="pub-year-heading">2016</h2>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="policy">
   <div class="pub-card-img">
     <img src="files/images/journals/p2016_1.jpg" alt="Gestión ambiental">
   </div>
@@ -286,7 +304,7 @@ toc: false
 <!-- ==================== 2015 ==================== -->
 <h2 class="pub-year-heading">2015</h2>
 
-<div class="pub-card">
+<div class="pub-card" data-topic="food">
   <div class="pub-card-img">
     <img src="files/images/journals/p2015_1.jpg" alt="Coffee certification">
   </div>
@@ -361,6 +379,36 @@ function toggleAbstract(btn) {
     abstract.classList.toggle('pub-abstract-open');
     btn.classList.toggle('pub-btn-active');
   }
+}
+
+function filterPubs(btn, topic) {
+  // toggle active button
+  document.querySelectorAll('.pub-filter').forEach(b => b.classList.remove('pub-filter-on'));
+  btn.classList.add('pub-filter-on');
+
+  // show/hide cards
+  document.querySelectorAll('.pub-card').forEach(card => {
+    const topics = (card.getAttribute('data-topic') || '').split(' ');
+    const show = (topic === 'all') || topics.includes(topic);
+    card.style.display = show ? '' : 'none';
+  });
+
+  // hide year headings + their divider when no visible card follows before next heading
+  const wpId = 'working-papers';
+  document.querySelectorAll('.pub-year-heading').forEach(h => {
+    let anyVisible = false;
+    let el = h.nextElementSibling;
+    while (el && !el.classList.contains('pub-year-heading')) {
+      if (el.classList.contains('pub-card') && el.style.display !== 'none') anyVisible = true;
+      el = el.nextElementSibling;
+    }
+    h.style.display = anyVisible ? '' : 'none';
+  });
+
+  // hide dividers adjacent to hidden content (simple approach: hide all dividers on filter, show on 'all')
+  document.querySelectorAll('.pub-divider').forEach(d => {
+    d.style.display = (topic === 'all') ? '' : 'none';
+  });
 }
 </script>
 ```
