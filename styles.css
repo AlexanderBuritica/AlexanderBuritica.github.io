@@ -1680,56 +1680,6 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
 }
 
 /* ============================================================
-   METRICS STRIP (home)
-   ============================================================ */
-.metrics-strip {
-  max-width: 960px;
-  margin: 1.8rem auto 0;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-.metric-box {
-  text-align: center;
-  padding: 1.3rem 0.8rem;
-  background: var(--color-bg-subtle);
-  border: 1px solid var(--color-border);
-  border-radius: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-.metric-box:hover {
-  border-color: var(--color-accent);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
-}
-.metric-box > i {
-  color: var(--color-accent);
-  opacity: 0.5;
-  font-size: 1rem;
-  margin-bottom: 0.4rem;
-  display: block;
-}
-.metric-num {
-  font-family: var(--font-serif);
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--color-accent);
-  line-height: 1;
-}
-.metric-cap {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--color-text-secondary);
-  margin-top: 0.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-@media (max-width: 700px) {
-  .metrics-strip { grid-template-columns: 1fr 1fr; }
-}
-
-/* ============================================================
    SELECTED PUBLICATION BADGES (year + NEW)
    ============================================================ */
 .feat-card { position: relative; }
