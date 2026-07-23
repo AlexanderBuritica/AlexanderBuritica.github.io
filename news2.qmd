@@ -38,6 +38,17 @@ css: styles.css
       <div class="tl-dot tl-pub"></div>
       <div class="tl-content">
         <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
+        <span class="tl-date">2026</span>
+        <h3>New paper in <em>Peace and Sustainability</em></h3>
+        <p>Community seed banks deliver social cohesion and peacebuilding in conflict-affected, climate-vulnerable agricultural contexts: a study from northern Ethiopia.</p>
+        <a href="https://doi.org/10.1016/j.nerpsj.2026.100049" target="_blank" class="tl-link">Journal →</a>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot tl-pub"></div>
+      <div class="tl-content">
+        <span class="tl-badge tl-badge-pub"><i class="fa-solid fa-file-lines"></i> Publication</span>
         <span class="tl-date">April 2026</span>
         <h3>Impact of community seed banks on seed security and food access outcomes in Ethiopia</h3>
         <p><em>Discover Sustainability</em> (Springer Nature).</p>

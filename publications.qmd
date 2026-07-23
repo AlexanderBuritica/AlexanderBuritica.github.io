@@ -17,13 +17,13 @@ toc: false
 </p>
 
 <div class="pub-stats-bar">
-  <span><b>14</b> peer-reviewed</span>
+  <span><b>15</b> peer-reviewed</span>
   <span class="pub-stats-sep">|</span>
   <span><b>3</b> working papers</span>
   <span class="pub-stats-sep">|</span>
   <span><b>374</b> citations</span>
   <span class="pub-stats-sep">|</span>
-  <span><b>11</b> journals</span>
+  <span><b>12</b> journals</span>
 </div>
 
 <div class="pub-filters">
@@ -38,6 +38,25 @@ toc: false
 
 <!-- ==================== 2026 ==================== -->
 <h2 class="pub-year-heading">2026</h2>
+
+<div class="pub-card" data-topic="policy food">
+  <div class="pub-card-img">
+    <img src="images/wp2-01.jpg" alt="Community seed banks peacebuilding Ethiopia">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-card-title">Community seed banks deliver social cohesion and peacebuilding in conflict-affected, climate-vulnerable agricultural contexts: a study from northern Ethiopia</div>
+    <div class="pub-card-authors">Mary Eyeniyeh Ngaiwi, <strong>Alexander Buriticá</strong>, Carolina González, Carlo Fadda, Elena García-Conejero, Augusto Carlos Castro-Nunez</div>
+    <div class="pub-card-journal"><em>Peace and Sustainability</em>, 100049, 2026. Elsevier (NERPS)</div>
+    <div class="pub-card-links">
+      <button class="pub-btn pub-abs-toggle" onclick="toggleAbstract(this)">ABS</button>
+      <a href="https://doi.org/10.1016/j.nerpsj.2026.100049" target="_blank" class="pub-btn">DOI</a>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S2950642526000298" target="_blank" class="pub-btn">Journal</a>
+    </div>
+    <div class="pub-abstract">
+      Sub-Saharan Africa's rural communities are increasingly exposed to the compound pressures of climate variability and armed conflict, which erode livelihoods, disrupt institutions, and weaken social cohesion. Community Seed Banks (CSBs), initially designed to conserve agrobiodiversity and improve seed access, are increasingly functioning as grassroots institutions with broader social roles that strengthen social resilience and support peacebuilding. This study employed a three-stage least squares (3SLS) estimation to investigate how CSBs influence six social cohesion dimensions—trust, unity, communication flow, social interaction, conflict resolution, and perceived security—in three conflict-affected, climate-vulnerable rural communities (Ayba, Melfa, Wakaye) in northern Ethiopia. Using original survey data from 393 households, we identify significant but differentiated effects of CSB membership. Results suggest that CSB affiliation in Ayba and Wakaye correlates with higher trust and improved communication, interpersonal interaction, and conflict resolution capacity. These findings posit that, as locally rooted institutions, CSBs contribute to community-led adaptation, peacebuilding, and social cohesion beyond mere seed conservation—bridging environmental peacebuilding frameworks with critical political ecology.
+    </div>
+  </div>
+</div>
 
 <div class="pub-card" data-topic="food">
   <div class="pub-card-img">
