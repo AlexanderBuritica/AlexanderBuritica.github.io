@@ -24,6 +24,12 @@ title-block-banner: false
       </p>
       <p class="hero-eduard-location"><i class="fa-solid fa-location-dot"></i> Cali, Colombia</p>
 
+      <div class="hero-eduard-tags">
+        <span class="hero-tag">Development Economics</span>
+        <span class="hero-tag">Impact Evaluation</span>
+        <span class="hero-tag">Agricultural Economics</span>
+      </div>
+
       <div class="hero-eduard-icons">
         <a href="mailto:a.buritica@cgiar.org" title="Email"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
