@@ -15,8 +15,6 @@ website:
   navbar:
     background: light
     left:
-      - text: Research
-        href: research.qmd
       - text: Publications
         href: publications.qmd
       - text: Field Work

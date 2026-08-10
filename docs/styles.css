@@ -104,21 +104,23 @@ a:hover { color: #134545; }
   font-weight: 400;
 }
 
-/* Subtitle */
-.hero-eduard-subtitle {
-  font-size: 1.2rem;
-  color: var(--color-text);
-  margin: 0 0 0.15rem 0;
+/* Meta block (role + affiliation + location) */
+.hero-eduard-meta {
   padding-left: 1rem;
+  margin-bottom: 1.1rem;
+}
+.hero-eduard-role {
+  font-size: 1.15rem;
+  color: var(--color-text);
+  margin: 0 0 0.1rem 0;
 }
 
 /* Affiliation */
 .hero-eduard-affiliation {
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-style: italic;
   color: var(--color-accent);
-  margin: 0 0 1rem 0;
-  padding-left: 1rem;
+  margin: 0 0 0.4rem 0;
 }
 
 .hero-eduard-affiliation a {
@@ -129,22 +131,37 @@ a:hover { color: #134545; }
 .hero-eduard-location {
   font-size: 0.85rem;
   color: var(--color-text-secondary);
-  margin: -0.6rem 0 1rem 0;
-  padding-left: 1rem;
+  margin: 0;
 }
 .hero-eduard-location i {
   color: var(--color-accent);
   margin-right: 0.3rem;
 }
 
-/* Icons — circular buttons */
+/* Bio */
+.hero-eduard-bio {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  padding-left: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.hero-eduard-bio p {
+  margin-bottom: 0;
+}
+
+.hero-eduard-bio strong {
+  font-weight: 650;
+}
+
+/* Icons — circular buttons, with divider above */
 .hero-eduard-icons {
   display: flex;
   gap: 0.7rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.2rem;
+  margin: 0;
+  padding-top: 1.2rem;
   padding-left: 1rem;
-  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
 }
 
 .hero-eduard-icons a {
@@ -166,21 +183,6 @@ a:hover { color: #134545; }
   transform: translateY(-2px);
 }
 
-/* Bio */
-.hero-eduard-bio {
-  font-size: 0.97rem;
-  line-height: 1.75;
-  padding-left: 1rem;
-}
-
-.hero-eduard-bio p {
-  margin-bottom: 0.7rem;
-}
-
-.hero-eduard-bio strong {
-  font-weight: 650;
-}
-
 /* Right: Photo + actions */
 .hero-eduard-right {
   display: flex;
@@ -190,7 +192,7 @@ a:hover { color: #134545; }
   padding-top: 0.5rem;
 }
 
-/* Square photo (Variant 2 style) */
+/* Square photo */
 .hero-eduard-photo {
   width: 290px;
   height: 330px;
@@ -205,17 +207,6 @@ a:hover { color: #134545; }
   box-shadow: 0 16px 40px rgba(0,0,0,0.18);
 }
 
-.hero-eduard-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Courier New', Consolas, monospace;
-  font-size: 0.82rem;
-  color: var(--color-text-secondary);
-  line-height: 1.5;
-  text-align: center;
-}
-
 @media (max-width: 800px) {
   .hero-eduard-inner {
     grid-template-columns: 1fr;
@@ -223,8 +214,9 @@ a:hover { color: #134545; }
   .hero-eduard-right { order: -1; }
   .hero-eduard-photo { width: 240px; height: 280px; }
   .hero-eduard-name { font-size: 2.3rem; }
-  .hero-eduard-icons { justify-content: center; }
-  .hero-eduard-bio { text-align: center; }
+  .hero-eduard-meta { text-align: center; padding-left: 0; }
+  .hero-eduard-icons { justify-content: center; padding-left: 0; }
+  .hero-eduard-bio { text-align: center; padding-left: 0; }
 }
 
 /* ============================================================
