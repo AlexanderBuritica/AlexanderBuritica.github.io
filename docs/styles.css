@@ -2031,3 +2031,59 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
 @media (max-width: 800px) {
   .hero-eduard-tags { justify-content: center; padding-left: 0; }
 }
+
+/* ============================================================
+   404 PAGE
+   ============================================================ */
+.notfound-page {
+  max-width: 640px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.notfound-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.8rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+}
+.notfound-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.notfound-code {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.4rem;
+}
+.notfound-body h1 {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem;
+}
+.notfound-body p {
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+}
+.notfound-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.notfound-link {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}

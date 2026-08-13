@@ -1,7 +1,29 @@
 ---
-title: Page Unplugged
+title: ""
+pagetitle: "Page Not Found — Alexander Buriticá"
+description-meta: "Page not found"
+title-block-banner: false
+toc: false
+page-navigation: false
+page-layout: full
+css: styles.css
 ---
 
-The page you requested cannot be found (perhaps it was unplugged).
-
-You may want to try searching to find the page's new plug.
+```{=html}
+<section class="notfound-page">
+  <div class="notfound-photo">
+    <img src="files/images/fieldwork/a16.jpeg" alt="Fieldwork">
+  </div>
+  <div class="notfound-body">
+    <span class="notfound-code">404</span>
+    <h1>This page wandered off the map.</h1>
+    <p>The page you're looking for doesn't exist or may have moved. Here are a few places to head instead:</p>
+    <div class="notfound-links">
+      <a href="index.html" class="cv-btn"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="publications.html" class="notfound-link">Publications →</a>
+      <a href="speakers.html" class="notfound-link">Field Work →</a>
+      <a href="contact.html" class="notfound-link">Contact →</a>
+    </div>
+  </div>
+</section>
+```

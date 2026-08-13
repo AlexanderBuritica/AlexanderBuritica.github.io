@@ -31,6 +31,41 @@
 
 
 <!--Include academic icons or buttons-->
+<!-- Person structured data (schema.org) — site-wide identity for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alexander Buriticá Casanova",
+  "givenName": "Alexander",
+  "familyName": "Buriticá Casanova",
+  "jobTitle": "Postdoctoral Researcher",
+  "description": "Applied economist working on technology adoption, impact evaluation, and rural development in Latin America and Sub-Saharan Africa.",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Alliance of Bioversity International and CIAT",
+    "url": "https://alliancebioversityciat.org/"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidad de los Andes" },
+    { "@type": "CollegeOrUniversity", "name": "Universidad del Valle" }
+  ],
+  "url": "https://alexanderburitica.github.io",
+  "image": "https://alexanderburitica.github.io/files/images/Alex_Buritaca.JPG",
+  "email": "mailto:a.buritica@cgiar.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cali",
+    "addressCountry": "CO"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ",
+    "https://orcid.org/0000-0002-3856-9126",
+    "https://github.com/AlexanderBuritica",
+    "https://www.linkedin.com/in/alexander-buritica-casanova-738827155/"
+  ]
+}
+</script>
 <!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
 <p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
 <!-- Academicons -->
@@ -139,6 +174,41 @@ Security</em>, February. <a href="https://doi.org/10.1007/s12571-025-01639-0">ht
 
 
 <!--Include academic icons or buttons-->
+<!-- Person structured data (schema.org) — site-wide identity for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alexander Buriticá Casanova",
+  "givenName": "Alexander",
+  "familyName": "Buriticá Casanova",
+  "jobTitle": "Postdoctoral Researcher",
+  "description": "Applied economist working on technology adoption, impact evaluation, and rural development in Latin America and Sub-Saharan Africa.",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Alliance of Bioversity International and CIAT",
+    "url": "https://alliancebioversityciat.org/"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidad de los Andes" },
+    { "@type": "CollegeOrUniversity", "name": "Universidad del Valle" }
+  ],
+  "url": "https://alexanderburitica.github.io",
+  "image": "https://alexanderburitica.github.io/files/images/Alex_Buritaca.JPG",
+  "email": "mailto:a.buritica@cgiar.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cali",
+    "addressCountry": "CO"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ",
+    "https://orcid.org/0000-0002-3856-9126",
+    "https://github.com/AlexanderBuritica",
+    "https://www.linkedin.com/in/alexander-buritica-casanova-738827155/"
+  ]
+}
+</script>
 <!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
 <p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
 <!-- Academicons -->
@@ -251,6 +321,41 @@ and Emerging Economies</em>, February, 1–24. <a href="https://doi.org/10.1108/
 
 
 <!--Include academic icons or buttons-->
+<!-- Person structured data (schema.org) — site-wide identity for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alexander Buriticá Casanova",
+  "givenName": "Alexander",
+  "familyName": "Buriticá Casanova",
+  "jobTitle": "Postdoctoral Researcher",
+  "description": "Applied economist working on technology adoption, impact evaluation, and rural development in Latin America and Sub-Saharan Africa.",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Alliance of Bioversity International and CIAT",
+    "url": "https://alliancebioversityciat.org/"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidad de los Andes" },
+    { "@type": "CollegeOrUniversity", "name": "Universidad del Valle" }
+  ],
+  "url": "https://alexanderburitica.github.io",
+  "image": "https://alexanderburitica.github.io/files/images/Alex_Buritaca.JPG",
+  "email": "mailto:a.buritica@cgiar.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cali",
+    "addressCountry": "CO"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ",
+    "https://orcid.org/0000-0002-3856-9126",
+    "https://github.com/AlexanderBuritica",
+    "https://www.linkedin.com/in/alexander-buritica-casanova-738827155/"
+  ]
+}
+</script>
 <!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
 <p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
 <!-- Academicons -->
