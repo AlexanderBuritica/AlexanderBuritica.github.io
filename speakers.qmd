@@ -10,7 +10,7 @@ css: styles.css
 <section class="fw-page">
   <h1 class="fw-page-title">Field Work</h1>
   <p class="fw-page-subtitle">
-    Rigorous impact evaluation begins in the field. Over the past decade I have led and participated in primary data collection across Colombia and Ecuador — designing household surveys, conducting farm visits, running focus groups, and working alongside smallholder communities. These images document that work: the people, landscapes, and production systems behind the data. Click any photo to enlarge.
+    Rigorous impact evaluation begins in the field. Over the past decade I have led and participated in primary data collection across Colombia and Ecuador, designing household surveys, conducting farm visits, running focus groups, and working alongside smallholder communities. These images document that work: the people, landscapes, and production systems behind the data. Click any photo to enlarge.
   </p>
 
   <div class="fieldwork-gallery" id="fw-gallery">

@@ -6,18 +6,18 @@
 :root {
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --color-text: #1d1d1f;
-  --color-text-secondary: #555;
-  --color-accent: #1b5e5e;
-  --color-accent-light: #e8f4f4;
-  --color-border: rgba(0, 0, 0, 0.1);
+  --color-text: #262620;
+  --color-text-secondary: #6b6b5a;
+  --color-accent: #5c6b32;
+  --color-accent-light: #eef0e2;
+  --color-border: rgba(43, 42, 31, 0.12);
   --color-bg: #ffffff;
-  --color-bg-subtle: #f8f9fa;
+  --color-bg-subtle: #f7f7f2;
   --color-card: #ffffff;
   --radius-sm: 8px;
   --radius-md: 12px;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.07);
+  --shadow-sm: 0 2px 8px rgba(43, 42, 31, 0.05);
+  --shadow-md: 0 4px 20px rgba(43, 42, 31, 0.08);
   --max-width: 960px;
 }
 
@@ -41,7 +41,7 @@ h2 { font-size: 1.55rem; margin-top: 1.5rem; }
 h3 { font-size: 1.2rem; }
 
 a { color: var(--color-accent); text-decoration: none; transition: color 0.15s ease; }
-a:hover { color: #134545; }
+a:hover { color: #3f4a20; }
 
 /* --- Navbar --- */
 .navbar {
@@ -64,13 +64,129 @@ a:hover { color: #134545; }
 .nav-footer { border-top: 1px solid var(--color-border); font-size: 0.85rem; color: var(--color-text-secondary); padding: 1.2rem 0; }
 
 /* ============================================================
-   HERO — Eduard style
+   HERO — Field Notes style
    ============================================================ */
-.hero-eduard {
-  background: #ffffff;
-  border-bottom: 1px solid var(--color-border);
-  padding: 2.5rem 2rem 2rem;
+.hero-fieldnotes {
+  position: relative;
+  margin-bottom: 2.2rem;
+}
+
+.hero-fn-cover {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+.hero-fn-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  filter: sepia(15%) saturate(105%) brightness(0.94);
+}
+
+.hero-fn-band {
+  max-width: 960px;
+  margin: -90px auto 0;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
   animation: fadeInUp 0.6s ease-out;
+}
+
+.hero-fn-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  box-shadow: 0 18px 44px rgba(43,42,31,0.16);
+  padding: 2.5rem 2.6rem;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.hero-fn-stamp {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  margin-bottom: 0.9rem;
+}
+
+.hero-fn-name {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.08;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.5px;
+}
+
+.hero-fn-aff {
+  font-size: 0.97rem;
+  color: var(--color-text-secondary);
+  margin: 0 0 1.2rem 0;
+}
+.hero-fn-aff a {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.hero-fn-bio p {
+  font-size: 0.97rem;
+  line-height: 1.72;
+  color: #3a3a30;
+  margin: 0 0 1.3rem 0;
+  max-width: 520px;
+}
+
+.hero-fn-icons {
+  display: flex;
+  gap: 0.6rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--color-border);
+}
+.hero-fn-icons a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+.hero-fn-icons a:hover {
+  background: var(--color-accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.hero-fn-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.hero-fn-photo {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+  box-shadow: 0 10px 28px rgba(43,42,31,0.24);
+  transition: transform 0.3s ease;
+}
+.hero-fn-photo:hover {
+  transform: scale(1.03);
 }
 
 @keyframes fadeInUp {
@@ -78,145 +194,19 @@ a:hover { color: #134545; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.hero-eduard-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 2rem;
-  align-items: start;
-}
-
-/* Name */
-.hero-eduard-name {
-  font-family: var(--font-serif);
-  font-size: 2.7rem;
-  font-weight: 700;
-  color: var(--color-text);
-  margin: 0 0 0.2rem 0;
-  letter-spacing: -0.5px;
-  line-height: 1.1;
-  padding-left: 1rem;
-  border-left: 4px solid var(--color-accent);
-}
-
-.hero-name-light {
-  font-weight: 400;
-}
-
-/* Meta block (role + affiliation + location) */
-.hero-eduard-meta {
-  padding-left: 1rem;
-  margin-bottom: 1.1rem;
-}
-.hero-eduard-role {
-  font-size: 1.15rem;
-  color: var(--color-text);
-  margin: 0 0 0.1rem 0;
-}
-
-/* Affiliation */
-.hero-eduard-affiliation {
-  font-size: 0.98rem;
-  font-style: italic;
-  color: var(--color-accent);
-  margin: 0 0 0.4rem 0;
-}
-
-.hero-eduard-affiliation a {
-  color: var(--color-accent);
-}
-
-/* Location chip */
-.hero-eduard-location {
-  font-size: 0.85rem;
-  color: var(--color-text-secondary);
-  margin: 0;
-}
-.hero-eduard-location i {
-  color: var(--color-accent);
-  margin-right: 0.3rem;
-}
-
-/* Bio */
-.hero-eduard-bio {
-  font-size: 0.98rem;
-  line-height: 1.75;
-  padding-left: 1rem;
-  margin-bottom: 1.3rem;
-}
-
-.hero-eduard-bio p {
-  margin-bottom: 0;
-}
-
-.hero-eduard-bio strong {
-  font-weight: 650;
-}
-
-/* Icons — circular buttons, with divider above */
-.hero-eduard-icons {
-  display: flex;
-  gap: 0.7rem;
-  margin: 0;
-  padding-top: 1.2rem;
-  padding-left: 1rem;
-  border-top: 1px solid var(--color-border);
-}
-
-.hero-eduard-icons a {
-  width: 42px;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #f2f4f4;
-  color: var(--color-text);
-  font-size: 1.1rem;
-  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
-}
-
-.hero-eduard-icons a:hover {
-  background: var(--color-accent);
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-/* Right: Photo + actions */
-.hero-eduard-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.9rem;
-  padding-top: 0.5rem;
-}
-
-/* Square photo */
-.hero-eduard-photo {
-  width: 290px;
-  height: 330px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: none;
-  box-shadow: 0 12px 32px rgba(0,0,0,0.14);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hero-eduard-photo:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.18);
-}
-
 @media (max-width: 800px) {
-  .hero-eduard-inner {
+  .hero-fn-cover { height: 220px; }
+  .hero-fn-band { margin-top: -60px; padding: 0 1.2rem; }
+  .hero-fn-card {
     grid-template-columns: 1fr;
+    padding: 1.8rem 1.6rem;
+    text-align: center;
   }
-  .hero-eduard-right { order: -1; }
-  .hero-eduard-photo { width: 240px; height: 280px; }
-  .hero-eduard-name { font-size: 2.3rem; }
-  .hero-eduard-meta { text-align: center; padding-left: 0; }
-  .hero-eduard-icons { justify-content: center; padding-left: 0; }
-  .hero-eduard-bio { text-align: center; padding-left: 0; }
+  .hero-fn-right { order: -1; }
+  .hero-fn-icons { justify-content: center; }
+  .hero-fn-name { font-size: 2rem; }
+  .hero-fn-bio p { max-width: 100%; }
+  .hero-fn-stamp { margin-left: auto; margin-right: auto; }
 }
 
 /* ============================================================
@@ -600,9 +590,10 @@ a:hover { color: #134545; }
   border: 1px solid var(--color-border);
   transition: transform 0.25s ease, filter 0.25s ease;
   display: block;
+  filter: sepia(14%) saturate(108%) brightness(0.97);
 }
 
-.gallery-item:hover img { transform: scale(1.03); filter: brightness(0.92); }
+.gallery-item:hover img { transform: scale(1.03); filter: sepia(14%) saturate(108%) brightness(0.88); }
 
 .gallery-caption {
   position: absolute; bottom: 0; left: 0; right: 0;
@@ -1424,6 +1415,7 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  filter: sepia(14%) saturate(108%) brightness(0.97);
 }
 .fw-photo:hover img {
   transform: scale(1.05);
@@ -1501,11 +1493,11 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease, filter 0.4s ease;
-  filter: grayscale(15%);
+  filter: sepia(16%) saturate(108%) brightness(0.95);
 }
 .fw-strip-item:hover img {
   transform: scale(1.08);
-  filter: grayscale(0%);
+  filter: sepia(16%) saturate(115%) brightness(1);
 }
 .fw-strip-label {
   position: absolute;
@@ -1569,6 +1561,7 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  filter: sepia(14%) saturate(108%) brightness(0.97);
 }
 .footer-gallery-imgs a:hover img {
   transform: scale(1.08);
@@ -1593,7 +1586,7 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(180deg, rgba(27,94,94,0.55), rgba(0,0,0,0.55));
+  background: linear-gradient(180deg, rgba(92,107,50,0.55), rgba(0,0,0,0.55));
   padding: 1rem;
 }
 .page-banner-title {
@@ -1636,6 +1629,7 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: sepia(15%) saturate(105%) brightness(0.95);
 }
 .about-title {
   font-family: var(--font-serif);
@@ -1720,7 +1714,7 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 700;
-  box-shadow: 0 4px 14px rgba(27,94,94,0.35);
+  box-shadow: 0 4px 14px rgba(92,107,50,0.35);
 }
 .ra-card-reverse .ra-num {
   left: auto;
@@ -2053,6 +2047,7 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: sepia(15%) saturate(105%) brightness(0.95);
 }
 .notfound-code {
   display: block;
