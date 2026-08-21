@@ -552,17 +552,6 @@ a:hover { color: #3f4a20; }
   background: #4a5628;
 }
 
-/* Altmetric / Dimensions badges */
-.pub-metrics {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 0.9rem;
-  padding-top: 0.9rem;
-  border-top: 1px dashed var(--color-border);
-  flex-wrap: wrap;
-}
-
 @media (max-width: 600px) {
   .pub-card {
     grid-template-columns: 1fr;
@@ -744,8 +733,6 @@ html { scroll-behavior: smooth; }
   display: none !important;
 }
 
-/* Altmetric & Dimensions badges */
-span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
 .csl-entry em strong, .csl-entry i strong { font-style: italic; font-weight: 800; }
 #refs { display: none; }
 
@@ -1921,7 +1908,7 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
   /* Hide navigation, decorative, and interactive chrome */
   .navbar, .nav-footer, .footer-gallery, .hero-fn-cover,
   .fw-strip, .page-banner, .pub-filters, .pub-stats-bar,
-  .pub-abs-toggle, .pub-cite-toggle, .bibtex-box, .pub-metrics,
+  .pub-abs-toggle, .pub-cite-toggle, .bibtex-box,
   .fw-more, .about-cta, .contact-socials, .gs-badge, .cv-btn,
   .hero-fn-icons, .lightbox-overlay, script {
     display: none !important;
