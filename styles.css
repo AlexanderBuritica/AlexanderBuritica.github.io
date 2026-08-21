@@ -132,6 +132,10 @@ a:hover { color: #3f4a20; }
   color: var(--color-text-secondary);
   margin: 0 0 1.2rem 0;
 }
+.hero-fn-aff i {
+  color: var(--color-accent);
+  margin-right: 0.3rem;
+}
 .hero-fn-aff a {
   color: var(--color-accent);
   font-weight: 500;
@@ -495,6 +499,68 @@ a:hover { color: #3f4a20; }
 .pub-btn-active {
   background: var(--color-accent) !important;
   color: #fff !important;
+}
+
+/* Cite button (BibTeX) */
+.pub-cite-toggle {
+  cursor: pointer;
+  background: none;
+  font-family: var(--font-sans);
+}
+.pub-cite-toggle i {
+  margin-right: 0.25rem;
+  font-size: 0.72rem;
+}
+
+.bibtex-box {
+  display: none;
+  position: relative;
+  margin-top: 0.8rem;
+  background: #24241d;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.bibtex-box.bibtex-box-open {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+.bibtex-box pre {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  color: #dde3cc;
+  font-family: 'Courier New', Consolas, monospace;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.bibtex-copy {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+.bibtex-copy:hover {
+  background: #4a5628;
+}
+
+/* Altmetric / Dimensions badges */
+.pub-metrics {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--color-border);
+  flex-wrap: wrap;
 }
 
 @media (max-width: 600px) {
@@ -1846,6 +1912,49 @@ span.__dimensions_badge_embed__, div.altmetric-embed { display: inline-block; }
 
 @media (max-width: 700px) {
   .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   PRINT STYLESHEET (site-wide)
+   ============================================================ */
+@media print {
+  /* Hide navigation, decorative, and interactive chrome */
+  .navbar, .nav-footer, .footer-gallery, .hero-fn-cover,
+  .fw-strip, .page-banner, .pub-filters, .pub-stats-bar,
+  .pub-abs-toggle, .pub-cite-toggle, .bibtex-box, .pub-metrics,
+  .fw-more, .about-cta, .contact-socials, .gs-badge, .cv-btn,
+  .hero-fn-icons, .lightbox-overlay, script {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+
+  a { color: #000 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; font-size: 0.8em; color: #444; }
+
+  .hero-fn-band { margin-top: 0 !important; }
+  .hero-fn-card {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .pub-card, .cv-item, .ra-area, .rc-area {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .pub-card-img, .fw-photo, .fw-grid, .gallery-item {
+    display: none !important;
+  }
+
+  h1, h2, h3 { color: #000 !important; }
+
+  .pub-year-heading { border-bottom: 1px solid #000; padding-bottom: 0.2rem; }
 }
 
 /* ============================================================
