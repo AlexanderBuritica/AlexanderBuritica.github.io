@@ -150,10 +150,6 @@ toc: false
   <span><b>15</b> peer-reviewed</span>
   <span class="pub-stats-sep">|</span>
   <span><b>3</b> working papers</span>
-  <span class="pub-stats-sep">|</span>
-  <span><b>374</b> citations</span>
-  <span class="pub-stats-sep">|</span>
-  <span><b>12</b> journals</span>
 </div>
 
 <div class="pub-filters">

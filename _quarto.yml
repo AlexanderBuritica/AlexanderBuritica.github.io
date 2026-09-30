@@ -1,6 +1,14 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!files/"
+    # Teaching pages kept locally but not published for now
+    - "!teaching.qmd"
+    - "!teaching-ba2.qmd"
+    - "!teaching-datalab.qmd"
 
 # Meta
 description-meta: "Academic website of Alexander Buriticá Casanova"

@@ -22,7 +22,7 @@ title-block-banner: false
       <!-- LEFT: Name + meta + bio + icons -->
       <div class="hero-fn-left">
         <span class="hero-fn-stamp">Postdoctoral Researcher</span>
-        <h1 class="hero-fn-name">Alexander Buriticá Casanova</h1>
+        <h1 class="hero-fn-name"><span class="nm-first">Alexander</span> <span class="nm-last">Buriticá Casanova</span></h1>
         <p class="hero-fn-aff">
           <i class="fa-solid fa-location-dot"></i> Cali, Colombia
         </p>
@@ -48,7 +48,7 @@ title-block-banner: false
              alt="Alexander Buriticá Casanova"
              class="hero-fn-photo" />
         <a href="files/cv_ingles_v3.pdf" class="cv-btn" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
-        <a href="https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="gs-badge"><i class="ai ai-google-scholar"></i> 374 citations · h-index 5</a>
+        <a href="https://scholar.google.com/citations?hl=es&user=43WzRV4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="gs-badge"><i class="ai ai-google-scholar"></i> Google Scholar profile</a>
       </div>
 
     </div>

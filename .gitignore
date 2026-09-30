@@ -2,3 +2,9 @@
 
 **/*.quarto_ipynb
 .Rproj.user
+
+# Teaching pages: kept locally, not published for now
+teaching.qmd
+teaching-ba2.qmd
+teaching-datalab.qmd
+files/teaching/

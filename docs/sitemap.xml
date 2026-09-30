@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://alexanderburitica.github.io/teaching.html</loc>
-    <lastmod>2026-04-22T19:29:46.188Z</lastmod>
+    <loc>https://alexanderburitica.github.io/talks.html</loc>
+    <lastmod>2026-06-30T18:41:23.985Z</lastmod>
   </url>
   <url>
-    <loc>https://alexanderburitica.github.io/speakers.html</loc>
-    <lastmod>2026-08-15T23:10:17.879Z</lastmod>
+    <loc>https://alexanderburitica.github.io/research.html</loc>
+    <lastmod>2026-08-15T23:10:00.043Z</lastmod>
   </url>
   <url>
-    <loc>https://alexanderburitica.github.io/publications2.html</loc>
-    <lastmod>2026-02-18T02:49:46.007Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexanderburitica.github.io/projects.html</loc>
-    <lastmod>2026-01-20T14:45:08.000Z</lastmod>
+    <loc>https://alexanderburitica.github.io/publications.html</loc>
+    <lastmod>2026-09-30T04:29:59.405Z</lastmod>
   </url>
   <url>
     <loc>https://alexanderburitica.github.io/posts/paper-title/index.html</loc>
@@ -25,24 +21,28 @@
     <lastmod>2026-02-14T18:18:16.426Z</lastmod>
   </url>
   <url>
-    <loc>https://alexanderburitica.github.io/people.html</loc>
-    <lastmod>2026-01-20T14:45:08.000Z</lastmod>
+    <loc>https://alexanderburitica.github.io/posts.html</loc>
+    <lastmod>2026-02-12T19:01:07.037Z</lastmod>
   </url>
   <url>
-    <loc>https://alexanderburitica.github.io/index.html</loc>
-    <lastmod>2026-08-21T16:01:47.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexanderburitica.github.io/about.html</loc>
-    <lastmod>2026-06-30T18:42:51.877Z</lastmod>
+    <loc>https://alexanderburitica.github.io/news2.html</loc>
+    <lastmod>2026-07-23T03:11:43.755Z</lastmod>
   </url>
   <url>
     <loc>https://alexanderburitica.github.io/contact.html</loc>
     <lastmod>2026-07-03T18:47:10.614Z</lastmod>
   </url>
   <url>
-    <loc>https://alexanderburitica.github.io/news2.html</loc>
-    <lastmod>2026-07-23T03:11:43.755Z</lastmod>
+    <loc>https://alexanderburitica.github.io/about.html</loc>
+    <lastmod>2026-06-30T18:42:51.877Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexanderburitica.github.io/index.html</loc>
+    <lastmod>2026-09-30T04:31:41.598Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexanderburitica.github.io/people.html</loc>
+    <lastmod>2026-01-20T14:45:08.000Z</lastmod>
   </url>
   <url>
     <loc>https://alexanderburitica.github.io/posts/coffee-cupping/index.html</loc>
@@ -53,19 +53,15 @@
     <lastmod>2026-02-14T17:51:19.279Z</lastmod>
   </url>
   <url>
-    <loc>https://alexanderburitica.github.io/posts.html</loc>
-    <lastmod>2026-02-12T19:01:07.037Z</lastmod>
+    <loc>https://alexanderburitica.github.io/projects.html</loc>
+    <lastmod>2026-01-20T14:45:08.000Z</lastmod>
   </url>
   <url>
-    <loc>https://alexanderburitica.github.io/publications.html</loc>
-    <lastmod>2026-08-21T16:11:21.988Z</lastmod>
+    <loc>https://alexanderburitica.github.io/publications2.html</loc>
+    <lastmod>2026-02-18T02:49:46.007Z</lastmod>
   </url>
   <url>
-    <loc>https://alexanderburitica.github.io/research.html</loc>
-    <lastmod>2026-08-15T23:10:00.043Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexanderburitica.github.io/talks.html</loc>
-    <lastmod>2026-06-30T18:41:23.985Z</lastmod>
+    <loc>https://alexanderburitica.github.io/speakers.html</loc>
+    <lastmod>2026-08-15T23:10:17.879Z</lastmod>
   </url>
 </urlset>

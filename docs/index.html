@@ -115,10 +115,10 @@ gtag('config', '', { 'anonymize_ip': true});
 }
 </script>
 
-<!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
+<!-- Google Fonts: Roboto + Roboto Mono (al-folio light look) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 <!-- Academicons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -160,8 +160,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var gal = document.createElement('div');
     gal.className = 'footer-gallery';
     var inner = '<span class="footer-gallery-label">From the field</span><div class="footer-gallery-imgs">';
+    var offMeta = document.querySelector('meta[name="quarto:offset"]');
+    var root = offMeta ? offMeta.getAttribute('content') : './';
     imgs.forEach(function(im){
-      inner += '<a href="speakers.html"><img src="files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
+      inner += '<a href="'+root+'speakers.html"><img src="'+root+'files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
     });
     inner += '</div>';
     gal.innerHTML = inner;
@@ -261,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <!-- LEFT: Name + meta + bio + icons -->
       <div class="hero-fn-left">
         <span class="hero-fn-stamp">Postdoctoral Researcher</span>
-        <h1 class="hero-fn-name">Alexander Buriticá Casanova</h1>
+        <h1 class="hero-fn-name"><span class="nm-first">Alexander</span> <span class="nm-last">Buriticá Casanova</span></h1>
         <p class="hero-fn-aff">
           <i class="fa-solid fa-location-dot"></i> Cali, Colombia
         </p>
@@ -285,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="hero-fn-right">
         <img src="files/images/Alex_Buritaca.JPG" alt="Alexander Buriticá Casanova" class="hero-fn-photo">
         <a href="files/cv_ingles_v3.pdf" class="cv-btn" target="_blank"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
-        <a href="https://scholar.google.com/citations?hl=es&amp;user=43WzRV4AAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" class="gs-badge"><i class="ai ai-google-scholar"></i> 374 citations · h-index 5</a>
+        <a href="https://scholar.google.com/citations?hl=es&amp;user=43WzRV4AAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" class="gs-badge"><i class="ai ai-google-scholar"></i> Google Scholar profile</a>
       </div>
 
     </div>

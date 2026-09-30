@@ -116,10 +116,10 @@ gtag('config', '', { 'anonymize_ip': true});
 }
 </script>
 
-<!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
+<!-- Google Fonts: Roboto + Roboto Mono (al-folio light look) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 <!-- Academicons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -161,8 +161,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var gal = document.createElement('div');
     gal.className = 'footer-gallery';
     var inner = '<span class="footer-gallery-label">From the field</span><div class="footer-gallery-imgs">';
+    var offMeta = document.querySelector('meta[name="quarto:offset"]');
+    var root = offMeta ? offMeta.getAttribute('content') : './';
     imgs.forEach(function(im){
-      inner += '<a href="speakers.html"><img src="files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
+      inner += '<a href="'+root+'speakers.html"><img src="'+root+'files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
     });
     inner += '</div>';
     gal.innerHTML = inner;
@@ -362,8 +364,8 @@ document.addEventListener('DOMContentLoaded', function() {
   ]
 }
 </script>
-<!-- Google Fonts: Cormorant Garamond + Source Sans 3 + Inter -->
-<p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"></p>
+<!-- Google Fonts: Roboto + Roboto Mono (al-folio light look) -->
+<p><link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&amp;family=Roboto+Mono:wght@400;500&amp;display=swap" rel="stylesheet"></p>
 <!-- Academicons -->
 <p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></p>
 <!-- Font Awesome (updated) -->
@@ -402,8 +404,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var gal = document.createElement('div');
     gal.className = 'footer-gallery';
     var inner = '<span class="footer-gallery-label">From the field</span><div class="footer-gallery-imgs">';
+    var offMeta = document.querySelector('meta[name="quarto:offset"]');
+    var root = offMeta ? offMeta.getAttribute('content') : './';
     imgs.forEach(function(im){
-      inner += '<a href="speakers.html"><img src="files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
+      inner += '<a href="'+root+'speakers.html"><img src="'+root+'files/images/fieldwork/'+im+'" loading="lazy" alt="Fieldwork"></a>';
     });
     inner += '</div>';
     gal.innerHTML = inner;
