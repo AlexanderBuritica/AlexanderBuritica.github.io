@@ -2362,3 +2362,14 @@ body .pub-card:hover { box-shadow: none; transform: none; border-color: var(--co
   .hc-main { grid-template-columns: 1fr; gap: 1.4rem; }
   .hc-photo { height: auto; aspect-ratio: 3 / 2; max-width: 420px; }
 }
+
+/* Profile block, Fergusson style (2026-10-14): rounded photo + 3 short justified paragraphs */
+.hc-main { grid-template-columns: 295px 1fr; gap: 2rem; }
+.hc-photo { border-radius: 8px; height: 355px; }
+.hc-bio p {
+  font-size: 0.97rem; font-weight: 300; line-height: 1.75; color: #000;
+  text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin: 0 0 1rem;
+}
+.hc-bio a { color: #3b8ca5; text-decoration: underline; text-underline-offset: 2px; }
+.hc-bio a:hover { color: #275d6e; }
+.hc-bio + .hc-links { margin-top: 0.4rem; }
