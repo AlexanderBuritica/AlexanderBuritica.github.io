@@ -167,30 +167,30 @@ title-block-banner: false
 
   <div class="selected-papers">
 
-    <a href="https://doi.org/10.1080/23311932.2026.2651483" target="_blank" class="feat-card">
-      <span class="feat-new">NEW</span><span class="feat-year">2026</span>
-      <div class="feat-img"><img src="files/images/journals/p2026_5.png" alt="Ecuador rice subsidy"></div>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0306919215000810" target="_blank" class="feat-card">
+      <span class="feat-year">2015</span>
+      <div class="feat-img"><img src="files/images/journals/p2015_1.jpg" alt="Coffee certification"></div>
       <div class="feat-body">
-        <div class="feat-title">Technology access without impact? An evaluation of Ecuador's input subsidy program for rice</div>
-        <div class="feat-journal"><em>Cogent Food &amp; Agriculture</em>, 2026</div>
+        <div class="feat-title">The effect of specialty coffee certification on household livelihood strategies and specialisation</div>
+        <div class="feat-journal"><em>Food Policy</em>, 2015</div>
       </div>
     </a>
 
-    <a href="https://www.ecologyandsociety.org/vol31/iss2/art1/" target="_blank" class="feat-card">
+    <a href="https://doi.org/10.1016/j.jrurstud.2026.104167" target="_blank" class="feat-card">
       <span class="feat-new">NEW</span><span class="feat-year">2026</span>
-      <div class="feat-img"><img src="files/images/journals/p2026_4.png" alt="Landscape peacebuilding"></div>
+      <div class="feat-img"><img src="files/images/journals/p2026_6.png" alt="Land restitution gender"></div>
       <div class="feat-body">
-        <div class="feat-title">Using landscape approaches to understand peacebuilding policy coherence: a case study of Caquetá</div>
-        <div class="feat-journal"><em>Ecology and Society</em>, 2026</div>
+        <div class="feat-title">Rural women's voices and gender dynamics in Colombian land restitution policy</div>
+        <div class="feat-journal"><em>Journal of Rural Studies</em>, 2026</div>
       </div>
     </a>
 
-    <a href="https://doi.org/10.1007/s10640-025-01011-y" target="_blank" class="feat-card">
-      <span class="feat-year">2025</span>
-      <div class="feat-img"><img src="files/images/journals/p2025_1.png" alt="Sweating bullets"></div>
+    <a href="https://doi.org/10.1016/j.agsy.2025.104525" target="_blank" class="feat-card">
+      <span class="feat-new">NEW</span><span class="feat-year">2026</span>
+      <div class="feat-img"><img src="files/images/journals/p2026_1.png" alt="Silvopastoral systems"></div>
       <div class="feat-body">
-        <div class="feat-title">Sweating bullets: Heat, high-stakes evaluations, and the role of incentives</div>
-        <div class="feat-journal"><em>Environmental and Resource Economics</em>, 2025</div>
+        <div class="feat-title">Advancing sustainable silvopastoral practices for achieving zero deforestation in the Colombian Amazon</div>
+        <div class="feat-journal"><em>Agricultural Systems</em>, 2026</div>
       </div>
     </a>
 
